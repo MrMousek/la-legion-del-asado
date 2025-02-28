@@ -3,7 +3,7 @@ main {
     background-color: $background-color-dark;
 
     .hero {
-        background: url('../img/hero-img.jpg') no-repeat center;
+        background: url('../img/hero2.png') no-repeat center;
         height: calc(100vh - 140px);
         margin: 2vh;
         // display: flex;
@@ -28,7 +28,13 @@ main {
             }
 
             .heromain {
-                color: $text-color-light;
+                color: black;
+                font-size: xx-large;
+                text-shadow:
+                    -1px -1px 0 white,
+                    1px -1px 0 white,
+                    -1px 1px 0 white,
+                    1px 1px 0 white;
             }
         }
     }
@@ -127,6 +133,7 @@ main {
             text-align: center;
 
             &:hover {
+
                 color: #FFD700; // Dorado para hover
             }
         }
@@ -226,12 +233,17 @@ main {
 
 // Who We Are Section
 .borde-quienes-somos {
-    margin: 25px;
+    margin: 5%;
     padding: 40px;
     border-radius: 3px;
     box-shadow: $box-shadow-dark;
     background: #222;
     border: 2px solid $border-color;
+    h2,h3,p {
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
 }
 
 .equipo-raid {
@@ -271,8 +283,8 @@ main {
     }
 
     a {
-        margin: 2px;
-        padding: 5px;
+        margin: 20px;
+        padding: 10px;
         border: 2px solid $border-color;
         border-radius: 15px;
         color: $orange-warm;
@@ -301,12 +313,34 @@ main {
 }
 
 .nuestro-equipo-simple {
-    margin: 10px 0 0;
-    // display: flex;
-    // align-items: center;
-    flex-wrap: wrap;
-    @include flex(flex, none, center);
+    margin: 5px 0 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si el contenedor tiene altura suficiente */
+    flex-direction: column; /* Asegura que el contenido se apile en columna */
+
+    iframe {
+        width: 100%;
+        height: 200px;
+        padding: 5px;
+    }
+
+    // @include flex(flex, none, center);
 }
+
+// .borde-equipo {
+
+//     margin: 25px;
+//     padding: 40px;
+//     border-radius: 3px;
+//     box-shadow: $box-shadow-dark;
+//     background: #222;
+//     border: 2px solid $border-color;
+//     display: block;
+
+// }
 
 .img-muchachos {
     display: block;
@@ -412,21 +446,19 @@ main {
 .nuestro-goal {
     background-color: #222;
     padding: 20px;
-    margin: 15px;
+    margin: 20px;
+    
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si el contenedor tiene altura suficiente */
+    flex-direction: column; /* Asegura que el contenido se apile en columna */
 
     h2,
     h3,
     p {
-        text-align: start;
+        text-align: center;
         color: white;
         padding: 20px;
-    }
-
-    video {
-        width: 500px;
-        height: auto;
-        padding: 10px;
-        margin: 10px;
     }
 }
 

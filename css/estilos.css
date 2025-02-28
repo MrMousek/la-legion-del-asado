@@ -90,7 +90,7 @@ main {
   padding: 0;
   background-color: #1B1B1B; }
   main .hero {
-    background: url("../img/hero-img.jpg") no-repeat center;
+    background: url("../img/hero2.png") no-repeat center;
     height: calc(100vh - 140px);
     margin: 2vh;
     display: flex;
@@ -108,7 +108,9 @@ main {
         font-size: 1.5rem;
         margin: 10px 0 20px; }
       main .hero .hero-content .heromain {
-        color: #E0E0E0; }
+        color: black;
+        font-size: xx-large;
+        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; }
 
 .cta-button {
   background-color: #D32F2F;
@@ -224,12 +226,16 @@ main {
       z-index: 10; }
 
 .borde-quienes-somos {
-  margin: 25px;
+  margin: 5%;
   padding: 40px;
   border-radius: 3px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   background: #222;
   border: 2px solid #ff9117; }
+  .borde-quienes-somos h2, .borde-quienes-somos h3, .borde-quienes-somos p {
+    text-align: center;
+    width: auto;
+    height: auto; }
 
 .equipo-raid {
   text-align: center; }
@@ -254,8 +260,8 @@ main {
     width: 25%;
     height: auto; }
   .quienes-somos a {
-    margin: 2px;
-    padding: 5px;
+    margin: 20px;
+    padding: 10px;
     border: 2px solid #ff9117;
     border-radius: 15px;
     color: #FF6F00;
@@ -279,11 +285,20 @@ main {
     unicode-bidi: isolate; }
 
 .nuestro-equipo-simple {
-  margin: 10px 0 0;
-  flex-wrap: wrap;
+  margin: 5px 0 0;
+  width: auto;
+  height: auto;
   display: flex;
-  justify-content: none;
-  align-items: center; }
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente si el contenedor tiene altura suficiente */
+  flex-direction: column;
+  /* Asegura que el contenido se apile en columna */ }
+  .nuestro-equipo-simple iframe {
+    width: 100%;
+    height: 200px;
+    padding: 5px; }
 
 .img-muchachos {
   display: block;
@@ -367,18 +382,20 @@ main {
 .nuestro-goal {
   background-color: #222;
   padding: 20px;
-  margin: 15px; }
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente si el contenedor tiene altura suficiente */
+  flex-direction: column;
+  /* Asegura que el contenido se apile en columna */ }
   .nuestro-goal h2,
   .nuestro-goal h3,
   .nuestro-goal p {
-    text-align: start;
+    text-align: center;
     color: white;
     padding: 20px; }
-  .nuestro-goal video {
-    width: 500px;
-    height: auto;
-    padding: 10px;
-    margin: 10px; }
 
 .unete-bg {
   padding: 0;
