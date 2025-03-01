@@ -79,63 +79,6 @@
                     </a>
                 </div>
         </section>
-        <div class="libro-de-firmas">
-        <h1 class="text-center">📜 Libro de Firmas 📜</h1>
-    
-        <div class="mb-3">
-            <label class="form-label">Tu Nombre</label>
-            <input type="text" id="nombre" class="form-control" placeholder="Ejemplo: Arthas Menethil">
-        </div>
-    
-        <div class="mb-3">
-            <label class="form-label">Tu Mensaje</label>
-            <textarea id="mensaje" class="form-control" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea>
-        </div>
-    
-        <button class="btn btn-success w-100" onclick="agregarFirma()">✍️ Firmar</button>
-    
-        <h2 class="mt-4">📖 Mensajes</h2>
-        <div id="listaFirmas"></div>
-    
-        <script>
-            document.addEventListener("DOMContentLoaded", mostrarFirmas);
-    
-            function agregarFirma() {
-                let nombre = document.getElementById("nombre").value.trim();
-                let mensaje = document.getElementById("mensaje").value.trim();
-    
-                if (nombre === "" || mensaje === "") {
-                    alert("Por favor, completa todos los campos.");
-                    return;
-                }
-    
-                let firma = { nombre, mensaje, fecha: new Date().toLocaleString() };
-                let firmas = JSON.parse(localStorage.getItem("firmas")) || [];
-                firmas.unshift(firma);
-                localStorage.setItem("firmas", JSON.stringify(firmas));
-    
-                document.getElementById("nombre").value = "";
-                document.getElementById("mensaje").value = "";
-                mostrarFirmas();
-            }
-    
-            function mostrarFirmas() {
-                let firmas = JSON.parse(localStorage.getItem("firmas")) || [];
-                let lista = document.getElementById("listaFirmas");
-                lista.innerHTML = "";
-    
-                firmas.forEach(firma => {
-                    let div = document.createElement("div");
-                    div.classList.add("firma-card");
-                    div.innerHTML = `
-                        <p><strong>${firma.nombre}</strong> - <small>${firma.fecha}</small></p>
-                        <p>${firma.mensaje}</p>
-                    `;
-                    lista.appendChild(div);
-                });
-            }
-        </script>
-        </div>
     </main>
 
     <footer>
