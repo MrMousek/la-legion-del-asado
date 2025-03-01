@@ -27,7 +27,7 @@ estilos.innerHTML = `
         100% { transform: translateY(-10px); }
     }
     .cabeza-flotante img {
-        width: 100%;
+        width: 60%;
         border-radius: 50%;
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
     }

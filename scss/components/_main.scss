@@ -283,11 +283,11 @@ main {
     }
 
     a {
+        @include flex(flex, center, center);
         margin: 20px;
         padding: 10px;
-        border: 2px solid $border-color;
+        // border: 2px solid $border-color;
         border-radius: 15px;
-        color: $orange-warm;
         // text-decoration: none;
         @extend %enlaces;
         text-align: center;
