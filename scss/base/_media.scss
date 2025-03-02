@@ -101,17 +101,17 @@
 
 @media screen and (max-width: 1199px) {
 
-    main .hero {
-        background: url('../img/hero2.png') no-repeat center;
-        height: calc(100vh - 140px);
-        margin: 0.5vh;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        @include flex(flex, center, center);
-        text-align: center;
-        color: $text-color-light;
-    }
+    // main .hero {
+    //     background: url('../img/hero2.png') no-repeat center;
+    //     height: calc(100vh - 140px);
+    //     margin: 0.5vh;
+    //     // display: flex;
+    //     // justify-content: center;
+    //     // align-items: center;
+    //     @include flex(flex, center, center);
+    //     text-align: center;
+    //     color: $text-color-light;
+    // }
     b {
         font-size: 70%;
     }

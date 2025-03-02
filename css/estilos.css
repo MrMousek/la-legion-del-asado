@@ -590,15 +590,6 @@ footer {
     margin: auto; } }
 
 @media screen and (max-width: 1199px) {
-  main .hero {
-    background: url("../img/hero2.png") no-repeat center;
-    height: calc(100vh - 140px);
-    margin: 0.5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #E0E0E0; }
   b {
     font-size: 70%; } }
 
