@@ -16,6 +16,22 @@ $padding: 40px;
 $margin-top: 25px;
 $box-shadow: 0 2px 8px $shadow-color;
 
+// Definición de variables SCSS para los colores de clase en WoW
+$dk: #C41F3B;       // Death Knight - Rojo oscuro
+$dh: #A330C9;       // Demon Hunter - Morado
+$druid: #FF7D0A;    // Druid - Naranja
+$evoker: #33937F;   // Evoker - Verde azulado
+$hunter: #ABD473;   // Hunter - Verde
+$mage: #69CCF0;     // Mage - Azul claro
+$monk: #00FF96;     // Monk - Verde lima
+$paladin: #F58CBA;  // Paladin - Rosa
+$priest: #FFFFFF;   // Priest - Blanco
+$rogue: #FFF569;    // Rogue - Amarillo
+$shaman: #0070DE;   // Shaman - Azul oscuro
+$warlock: #9482C9;  // Warlock - Púrpura
+$warrior: #C79C6E;  // Warrior - Marrón dorado
+
+
 //* Mixin
 
 @mixin flex($flex, $justify, $aling) {

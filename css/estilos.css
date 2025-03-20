@@ -260,7 +260,9 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   background: #222;
   border: 2px solid #ff9117; }
-  .borde-quienes-somos h2, .borde-quienes-somos h3, .borde-quienes-somos p {
+  .borde-quienes-somos h2,
+  .borde-quienes-somos h3,
+  .borde-quienes-somos p {
     text-align: center;
     width: auto;
     height: auto; }
@@ -427,6 +429,78 @@ main {
   text-align: center;
   margin: 20px;
   padding: 20px; }
+
+.raid-team {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 10px; }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px; }
+
+.role {
+  background: #333;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); }
+
+.role h4 {
+  font-size: 1.2em;
+  font-weight: bold; }
+
+.dh {
+  color: #A330C9; }
+
+.dk {
+  color: #C41F3B; }
+
+.druid {
+  color: #FF7D0A; }
+
+.evoker {
+  color: #33937F; }
+
+.hunter {
+  color: #ABD473; }
+
+.mage {
+  color: #69CCF0; }
+
+.monk {
+  color: #00FF96; }
+
+.paladin {
+  color: #F58CBA; }
+
+.priest {
+  color: #FFFFFF; }
+
+.rogue {
+  color: #FFF569; }
+
+.shaman {
+  color: #0070DE; }
+
+.warlock {
+  color: #9482C9; }
+
+.warrior {
+  color: #C79C6E; }
+
+.widget-theme-aversion,
+.widget-theme-dragonflight,
+.widget-theme-wow {
+  font-family: Friz Quadrata;
+  display: flex !important;
+  justify-content: flex-start !important;
+  /* Cambia según la ubicación deseada */
+  align-items: center !important;
+  /* Ajusta la posición vertical */ }
 
 .titulo-grid {
   text-align: center;
