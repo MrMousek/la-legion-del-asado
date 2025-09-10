@@ -600,51 +600,58 @@ main {
   margin: 20px; }
 
 .hache {
-  padding: 30px;
+  border: solid #ff9117;
   margin: 10px;
+  padding: 50px;
   background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/241/233135857-avatar.jpg); }
-  .hache p {
-    text-align: end; }
 
 .yadou {
-  padding: 30px;
+  border: solid #ff9117;
   margin: 10px;
+  padding: 50px;
   background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/214/168077782-avatar.jpg); }
 
 .mouse {
+  border: solid #ff9117;
   text-align: start;
   margin: 10px;
   padding: 50px;
   background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/33/168458529-avatar.jpg); }
 
 .tano {
-  padding: 30px;
+  border: solid #ff9117;
   margin: 10px;
+  padding: 50px;
   background-image: url(https://render.worldofwarcraft.com/us/character/ragnaros/94/238294622-avatar.jpg); }
 
 .tonelt {
-  padding: 30px;
+  border: solid #ff9117;
   margin: 10px;
+  padding: 50px;
   background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/70/246606662-avatar.jpg); }
 
 .kyalu {
-  padding: 30px;
+  border: solid #ff9117;
   margin: 10px;
+  padding: 50px;
   background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/91/243828827-avatar.jpg); }
 
 .zailok {
-  padding: 30px;
+  border: solid #ff9117;
   margin: 10px;
+  padding: 50px;
   background-image: url(https://render.worldofwarcraft.com/us/character/area-52/54/247165238-avatar.jpg); }
 
 .chozen {
-  padding: 30px;
+  border: solid #ff9117;
   margin: 10px;
+  padding: 50px;
   background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/39/240412711-avatar.jpg); }
 
 .apolo {
-  padding: 30px;
+  border: solid #ff9117;
   margin: 10px;
+  padding: 50px;
   background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/173/245867949-avatar.jpg); }
 
 footer {
