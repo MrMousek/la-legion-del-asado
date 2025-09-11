@@ -4,10 +4,6 @@
 .cta-button, .eventos-grid a, .productos div a, .quiero-mas .cta-button-mas, .join-action, .quienes-somos a, .rojo, footer .footer-container .footer-sections .footer-column a, footer .footer-container .footer-sections .footer-column ul li a {
   text-decoration: none; }
 
-.hache, .yadou, .mouse, .tano, .tonelt, .kyalu, .zailok, .chozen, .apolo {
-  background-repeat: no-repeat;
-  background-position: 50%; }
-
 body {
   font-family: "Roboto Condensed", 'Trebuchet MS', 'Tahoma', sans-serif;
   background-color: #1B1B1B;
@@ -594,65 +590,62 @@ main {
     height: 100%;
     object-fit: cover; }
 
-.libro-de-firmas {
-  width: auto;
-  height: auto;
-  margin: 20px; }
+/* Estilos para la presentación del equipo */
+.team-member-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  border: 2px solid #8B0000;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 100%); }
 
-.hache {
-  border: solid #ff9117;
-  margin: 10px;
-  padding: 50px;
-  background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/241/233135857-avatar.jpg); }
+.team-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(139, 0, 0, 0.3); }
 
-.yadou {
-  border: solid #ff9117;
-  margin: 10px;
-  padding: 50px;
-  background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/214/168077782-avatar.jpg); }
+.member-avatar {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
 
-.mouse {
-  border: solid #ff9117;
-  text-align: start;
-  margin: 10px;
-  padding: 50px;
-  background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/33/168458529-avatar.jpg); }
+.member-info {
+  padding: 15px;
+  color: #f1f1f1; }
 
-.tano {
-  border: solid #ff9117;
-  margin: 10px;
-  padding: 50px;
-  background-image: url(https://render.worldofwarcraft.com/us/character/ragnaros/94/238294622-avatar.jpg); }
+.member-name {
+  font-weight: bold;
+  color: #FFD700;
+  margin-bottom: 5px;
+  font-size: 1.2rem; }
 
-.tonelt {
-  border: solid #ff9117;
-  margin: 10px;
-  padding: 50px;
-  background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/70/246606662-avatar.jpg); }
+.member-role {
+  color: #8B0000;
+  margin-bottom: 10px; }
 
-.kyalu {
-  border: solid #ff9117;
-  margin: 10px;
-  padding: 50px;
-  background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/91/243828827-avatar.jpg); }
+.member-details {
+  font-size: 0.9rem;
+  margin-bottom: 0; }
 
-.zailok {
-  border: solid #ff9117;
-  margin: 10px;
-  padding: 50px;
-  background-image: url(https://render.worldofwarcraft.com/us/character/area-52/54/247165238-avatar.jpg); }
+.team-section-title {
+  border-bottom: 2px solid #8B0000;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  color: #FFD700; }
 
-.chozen {
-  border: solid #ff9117;
-  margin: 10px;
-  padding: 50px;
-  background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/39/240412711-avatar.jpg); }
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px; }
 
-.apolo {
-  border: solid #ff9117;
-  margin: 10px;
-  padding: 50px;
-  background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/173/245867949-avatar.jpg); }
+.social-links a {
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  transition: color 0.3s; }
+
+.social-links a:hover {
+  color: #FFD700; }
 
 footer {
   background-color: #444;
@@ -806,3 +799,7 @@ footer {
     width: auto;
     height: 100%;
     padding: 10px; } }
+
+@media (max-width: 768px) {
+  .member-avatar {
+    height: 150px; } }

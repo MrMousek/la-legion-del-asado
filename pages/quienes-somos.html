@@ -12,6 +12,82 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" href="../img/favicon.png" type="image">
     <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        /* Estilos específicos para la presentación del equipo */
+        .team-member-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            border: 2px solid #8B0000;
+            border-radius: 10px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 100%);
+        }
+        
+        .team-member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(139, 0, 0, 0.3);
+        }
+        
+        .member-avatar {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .member-info {
+            padding: 15px;
+            color: #f1f1f1;
+        }
+        
+        .member-name {
+            font-weight: bold;
+            color: #FFD700;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .member-role {
+            color: #8B0000;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .member-details {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+        .team-section-title {
+            border-bottom: 2px solid #8B0000;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            color: #FFD700;
+        }
+        
+        .social-links {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .social-links a {
+            color: #f1f1f1;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #FFD700;
+        }
+        
+        @media (max-width: 768px) {
+            .member-avatar {
+                height: 150px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -50,69 +126,202 @@
                 </div>
             </div>
         </nav>
-
     </header>
+
     <!-- Contiene todo el contenido principal de la página -->
     <main>
-        <div class="conteiner-who-we-are">
-            <div class="borde-quienes-somos">
-                <div class="quienes-somos">
-                    <h2>¿Quiénes Somos?</h2>
-                    <h3>La Legión del Asado</h3>
-                    <p>Fundada en 2020 por Facundo "Mouse" Miconi, <u class="ww">Whisky and WoW</u>, nombre anterior a
-                        la evolución de ser La Legión del Asado en 2023, es una guild de World of Warcraft que busca
-                        convertirse en una organización de esports con una rica trayectoria, impulsada por la innovación
-                        y una pasión por el progreso.</p>
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="borde-quienes-somos p-4 rounded">
+                        <h2 class="text-center mb-3">¿Quiénes Somos?</h2>
+                        <h3 class="text-center text-warning">La Legión del Asado</h3>
+                        <p class="text-center">Fundada en 2020 por "Mouse", <i>Whisky and WoW</i>, nombre anterior a
+                            la evolución de ser <b>La Legión del Asado</b> en 2023, es una guild de World of Warcraft que busca
+                            convertirse en una organización de esports con una rica trayectoria, impulsada por la innovación
+                            y una pasión por el progreso.</p>
 
-                    <p>En La Legión del Asado, la comunidad es el núcleo de todo lo que hacemos. Por eso, estamos
-                        comprometidos a esforzarnos por un mejor futuro, juntos. Como responsables respetuosos de la
-                        comunidad, nos dedicamos a crear un ecosistema de juegos más seguro e inclusivo que empodere a
-                        jugadores y creadores para rendir al más alto nivel, ofrezca experiencias de entretenimiento
-                        excepcionales y empuje los límites de nuestra industria.</p>
+                        <p class="text-center">En La Legión del Asado, la comunidad es el núcleo de todo lo que hacemos. Por eso, estamos
+                            comprometidos a esforzarnos por un mejor futuro, juntos. Como responsables respetuosos de la
+                            comunidad, nos dedicamos a crear un ecosistema de juegos más seguro e inclusivo que empodere a
+                            jugadores y creadores para rendir al más alto nivel, ofrezca experiencias de entretenimiento
+                            excepcionales y empuje los límites de nuestra industria.</p>
 
-                    <a href="./galeria.html" target="_blank" class="btn btn-primary enabled" tabindex="-1" role="button"
-                        aria-enabled="true">Haz clic aquí para ver fotos de la hermandad.</a>
-                </div>
-            </div>
-            <div class="borde-quienes-somos">
-                <h2>Nuestra mision</h2>
-                <p>Defender a las comunidades, unidas por nuestra pasión compartida por los videojuegos, y
-                    proporcionarles
-                    oportunidades inclusivas de crecimiento a través de experiencias de entretenimiento de clase mundial
-                    y
-                    recursos educativos.</p>
-            </div>
-            <div class="borde-quienes-somos">
-                <h2>Nuestro equipo</h2>
-                <p>Un equipo unido, apasionado y con mucha experiencia. Un equipo comprometido con la innovación, la
-                    creación y con llevar los límites del entretenimiento en esports más allá de lo que nunca antes se
-                    ha
-                    logrado."</p>
-                </div>
-                <div class="nuestro-equipo-simple">
-                    <p>Guild Master - Mouse</p>
-                    <div class="mouse"></div>
-                    <p>Oficial - Zailok</p>
-                    <div class="zailok"></div>
-                    <p>Oficial - Tano</p>
-                    <div class="tano"></div>
-                    <p>Oficial - Hache</p>
-                    <div class="hache"></div>
-                    <p>Oficial - Tonelt</p> 
-                    <div class="tonelt"></div>                  
-                    <p>Oficial - Kyalu</p>
-                    <div class="kyalu"></div>                   
-                    <p>Oficial - Apolo</p>
-                    <div class="apolo"></div>
-                    <p>Oficial - Yadou</p>
-                    <div class="yadou"></div> 
-                    <p>Oficial - Chozen</p>
-                    <div class="chozen"></div>                                      
+                        <div class="text-center mt-4">
+                            <a href="./galeria.html" target="_blank" class="btn btn-warning btn-lg" tabindex="-1" role="button"
+                                aria-enabled="true">Haz clic aquí para ver fotos de la hermandad</a>
+                        </div>
                     </div>
+                </div>
             </div>
-        </div>
+
+            <div class="row mb-5">
+                <div class="col-md-6 mb-4">
+                    <div class="borde-quienes-somos p-4 rounded h-100">
+                        <h2 class="text-center mb-3">Nuestra misión</h2>
+                        <p class="text-center">Defender a las comunidades, unidas por nuestra pasión compartida por los videojuegos, y
+                            proporcionarles oportunidades inclusivas de crecimiento a través de experiencias de entretenimiento 
+                            de clase mundial y recursos educativos.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="borde-quienes-somos p-4 rounded h-100">
+                        <h2 class="text-center mb-3">Nuestro equipo</h2>
+                        <p class="text-center">Un equipo unido, apasionado y con mucha experiencia. Un equipo comprometido con la innovación, la
+                            creación y con llevar los límites del entretenimiento en esports más allá de lo que nunca antes se
+                            ha logrado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección del equipo -->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center team-section-title">Conoce a nuestros equipo</h2>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Miembro 1: Mouse -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="member-avatar" style="background-image: url('../img/Mouzjorn.jpg')"></div>
+                        <div class="member-info">
+                            <div class="member-name">Mouse</div>
+                            <div class="member-role">Guild Master</div>
+                            <p class="member-details">Fundador de la guild y líder experimentado con visión estratégica.</p>
+                            <div class="social-links">
+                                <a href="https://www.twitch.tv/mouse_hc" title="Twitch"><i class="fab fa-twitch"></i>Twitch</a>
+                                <a href="https://x.com/mousedabest" title="Twitter"><i class="fab fa-twitter"></i>Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Miembro 2: Zailok -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="member-avatar" style="background-image: url('../img/Zâilok.jpg')"></div>
+                        <div class="member-info">
+                            <div class="member-name">Zailok</div>
+                            <div class="member-role">Oficial - DPS principal</div>
+                            <p class="member-details">Especialista en putear boluditos.</p>
+                            <div class="social-links">
+                                <a href="#" title="Twitch"><i class="fab fa-twitch"></i></a>
+                                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Miembro 3: Tano -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="member-avatar" style="background-image: url('../img/Gordomalö.jpg')"></div>
+                        <div class="member-info">
+                            <div class="member-name">Tano</div>
+                            <div class="member-role">Oficial - TANQUE/DPS</div>
+                            <p class="member-details">Experto en infligir daño masivo con su panza y tácticas de combate gordas.</p>
+                            <div class="social-links">
+                                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Miembro 4: Hache -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="member-avatar" style="background-image: url('../img/Elhempalador.jpg')"></div>
+                        <div class="member-info">
+                            <div class="member-name">Hache</div>
+                            <div class="member-role">Oficial - TANQUE</div>
+                            <p class="member-details">Mantiene al grupo con vida en las situaciones más críticas (ponele).</p>
+                            <div class="social-links">
+                                <a href="#" title="Twitch"><i class="fab fa-twitch"></i></a>
+                                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Miembro 5: Tonelt -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="member-avatar" style="background-image: url('../img/Kathlin.jpg')"></div>
+                        <div class="member-info">
+                            <div class="member-name">Tonelt</div>
+                            <div class="member-role">Oficial - ex Healer - DPS ahora</div>
+                            <p class="member-details">Mantenia al grupito vivo pero ahora pega bifes.</p>
+                            <div class="social-links">
+                                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Miembro 6: Kyalu -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="member-avatar" style="background-image: url('../img/Kyalu.jpg')"></div>
+                        <div class="member-info">
+                            <div class="member-name">Kyalu</div>
+                            <div class="member-role">Oficial - DPS</div>
+                            <p class="member-details">Se encarga de dar limones y summonear gente.</p>
+                            <div class="social-links">
+                                <a href="#" title="Twitch"><i class="fab fa-twitch"></i></a>
+                                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="member-avatar" style="background-image: url('../img/Stormshadows.jpg')"></div>
+                        <div class="member-info">
+                            <div class="member-name">Apolo</div>
+                            <div class="member-role">Oficial - ex DPS ahora HEALER</div>
+                            <p class="member-details">Entregaba bifes a la madrugada pero ahora se encarga de curar a los pibes.</p>
+                            <div class="social-links">
+                                <a href="#" title="Twitch"><i class="fab fa-twitch"></i></a>
+                                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="member-avatar" style="background-image: url('../img/Yadou.jpg')"></div>
+                        <div class="member-info">
+                            <div class="member-name">Yadou</div>
+                            <div class="member-role">Oficial - Healer</div>
+                            <p class="member-details">Un crack, fiel a su rol, nunca deja de curar.</p>
+                            <div class="social-links">
+                                <a href="#" title="Twitch"><i class="fab fa-twitch"></i></a>
+                                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-member-card">
+                        <div class="member-avatar" style="background-image: url('../img/Chozencha.jpg')"></div>
+                        <div class="member-info">
+                            <div class="member-name">Chozen</div>
+                            <div class="member-role">Oficial - DPS</div>
+                            <p class="member-details">Un pendejo crack que le encanta la waska.</p>
+                            <div class="social-links">
+                                <a href="#" title="Twitch"><i class="fab fa-twitch"></i></a>
+                                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Añade las tarjetas para Apolo, Yadou y Chozen siguiendo el mismo patrón -->
+            </div>
         </div>
     </main>
+
+    <!-- Footer y resto del código -->
+</body>
+</html>
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
