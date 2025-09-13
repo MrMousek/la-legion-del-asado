@@ -20,15 +20,10 @@ export async function handler(event, context) {
 
         // 2. Lista de streamers de tu guild
         const streamers = [
-            "mouse",
-            "zailok",
-            "tano",
-            "hache",
-            "tonelt",
-            "kyalu",
-            "apolo",
-            "yadou",
-            "chozen"
+            "mouse_hc",
+            "kevinaso",
+            "theyadou",
+            "kovuferal",
         ];
 
         // 3. Pedir info a Twitch API
