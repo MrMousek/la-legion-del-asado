@@ -9,7 +9,7 @@ exports.handler = async function(event, context) {
         };
     }
 
-    const guildStreamers = ["theyadou", "mouse_hc", "kevinaso__", "yodatv"];
+    const guildStreamers = ["theyadou", "mouse_hc", "kevinaso__", "nowenys", "yodatv",];
 
     try {
         // 1. Obtener OAuth token

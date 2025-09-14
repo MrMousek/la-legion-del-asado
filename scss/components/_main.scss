@@ -73,35 +73,6 @@ main {
     }
 }
 
-// .VideoPane-video {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     height: auto;
-//     min-height: 100%;
-//     min-width: 100%;
-//     width: auto;
-// }
-// audio, canvas, progress, video {
-//     display: inline-block;
-//     vertical-align: baseline;
-// }
-// *, :after, :before {
-//     box-sizing: inherit;
-// }
-
-// video {
-//     object-fit: contain;
-//     overflow-clip-margin: content-box;
-//     overflow: clip;
-// }
-// .VideoPane {
-//     color: #fff;
-//     display: block;
-//     position: relative;
-// }
-
 .cta-button {
     background-color: $cta-color;
     color: $background-color-dark;
@@ -169,6 +140,13 @@ main {
 
                 color: #FFD700; // Dorado para hover
             }
+        }
+
+        h4 {
+            margin: 10px;
+            font-size: 0.8rem;
+            color: $orange-warm;
+            text-align: center;
         }
     }
 }
@@ -742,76 +720,19 @@ main {
     color: #FFD700;
 }
 
+.contenedor-iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
 
-
-// .mouse {
-//         border: solid $border-color;
-//     text-align: start;
-//     margin: 10px;
-//     padding: 50px;
-//     background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/33/168458529-avatar.jpg);
-//     @extend %background;
-// }
-
-// .zailok {
-//         border: solid $border-color;
-//     margin: 10px;
-//     padding: 50px;
-//     background-image: url(https://render.worldofwarcraft.com/us/character/area-52/54/247165238-avatar.jpg);
-//     @extend %background;
-// }
-
-// .tano {
-//         border: solid $border-color;
-//     margin: 10px;
-//     padding: 50px;
-//     background-image: url(https://render.worldofwarcraft.com/us/character/ragnaros/94/238294622-avatar.jpg);
-//     @extend %background;
-// }
-
-// .hache {
-//     border: solid $border-color;
-//     margin: 10px;
-//     padding: 50px;
-//     background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/241/233135857-avatar.jpg);
-//     @extend %background;
-// }
-
-// .tonelt {
-//         border: solid $border-color;
-//     margin: 10px;
-//     padding: 50px;
-//     background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/70/246606662-avatar.jpg);
-//     @extend %background;
-// }
-
-// .kyalu {
-//         border: solid $border-color;
-//     margin: 10px;
-//     padding: 50px;
-//     background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/91/243828827-avatar.jpg);
-//     @extend %background;
-// }
-// .apolo {
-//         border: solid $border-color;
-//     margin: 10px;
-//     padding: 50px;
-//     background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/173/245867949-avatar.jpg);
-//     @extend %background;
-// }
-// .yadou {
-//     border: solid $border-color;
-//     margin: 10px;
-//     padding: 50px;
-//     background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/214/168077782-avatar.jpg);
-//     @extend %background;
-// }
-// .chozen {
-//         border: solid $border-color;
-//     margin: 10px;
-//     padding: 50px;
-//     background-image: url(https://render.worldofwarcraft.com/us/character/quelthalas/39/240412711-avatar.jpg);
-//     @extend %background;
-// }
-
-
+.contenedor-iframe iframe {
+    max-width: 500px; 
+    width: 100%;
+    height: 400px;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(200, 170, 110, 0.3);
+}
