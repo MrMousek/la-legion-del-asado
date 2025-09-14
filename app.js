@@ -3,7 +3,7 @@ async function fetchStreamers() {
     container.innerHTML = `<p class="text-center">Cargando streamers...</p>`;
 
     try {
-        const res = await fetch("./netlify/functions/getStreamers.js");
+        const res = await fetch("/netlify/functions/getStreamers.js");
         const data = await res.json();
 
         container.innerHTML = "";
