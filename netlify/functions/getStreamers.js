@@ -1,4 +1,3 @@
-// netlify/functions/get-streamers.js
 exports.handler = async function(event, context) {
     const { TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET } = process.env;
 
@@ -78,7 +77,7 @@ exports.handler = async function(event, context) {
         };
 
     } catch (err) {
-        console.error("Error en get-streamers:", err);
+        console.error("Error en getStreamers:", err);
         return {
             statusCode: 500,
             headers: {

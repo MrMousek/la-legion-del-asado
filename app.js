@@ -4,7 +4,7 @@ async function fetchStreamers() {
 
     try {
         // CORRECCIÓN: Usar el nombre correcto de la función (con guión)
-        const res = await fetch("/.netlify/functions/get-streamers");
+        const res = await fetch("/.netlify/functions/getStreamers");
         
         if (!res.ok) {
             throw new Error(`Error HTTP: ${res.status} ${res.statusText}`);
