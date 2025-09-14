@@ -1,10 +1,7 @@
 // netlify/functions/get-streamers.js
-import fetch from "node-fetch";
-
 export async function handler(event, context) {
     const { TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET } = process.env;
 
-    // Streamers de la guild
     const guildStreamers = ["theyadou", "mouse_hc", "kevinaso__", "yodatv"];
 
     try {
@@ -13,10 +10,14 @@ export async function handler(event, context) {
             `https://id.twitch.tv/oauth2/token?client_id=${TWITCH_CLIENT_ID}&client_secret=${TWITCH_CLIENT_SECRET}&grant_type=client_credentials`,
             { method: "POST" }
         );
+
         const tokenData = await tokenRes.json();
+        if (!tokenData.access_token) {
+            throw new Error("No se pudo obtener access_token: " + JSON.stringify(tokenData));
+        }
+
         const accessToken = tokenData.access_token;
 
-        // Headers para Twitch
         const headers = {
             "Client-ID": TWITCH_CLIENT_ID,
             "Authorization": `Bearer ${accessToken}`
@@ -34,7 +35,7 @@ export async function handler(event, context) {
 
         const online = streamsData.data;
 
-        // 4. Combinar usuarios con estado online/offline
+        // 4. Combinar online/offline
         const result = usersData.data.map(user => {
             const live = online.find(s => s.user_id === user.id);
             return {
@@ -55,6 +56,7 @@ export async function handler(event, context) {
         };
 
     } catch (err) {
+        console.error("Error en get-streamers:", err);
         return {
             statusCode: 500,
             body: JSON.stringify({ error: err.message })
