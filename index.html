@@ -61,7 +61,7 @@
                 <video autoplay muted loop playsinline>
                     <source src="./img/0302.mp4" type="video/mp4">
                     Tu navegador no soporta videos.
-                </video> 
+                </video>
             </div>
             <div class="hero-content">
                 <h2>Bienvenidos a La Legión del Asado</h2>
@@ -78,42 +78,86 @@
                         <h3>¡ESTAMOS RECLUTANDO PARA LA RAID MANAFORGE OMEGA - ÚNETE!</h3>
                         <h4> CLICKEAME PA DALE NO TE HAGA ROGA</h4>
                     </a>
-                </div>                
+                </div>
         </section>
-                <section class="eventos">
-                                    <h2>STREAMERS DE LA HERMANDAD</h2>
+        <section class="eventos">
+            <h2>STREAMERS DE LA HERMANDAD</h2>
             <div class="eldivdeltano">
-        <section class="streamers-section">
-            <div class="container">
+                <section class="streamers-section">
+                    <div class="container">
 
-                <p class="text-center mb-4">¡Dale follow a nuestros streamers y síguelos cuando estén en vivo!</p>
-                
-                <div class="row" id="streamers-container">
-                    <div class="loading-spinner">
-                        <div class="spinner-border text-primary" role="status">
-                            <span class="visually-hidden">Cargando...</span>
+                        <p class="text-center mb-4">¡Dale follow a nuestros streamers y síguelos cuando estén en vivo!
+                        </p>
+
+                        <div class="row" id="streamers-container">
+                            <div class="loading-spinner">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Cargando...</span>
+                                </div>
+                                <p class="mt-2">Buscando streamers en vivo...</p>
+                            </div>
                         </div>
-                        <p class="mt-2">Buscando streamers en vivo...</p>
+
+                        <div class="mt-4 text-center">
+                            <p>¿Eres miembro de la hermandad y quieres aparecer aquí?<br>Contacta a un oficial con tu
+                                nombre de usuario de Twitch.</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="mt-4 text-center">
-                    <p>¿Eres miembro de la hermandad y quieres aparecer aquí?<br>Contacta a un oficial con tu nombre de usuario de Twitch.</p>
-                </div>
+                    <!-- Twitch -->
+                    <script src="./js/app.js"></script>
+                </section>
             </div>
-                <!-- Twitch -->
-    <script src="./js/app.js"></script>
-        </section>
-                </div>                
         </section>
         <section class="eventos">
             <h2>NUESTRO PROGRESS ACTUAL</h2>
             <section class="contenedor-iframe">
-            <iframe 
-                src="https://raider.io/widgets/boss-progress?raid=latest&name_style=logo&difficulty=latest&region=us&realm=quelthalas&guild=La+Legi%C3%B3n+del+Asado&boss=latest&period=until_kill&orientation=rect&hide=&chromargb=transparent&theme=dragonflight"
-                frameborder="0" width="100%" height="400"></iframe>
-        </section>               
+                <iframe
+                    src="https://raider.io/widgets/boss-progress?raid=latest&name_style=logo&difficulty=latest&region=us&realm=quelthalas&guild=La+Legi%C3%B3n+del+Asado&boss=latest&period=until_kill&orientation=rect&hide=&chromargb=transparent&theme=dragonflight"
+                    frameborder="0" width="100%" height="400"></iframe>
+            </section>
         </section>
+<div class="container">
+        <div class="wow-header">
+            <h2>Generador de personajes para adictos a los alters.</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="wow-card">
+                    <h4><i class="fas fa-filter"></i> Filtrar por rol</h4>
+                    <div class="filter-section">
+                        <button class="btn filter-btn active" data-role="all">Todos los roles</button>
+                        <button class="btn filter-btn" data-role="DPS">DPS</button>
+                        <button class="btn filter-btn" data-role="Tanque">Tanque</button>
+                        <button class="btn filter-btn" data-role="Healer">Sanador</button>
+                    </div>
+                    
+                    <h4><i class="fas fa-hat-wizard"></i> Selecciona una clase pa</h4>
+                    <div class="class-grid" id="classGrid">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="wow-card">
+                    <h4><i class="fas fa-users"></i> Información de la clase</h4>
+                    <div id="classInfo">
+                        <p class="text-center">Selecciona una clase para ver detalles</p>
+                    </div>
+                </div>
+                
+                <div class="wow-card">
+                    <h4><i class="fas fa-random"></i> Generador aleatorio</h4>
+                    <p>¿No podes decidirte crack? ¡Deja que el destino elija por ti!</p>
+                    <button id="generateBtn" class="btn btn-wow">
+                        <i class="fas fa-dice"></i> Generar Personaje
+                    </button>
+                    <div id="personaje"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="./js/alters.js"></script>
     </main>
     <footer>
         <div class="footer-container">
