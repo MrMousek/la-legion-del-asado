@@ -5,7 +5,7 @@ const clases = [
         razas: [
             "Humano", "Enano", "Elfo de la Noche", "Gnomo", "Draenei", "Huargen", "Orco", "Trol", "No-Muerto",
             "Tauren", "Elfo de Sangre", "Goblin", "Pandaren", "Vulpera", "Draenei Templeluz",
-            "Elfo del Vacío", "Enano Hierro Negro", "Orco Mag'har", "Tauren Altamontaña", "Trol Zandalari", "Mecagnomo", "Terráneo",
+            "Elfo del Vacío", "Enano Hierro Negro", "Orco Mag'har", "Tauren Altamontaña", "Trol Zandalari", "Mecagnomo", "Terráneo", "Dracthyr",
         ],
         icon: "https://wow.zamimg.com/images/wow/icons/large/class_warrior.jpg"
     },
@@ -24,7 +24,7 @@ const clases = [
         razas: [
             "Humano", "Enano", "Elfo de la Noche", "Gnomo", "Draenei", "Huargen", "Orco", "Trol", "No-Muerto",
             "Tauren", "Elfo de Sangre", "Goblin", "Pandaren", "Vulpera", "Elfo del Vacío", "Enano Hierro Negro",
-            "Orco Mag'har", "Tauren Altamontaña", "Trol Zandalari", "Kultirano", "Mecagnomo", "Terráneo",
+            "Orco Mag'har", "Tauren Altamontaña", "Trol Zandalari", "Kultirano", "Mecagnomo", "Terráneo", "Dracthyr", 
         ],
         icon: "https://wow.zamimg.com/images/wow/icons/large/class_hunter.jpg"
     },
@@ -34,7 +34,7 @@ const clases = [
         razas: [
             "Humano", "Enano", "Elfo de la Noche", "Gnomo", "Huargen", "Orco", "Trol", "No-Muerto", "Elfo de Sangre",
             "Goblin", "Pandaren", "Vulpera", "Elfo del Vacío", "Enano Hierro Negro", "Orco Mag'har",
-            "Kultirano", "Mecagnomo", "Terráneo",
+            "Kultirano", "Mecagnomo", "Terráneo", "Dracthyr",
         ],
         icon: "https://wow.zamimg.com/images/wow/icons/large/class_rogue.jpg"
     },
@@ -63,7 +63,7 @@ const clases = [
         razas: [
             "Humano", "Enano", "Elfo de la Noche", "Gnomo", "Draenei", "Huargen", "Orco", "Trol", "No-Muerto",
             "Elfo de Sangre", "Goblin", "Pandaren", "Elfo del Vacío", "Enano Hierro Negro",
-            "Vulpera", "Kultirano", "Mecagnomo", "Terráneo",
+            "Vulpera", "Kultirano", "Mecagnomo", "Terráneo", "Dracthyr", 
         ],
         icon: "https://wow.zamimg.com/images/wow/icons/large/class_mage.jpg"
     },
@@ -72,7 +72,7 @@ const clases = [
         roles: ["DPS"],
         razas: [
             "Humano", "Enano", "Elfo de la Noche", "Gnomo", "Orco", "Trol", "No-Muerto", "Elfo de Sangre",
-            "Goblin", "Pandaren", "Elfo del Vacío", "Enano Hierro Negro", "Kultirano", "Mecagnomo", "Terráneo",
+            "Goblin", "Pandaren", "Elfo del Vacío", "Enano Hierro Negro", "Kultirano", "Mecagnomo", "Terráneo", "Dracthyr", 
         ],
         icon: "https://wow.zamimg.com/images/wow/icons/large/class_warlock.jpg"
     },
