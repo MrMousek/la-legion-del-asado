@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Roboto Condensed", 'Trebuchet MS', 'Tahoma', sans-serif;
     background-color: $background-color-dark;
@@ -14,3 +16,5 @@ body {
     box-sizing: border-box;
     z-index: 1;
 }
+
+

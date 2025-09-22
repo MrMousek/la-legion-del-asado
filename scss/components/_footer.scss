@@ -1,3 +1,4 @@
+// _footer.scss
 footer {
     background-color: $background-color;
     padding: 1%;
@@ -37,8 +38,7 @@ footer {
                 margin: 0 1em;
 
                 a {
-                    color: $text-color-light; // Blanco humo
-                    // text-decoration: none;
+                    color: $text-color-light;
                     @extend %enlaces;
                     transition: color 0.3s;
                     display: flex;
@@ -46,15 +46,14 @@ footer {
                 }
 
                 a:hover {
-                    color: $orange-warm; // Naranja cálido
+                    color: $accent-color;
                 }
-
 
                 h4 {
                     margin-bottom: 1em;
                     font-size: 1.2em;
                     text-align: center;
-                    color: $orange-warm; // Naranja cálido
+                    color: $accent-color;
                 }
 
                 ul {
@@ -65,15 +64,14 @@ footer {
                         margin-bottom: 0.5em;
 
                         a {
-                            color: $text-color-light; 
-                            // text-decoration: none;
+                            color: $text-color-light;
                             @extend %enlaces;
                             display: block;
                             margin-bottom: 0.5em;
                             transition: color 0.3s;
 
                             &:hover {
-                                color: $orange-warm; 
+                                color: $accent-color;
                             }
                         }
                     }
@@ -87,8 +85,8 @@ footer {
             text-align: center;
             margin-top: 2em;
             padding-top: 1em;
-            border-top: 1px solid $background-color-dark; // Gris oscuro
-            color: $text-color; // Gris claro
+            border-top: 1px solid $background-color-dark;
+            color: $text-color;
         }
     }
 }
