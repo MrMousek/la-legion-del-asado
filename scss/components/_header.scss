@@ -8,9 +8,10 @@ header {
     justify-content: space-between;
 
     img {
-        width: 100px;
+        width: 150px;
         height: auto;
         margin-left: 10px;
+        border-radius: 50px;
     }
 }
 
@@ -93,3 +94,4 @@ h1 {
     --bs-dropdown-bg: #333;
     --bs-dropdown-link-color: $text-color-light;
 }
+

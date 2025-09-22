@@ -15,11 +15,11 @@ body {
 
 h1,
 h2 {
-  font-family: 'Cinzel Decorative', serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 h3,
 h4 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #FF6F00; }
 
 button,
@@ -48,9 +48,10 @@ header {
   align-items: center;
   justify-content: space-between; }
   header img {
-    width: 100px;
+    width: 150px;
     height: auto;
-    margin-left: 10px; }
+    margin-left: 10px;
+    border-radius: 50px; }
 
 h1 {
   text-align: center;
@@ -925,7 +926,7 @@ footer {
     height: auto;
     padding: 10px; }
   header {
-    background-color: black;
+    background-color: #111111;
     padding: 20px;
     margin: auto;
     display: flex;
