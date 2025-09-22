@@ -206,22 +206,22 @@ function renderClasses(roleFilter = 'all') {
 function showClassInfo(clase) {
     const classInfo = document.getElementById('classInfo');
     classInfo.innerHTML = `
+        <div class="text-center">
+            <img src="${clase.icon}" alt="${clase.nombre}" class="wow-icon mb-2">
+            <h4 class="wow-class">${clase.nombre}</h4>
+        </div>
+        <p><strong>Roles:</strong> ${clase.roles.join(', ')}</p>
+        <p><strong>Razas disponibles:</strong></p>
+        <div class="raza-grid">
+            ${clase.razas.map(raza => `
                 <div class="text-center">
-                    <img src="${clase.icon}" alt="${clase.nombre}" class="wow-icon mb-2">
-                    <h4 class="wow-class">${clase.nombre}</h4>
+                    <img src="${razaIcons[raza] || 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg'}" 
+                        alt="${raza}" class="wow-icon" style="width: 50px; height: 50px;">
+                    <div>${raza}</div>
                 </div>
-                <p><strong>Roles:</strong> ${clase.roles.join(', ')}</p>
-                <p><strong>Razas disponibles:</strong></p>
-                <div class="d-flex flex-wrap">
-                    ${clase.razas.map(raza => `
-                        <div class="text-center me-3 mb-2">
-                            <img src="${razaIcons[raza] || 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg'}" 
-                                alt="${raza}" class="wow-icon" style="width: 50px; height: 50px;">
-                            <div>${raza}</div>
-                        </div>
-                    `).join('')}
-                </div>
-            `;
+            `).join('')}
+        </div>
+    `;
 }
 
 // Inicializar la página

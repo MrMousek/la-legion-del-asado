@@ -190,3 +190,17 @@
     width: 100%;
     margin: 15px 0;
 }
+
+@media (max-width: 768px) {
+    #classGrid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas en tablets/mobiles */
+    }
+}
+
+@media (max-width: 480px) {
+    #classGrid {
+        grid-template-columns: 2fr;
+        /* 1 columna en pantallas muy chicas */
+    }
+}

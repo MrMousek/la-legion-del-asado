@@ -778,6 +778,34 @@ main {
     margin-top: 10px;
 }
 
+#classGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+}
+
+.class-item {
+    background: #232326;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.class-item:hover {
+    transform: scale(1.05);
+}
+
+.raza-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 12px;
+    justify-items: center;
+}
+
+
 .btn-wow {
     background: linear-gradient(to bottom, #9b5c2b, #6d3c15);
     color: #ffcc00;
