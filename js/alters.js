@@ -161,83 +161,69 @@ function generarPersonaje() {
     const raza = clase.razas[Math.floor(Math.random() * clase.razas.length)];
 
     document.getElementById("personaje").innerHTML = `
-                <div class="wow-card mx-auto p-4 mt-3" style="max-width: 600px;">
-                    <h4 class="mb-4 text-center">¡Tu personaje generado!</h4>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="${rolesIcons[rol]}" alt="${rol}" class="wow-icon">
-                            <p class="wow-role"><strong>${rol}</strong></p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="${clase.icon}" alt="${clase.nombre}" class="wow-icon">
-                            <p class="wow-class"><strong>${clase.nombre}</strong></p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="${razaIcons[raza] || 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg'}" 
-                                alt="${raza}" class="wow-icon">
-                            <p class="wow-race"><strong>${raza}</strong></p>
-                        </div>
-                    </div>
-                    <p class="mt-3 text-center">👉 Este es tu PJ para que levees adicto a los alters.</p>
+        <div class="wow-card mx-auto p-4 mt-3" style="max-width: 600px;">
+            <h4 class="mb-4 text-center">¡Tu personaje generado!</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="${rolesIcons[rol]}" alt="${rol}" class="wow-icon">
+                    <p class="wow-role"><strong>${rol}</strong></p>
                 </div>
-            `;
-}
-
-// Función para mostrar las clases en la cuadrícula
-function renderClasses(roleFilter = 'all') {
-    const classGrid = document.getElementById('classGrid');
-    classGrid.innerHTML = '';
-
-    clases.forEach(clase => {
-        if (roleFilter === 'all' || clase.roles.includes(roleFilter)) {
-            const classItem = document.createElement('div');
-            classItem.className = 'class-item';
-            classItem.innerHTML = `
-                        <img src="${clase.icon}" alt="${clase.nombre}" class="class-icon">
-                        <div class="class-name">${clase.nombre}</div>
-                    `;
-            classItem.addEventListener('click', () => showClassInfo(clase));
-            classGrid.appendChild(classItem);
-        }
-    });
-}
-
-// Función para mostrar información de la clase seleccionada
-function showClassInfo(clase) {
-    const classInfo = document.getElementById('classInfo');
-    classInfo.innerHTML = `
-        <div class="text-center">
-            <img src="${clase.icon}" alt="${clase.nombre}" class="wow-icon mb-2">
-            <h4 class="wow-class">${clase.nombre}</h4>
-        </div>
-        <p><strong>Roles:</strong> ${clase.roles.join(', ')}</p>
-        <p><strong>Razas disponibles:</strong></p>
-        <div class="raza-grid">
-            ${clase.razas.map(raza => `
-                <div class="text-center">
+                <div class="col-md-4">
+                    <img src="${clase.icon}" alt="${clase.nombre}" class="wow-icon">
+                    <p class="wow-class"><strong>${clase.nombre}</strong></p>
+                </div>
+                <div class="col-md-4">
                     <img src="${razaIcons[raza] || 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg'}" 
-                        alt="${raza}" class="wow-icon" style="width: 50px; height: 50px;">
-                    <div>${raza}</div>
+                        alt="${raza}" class="wow-icon">
+                    <p class="wow-race"><strong>${raza}</strong></p>
                 </div>
-            `).join('')}
+            </div>
+            <p class="mt-3 text-center">👉 Este es tu PJ para que levees adicto a los alters.</p>
         </div>
     `;
 }
+// // Función para mostrar las clases en la cuadrícula
+// function renderClasses(roleFilter = 'all') {
+//     const classGrid = document.getElementById('classGrid');
+//     classGrid.innerHTML = '';
+
+//     clases.forEach(clase => {
+//         if (roleFilter === 'all' || clase.roles.includes(roleFilter)) {
+//             const classItem = document.createElement('div');
+//             classItem.className = 'class-item';
+//             classItem.innerHTML = `
+//                 <img src="${clase.icon}" alt="${clase.nombre}" class="class-icon">
+//                 <div class="class-name">${clase.nombre}</div>
+//             `;
+//             classItem.addEventListener('click', () => showClassInfo(clase));
+//             classGrid.appendChild(classItem);
+//         }
+//     });
+// }
+
+// // Función para mostrar información de la clase seleccionada
+// function showClassInfo(clase) {
+//     const classInfo = document.getElementById('classInfo');
+//     classInfo.innerHTML = `
+//         <div class="text-center">
+//             <img src="${clase.icon}" alt="${clase.nombre}" class="wow-icon mb-2">
+//             <h4 class="wow-class">${clase.nombre}</h4>
+//         </div>
+//         <p><strong>Roles:</strong> ${clase.roles.join(', ')}</p>
+//         <p><strong>Razas disponibles:</strong></p>
+//         <div class="raza-grid">
+//             ${clase.razas.map(raza => `
+//                 <div class="text-center">
+//                     <img src="${razaIcons[raza] || 'https://wow.zamimg.com/images/wow/icons/large/inv_misc_questionmark.jpg'}" 
+//                         alt="${raza}" class="wow-icon" style="width: 50px; height: 50px;">
+//                     <div>${raza}</div>
+//                 </div>
+//             `).join('')}
+//         </div>
+//     `;
+// }
 
 // Inicializar la página
 document.addEventListener('DOMContentLoaded', function () {
-    // Renderizar clases
-    renderClasses();
-
-    // Configurar el botón de generación
     document.getElementById('generateBtn').addEventListener('click', generarPersonaje);
-
-    // Configurar filtros
-    document.querySelectorAll('.filter-btn').forEach(button => {
-        button.addEventListener('click', function () {
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            renderClasses(this.getAttribute('data-role'));
-        });
-    });
 });

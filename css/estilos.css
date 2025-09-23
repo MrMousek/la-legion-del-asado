@@ -860,8 +860,14 @@ main {
   width: 100%;
   margin: 15px 0; }
 
+.randompj {
+  width: 250px;
+  height: auto;
+  border-radius: 150px;
+  border: 1px solid black; }
+
 footer {
-  background-color: #2A2A30;
+  background-color: #111111;
   padding: 1%; }
   footer .footer-container {
     display: flex;
@@ -872,8 +878,8 @@ footer {
     padding: 0 1em;
     flex-wrap: wrap; }
     footer .footer-container img {
-      width: 20px;
-      height: 20px;
+      width: 150px;
+      height: auto;
       margin: 2px;
       padding: 2px; }
     footer .footer-container .footer-logo {
@@ -1045,3 +1051,11 @@ footer {
   #classGrid {
     grid-template-columns: 2fr;
     /* 1 columna en pantallas muy chicas */ } }
+
+@media (max-width: 500px) {
+  .class-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    margin: 0 auto; } }

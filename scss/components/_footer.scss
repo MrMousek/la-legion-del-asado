@@ -1,6 +1,6 @@
 // _footer.scss
 footer {
-    background-color: $background-color;
+    background-color: #111111;
     padding: 1%;
 
     .footer-container {
@@ -13,8 +13,8 @@ footer {
         flex-wrap: wrap;
 
         img {
-            width: 20px;
-            height: 20px;
+            width: 150px;
+            height: auto;
             margin: 2px;
             padding: 2px;
         }
