@@ -1,0 +1,15 @@
+[
+    {
+        "id": "weekly-s3w1",
+        "titulo": "Weekly Affix Semana 1",
+        "fecha": "23 Sept 2025",
+        "texto": "Fortified, Entangling, Spiteful, + Tormented",
+        "imagen": "./img/weekly-s3w1.jpg",
+        "mapas": [
+            "Dawn of the Infinite",
+            "Black Rook Hold",
+            "Darkheart Thicket"
+        ],
+        "categoria": "weekly"
+    }
+]

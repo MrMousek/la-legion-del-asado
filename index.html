@@ -11,7 +11,7 @@
         content="World of Warcraft, comunidad de gamers, La Legión del Asado, WoW Argentina, guild de WoW, reclutamiento WoW, gamers argentinos, logros WoW, comunidad de WoW, gaming" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" href="./img/favicon.png" type="image">
+    <link rel="icon" href="./img/favicon.svg" type="image">
     <link rel="stylesheet" href="./css/estilos.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4581147465337293"
         crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
         <a class="navbar-brand" href="#">
             <img class="logo" src="./img/nuevoLLAN.svg" alt="La Legión del Asado - Logo">
         </a>
-        <h1>Una hermandad de World of Warcraft</h1>
+        <h1>Una comunidad hecha por amigos para amigos</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -72,10 +72,7 @@
 
                     <section class="hero">
                         <div class="video-container">
-                            <video autoplay muted loop playsinline>
-                                <source src="./img/0302.mp4" type="video/mp4">
-                                Tu navegador no soporta videos.
-                            </video>
+                            <img src="./img/reunionasado.png" alt="">
                         </div>
                         <div class="hero-content">
                             <h2>Bienvenidos a La Legión del Asado</h2>
@@ -83,111 +80,69 @@
                             <a href="./pages/quienes-somos.html" class="cta-button">Quienes somos</a>
                         </div>
                     </section>
-
-                    <!-- Anuncio horizontal para móviles
-                <div class="mobile-ad">
-                    <div class="ad-space horizontal">
-                        Espacio para anuncio móvil (320x100)
-                    </div>
-                </div> -->
-
                     <section class="eventos">
-                        <h2>NOTICIAS SUPER SUPER IMPORTANTES</h2>
-                        <div class="eldivdeltano">
-                            <div class="eventos-grid">
-                                <a href="./pages/unete.html" target="_blank">
-                                    <img src="./img/raids-manaforge-omega.webp" alt="Imagen de la raid Manaforge Omega">
-                                    <h3>¡ESTAMOS RECLUTANDO PARA LA RAID MANAFORGE OMEGA - ÚNETE!</h3>
-                                    <h4> CLICKEAME PA DALE NO TE HAGA ROGA</h4>
-                                </a>
-                            </div>
-                        </div>
+                        <h2>Noticias</h2>
+                        <div class="news-list" id="news-container"></div>
                     </section>
-
-                    <!-- Anuncio horizontal para móviles
-                <div class="mobile-ad">
-                    <div class="ad-space horizontal">
-                        Espacio para anuncio móvil (320x100)
-                    </div>
-                </div> -->
-
                     <section class="eventos">
-                        <h2>STREAMERS DE LA HERMANDAD</h2>
-                        <div class="eldivdeltano">
-                            <section class="streamers-section">
-                                <div class="container">
-                                    <p class="text-center mb-4">¡Dale follow a nuestros streamers y síguelos cuando
-                                        estén en
-                                        vivo!</p>
-                                    <div class="row" id="streamers-container">
-                                        <div class="loading-spinner">
-                                            <div class="spinner-border text-primary" role="status">
-                                                <span class="visually-hidden">Cargando...</span>
-                                            </div>
-                                            <p class="mt-2">Buscando streamers en vivo...</p>
+                        <h2>Guías de Clases</h2>
+                        <div class="news-list" id="guides-container"></div>
+                    </section>
+                    <section class="eventos">
+                        <h2>Weekly Affix - Season 3</h2>
+                        <div class="news-list" id="weekly-container"></div>
+                    </section>
+                    <script src="./js/appNoticias.js"></script>
+                </div>
+                </section>
+                <section class="eventos">
+                    <h2>Streamers</h2>
+                    <div class="eldivdeltano">
+                        <section class="streamers-section">
+                            <div class="container">
+                                <p class="text-center mb-4">¡Dale follow a nuestros streamers y síguelos cuando
+                                    estén en
+                                    vivo!</p>
+                                <div class="row" id="streamers-container">
+                                    <div class="loading-spinner">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Cargando...</span>
                                         </div>
-                                    </div>
-                                    <div class="mt-4 text-center">
-                                        <p>¿Eres miembro de la hermandad y quieres aparecer aquí?<br>Contacta a un
-                                            oficial
-                                            con tu nombre de usuario de Twitch.</p>
+                                        <p class="mt-2">Buscando streamers en vivo...</p>
                                     </div>
                                 </div>
-                                <script src="./js/app.js"></script>
-                            </section>
-                        </div>
-                    </section>
-
-                    <!-- Anuncio horizontal para móviles
-                <div class="mobile-ad">
-                    <div class="ad-space horizontal">
-                        Espacio para anuncio móvil (320x100)
-                    </div>
-                </div> -->
-
-                    <section class="eventos">
-                        <h2>Nuestro progreso de RAID actual</h2>
-                        <section class="contenedor-iframe">
-                            <iframe
-                                src="https://raider.io/widgets/boss-progress?raid=latest&name_style=logo&difficulty=latest&region=us&realm=quelthalas&guild=La+Legi%C3%B3n+del+Asado&boss=latest&period=until_kill&orientation=rect&hide=&chromargb=transparent&theme=dragonflight"
-                                frameborder="0" width="100%" height="400"></iframe>
+                                <div class="mt-4 text-center">
+                                    <p>¿Eres miembro de la hermandad y quieres aparecer aquí?<br>Contacta a un
+                                        oficial
+                                        con tu nombre de usuario de Twitch.</p>
+                                </div>
+                            </div>
+                            <script src="./js/app.js"></script>
                         </section>
+                    </div>
+                </section>
+                <section class="eventos">
+                    <h2>Nuestro progreso de RAID actual</h2>
+                    <section class="contenedor-iframe">
+                        <iframe
+                            src="https://raider.io/widgets/boss-progress?raid=latest&name_style=logo&difficulty=latest&region=us&realm=quelthalas&guild=La+Legi%C3%B3n+del+Asado&boss=latest&period=until_kill&orientation=rect&hide=&chromargb=transparent&theme=dragonflight"
+                            frameborder="0" width="100%" height="400"></iframe>
                     </section>
-
-                    <!-- Anuncio horizontal para móviles
-                <div class="mobile-ad">
-                    <div class="ad-space horizontal">
-                        Espacio para anuncio móvil (320x100)
-                    </div>
-                </div> -->
-
-                    <div class="wow-header">
-                        <div class="eventos">
-                            <h2>Generador de personajes aleatorios</h2>
-                        </div>
-                    </div>
-
+                </section>
                     <div class="wow-card text-center">
                         <h4><i class="fas fa-random"></i> Generador aleatorio</h4>
-                        <p>¿No podés decidirte que subir de nivel esta vez? ¡Dejá que el ena o elija por vos papá!</p>
-                                                    <img class="randompj" src="./img/randompj.png" width="300" height="300" alt="Un enano con cara de sorpresa">
+                        <p>¿No podés decidirte que subir de nivel esta vez? ¡Dejá que el enano elija por vos papá!
+                        </p>
+                        <img class="randompj" src="./img/randompj.png" width="300" height="300"
+                            alt="Un enano con cara de sorpresa">
                         <button id="generateBtn" class="btn btn-wow">
                             <i class="fas fa-dice"></i> Generar Personaje
                         </button>
                         <div id="personaje"></div>
                     </div>
-                    <script src="./js/alters.js"></script>
+                </section>
+                <script src="./js/alters.js"></script>
             </main>
-
-            <!-- Columna de anuncios derecha
-            <aside class="ad-column">
-                <div class="ad-space">
-                    Espacio para anuncio (160x600)
-                </div>
-                <div class="ad-space">
-                    Espacio para anuncio (160x600)
-                </div>
-            </aside> -->
         </div>
     </div>
     <footer>

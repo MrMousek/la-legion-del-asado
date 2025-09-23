@@ -1,0 +1,18 @@
+[
+    {
+        "id": "guia-guerrero-arms",
+        "titulo": "Guía de Guerrero Arms - Season 3",
+        "fecha": "Hace 2 días",
+        "texto": "Rotación, talentos y mejores equipos para Guerrero Arms en The War Within.",
+        "imagen": "./img/guia-warrior.jpg",
+        "categoria": "guia"
+    },
+    {
+        "id": "guia-sacerdote-shadow",
+        "titulo": "Guía de Sacerdote Shadow - Season 3",
+        "fecha": "Hace 4 días",
+        "texto": "Optimiza tu daño en míticas+ y raids.",
+        "imagen": "./img/guia-priest.jpg",
+        "categoria": "guia"
+    }
+]

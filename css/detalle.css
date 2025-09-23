@@ -1,0 +1,102 @@
+/* =========
+ESTILO DETALLE DE ARTÍCULOS
+   ========= */
+.news-detail {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    color: #ddd;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/* Título del artículo */
+.news-detail h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #f0b63a;
+    /* dorado estilo wow */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Fecha/meta */
+.news-detail em {
+    display: block;
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+/* Imágenes principales */
+.news-detail img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Subtítulos internos */
+.news-detail h2,
+.news-detail h3 {
+    margin-top: 30px;
+    color: #ffd700;
+    /* dorado brillante */
+    border-left: 4px solid #f0b63a;
+    padding-left: 10px;
+}
+
+/* Listas (para rutas, mapas, guías, etc.) */
+.news-detail ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.news-detail ul li {
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 3px solid #f0b63a;
+}
+
+/* Links */
+.news-detail a {
+    color: #f0b63a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-detail a:hover {
+    text-decoration: underline;
+}
+
+/* Citas / bloques destacados */
+.news-detail blockquote {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px 20px;
+    border-left: 5px solid #f0b63a;
+    margin: 20px 0;
+    font-style: italic;
+    color: #eee;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .news-detail {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .news-detail h1 {
+        font-size: 1.6rem;
+    }
+}

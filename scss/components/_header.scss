@@ -13,9 +13,7 @@ header {
         margin-left: 10px;
         border-radius: 50px;
     }
-}
-
-h1 {
+    h1 {
     text-align: center;
     margin: 0;
     padding: 0;
@@ -24,6 +22,9 @@ h1 {
     font-family: "Sedgwick Ave", cursive;
     color: $text-color-light;
 }
+}
+
+
 
 .navbar {
     background-color: $background-color;

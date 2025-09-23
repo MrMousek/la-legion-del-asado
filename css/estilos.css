@@ -52,15 +52,14 @@ header {
     height: auto;
     margin-left: 10px;
     border-radius: 50px; }
-
-h1 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  flex: 1;
-  font-size: 1.5rem;
-  font-family: "Sedgwick Ave", cursive;
-  color: #F5F5F5; }
+  header h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    font-size: 1.5rem;
+    font-family: "Sedgwick Ave", cursive;
+    color: #F5F5F5; }
 
 .navbar {
   background-color: #2A2A30;
@@ -129,7 +128,7 @@ main {
       width: 100%;
       height: 100%;
       z-index: -1; }
-      main .hero .video-container video {
+      main .hero .video-container img {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -143,18 +142,18 @@ main {
     main .hero .hero-content {
       position: relative;
       z-index: 1;
-      padding: 20px;
+      padding: 25px;
       background: rgba(0, 0, 0, 0.5);
       border-radius: 10px; }
-      main .hero .hero-content h1,
-      main .hero .hero-content p {
-        font-size: 1.5rem;
-        margin: 20px 0;
-        padding: 10px; }
-      main .hero .hero-content .heromain {
-        color: black;
-        font-size: xx-large;
-        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; }
+    main .hero h1,
+    main .hero p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      padding: 10px; }
+    main .hero .heromain {
+      color: black;
+      font-size: xx-large;
+      text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; }
 
 .cta-button {
   background-color: #FF3D00;
@@ -191,7 +190,7 @@ main {
   background-color: black;
   text-align: center;
   padding: 10px;
-  margin: 0; }
+  margin: 10px; }
 
 .eventos-grid {
   display: flex;
@@ -202,12 +201,11 @@ main {
   padding: 5px;
   width: 100%; }
   .eventos-grid a {
-    color: #F5F5F5;
-    display: block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #232326;
     border-radius: 10px;
-    overflow: hidden;
-    background-color: #1B1B1F; }
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    margin: 20px 0;
+    padding: 32px; }
     .eventos-grid a:hover {
       transform: translateY(-10px);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); }
@@ -695,17 +693,13 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); }
 
 .container {
-  background-color: #1B1B1F;
+  background: #232326;
   border-radius: 10px;
-  padding: 25px;
-  margin-top: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 32px; }
 
 .wow-header {
-  text-align: center;
-  margin-bottom: 30px;
-  border-bottom: 2px solid #FF6F00;
-  padding-bottom: 15px; }
+  text-align: center; }
 
 .wow-title {
   color: #ffcc00;
@@ -716,7 +710,7 @@ main {
   width: 64px;
   height: 64px;
   border-radius: 30px;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
   display: block; }
@@ -865,6 +859,52 @@ main {
   height: auto;
   border-radius: 150px;
   border: 1px solid black; }
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px; }
+
+.news-item {
+  display: flex;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease; }
+
+.news-item:hover {
+  background: rgba(255, 255, 255, 0.05); }
+
+.news-item img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px; }
+
+.news-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
+
+.news-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f0b63a;
+  /* color estilo wowhead/blizzard */
+  margin: 0; }
+
+.news-meta {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 5px 0; }
+
+.news-text {
+  font-size: 1rem;
+  color: #ddd;
+  margin: 0; }
 
 footer {
   background-color: #111111;

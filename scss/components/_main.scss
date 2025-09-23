@@ -23,7 +23,7 @@ main {
             height: 100%;
             z-index: -1;
 
-            video {
+            img {
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -42,22 +42,22 @@ main {
         .hero-content {
             position: relative;
             z-index: 1;
-            padding: 20px;
+            padding: 25px;
             background: rgba(0, 0, 0, 0.5);
             border-radius: 10px;
+        }
 
-            h1,
-            p {
-                font-size: 1.5rem;
-                margin: 20px 0;
-                padding: 10px;
-            }
+        h1,
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            padding: 10px;
+        }
 
-            .heromain {
-                color: black;
-                font-size: xx-large;
-                text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-            }
+        .heromain {
+            color: black;
+            font-size: xx-large;
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
         }
     }
 }
@@ -108,7 +108,7 @@ main {
         background-color: black;
         text-align: center;
         padding: 10px;
-        margin: 0;
+        margin: 10px;
     }
 
     &-grid {
@@ -120,12 +120,11 @@ main {
 
         a {
             @extend %enlaces;
-            color: $text-color-light;
-            display: block;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #232326;
             border-radius: 10px;
-            overflow: hidden;
-            background-color: $background-color-dark;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            margin: 20px 0;
+            padding: 32px;
 
             &:hover {
                 transform: translateY(-10px);
@@ -727,18 +726,14 @@ main {
 }
 
 .container {
-    background-color: $background-color-dark;
+    background: #232326;
     border-radius: 10px;
-    padding: 25px;
-    margin-top: 30px;
-    box-shadow: $box-shadow;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 32px;
 }
 
 .wow-header {
     text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 2px solid $accent-color;
-    padding-bottom: 15px;
 }
 
 .wow-title {
@@ -751,7 +746,7 @@ main {
     width: 64px;
     height: 64px;
     border-radius: 30px;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     display: block;
@@ -929,4 +924,58 @@ main {
     height: auto;
     border-radius: 150px;
     border: 1px solid black;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.news-item {
+    display: flex;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.news-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.news-item img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.news-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f0b63a;
+    /* color estilo wowhead/blizzard */
+    margin: 0;
+}
+
+.news-meta {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 5px 0;
+}
+
+.news-text {
+    font-size: 1rem;
+    color: #ddd;
+    margin: 0;
 }
