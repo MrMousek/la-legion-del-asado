@@ -89,6 +89,8 @@ ESTILO DETALLE DE ARTÍCULOS
     color: #eee;
 }
 
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .news-detail {

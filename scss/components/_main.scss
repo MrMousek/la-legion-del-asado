@@ -937,11 +937,14 @@ main {
     display: flex;
     gap: 15px;
     background: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 15px;
-    border-radius: 6px;
+    border-radius: 8px;
     transition: background 0.3s ease;
+    position: relative;
+    /* suficiente para hover, no hace falta z-index */
 }
+
 
 .news-item:hover {
     background: rgba(255, 255, 255, 0.05);
@@ -952,6 +955,16 @@ main {
     height: 120px;
     object-fit: cover;
     border-radius: 4px;
+
+    .news-item h2,
+    .news-item h3,
+    .news-item p {
+        word-wrap: break-word;
+        /* rompe palabras largas */
+        overflow-wrap: break-word;
+        /* soporte moderno */
+    }
+
 }
 
 .news-content {
@@ -978,4 +991,12 @@ main {
     font-size: 1rem;
     color: #ddd;
     margin: 0;
+}
+
+article {
+    a {
+        text-decoration: none;
+        color: $accent-glow;
+    }
+
 }

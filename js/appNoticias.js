@@ -10,7 +10,7 @@ function renderItems(jsonFile, containerId) {
         <img src="${item.imagen}" alt="${item.titulo}">
         <div class="news-content">
             <h3 class="news-title">
-            <a href="./pages/detalle.html?id=${item.id}&categoria=${item.categoria}">
+            <a href="./pages/details.html?id=${item.id}&categoria=${item.categoria}">
                 ${item.titulo}
             </a>
             </h3>

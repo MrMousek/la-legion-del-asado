@@ -870,10 +870,12 @@ main {
   display: flex;
   gap: 15px;
   background: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 15px;
-  border-radius: 6px;
-  transition: background 0.3s ease; }
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  position: relative;
+  /* suficiente para hover, no hace falta z-index */ }
 
 .news-item:hover {
   background: rgba(255, 255, 255, 0.05); }
@@ -883,6 +885,13 @@ main {
   height: 120px;
   object-fit: cover;
   border-radius: 4px; }
+  .news-item img .news-item h2,
+  .news-item img .news-item h3,
+  .news-item img .news-item p {
+    word-wrap: break-word;
+    /* rompe palabras largas */
+    overflow-wrap: break-word;
+    /* soporte moderno */ }
 
 .news-content {
   flex: 1;
@@ -905,6 +914,10 @@ main {
   font-size: 1rem;
   color: #ddd;
   margin: 0; }
+
+article a {
+  text-decoration: none;
+  color: #ffb347; }
 
 footer {
   background-color: #111111;
@@ -1099,3 +1112,26 @@ footer {
     border-radius: 10px;
     border: 2px solid #000000;
     margin: 0 auto; } }
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl .wow-card {
+    max-width: 1320px; } }
+
+@media (max-width: 768px) {
+  .news-item {
+    flex-direction: column;
+    /* en vez de lado a lado */
+    align-items: flex-start; }
+  .news-item img {
+    width: 100%;
+    /* imagen ocupa todo el ancho */
+    height: auto;
+    margin-bottom: 10px; }
+  .news-item h2 {
+    font-size: 1.2rem;
+    /* títulos más chicos */ } }

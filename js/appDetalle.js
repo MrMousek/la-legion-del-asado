@@ -14,10 +14,10 @@ fetch(archivo)
         const item = items.find(i => i.id === id);
         if (!item) return;
 
-        const detalle = document.getElementById("detalle");
+        const details = document.getElementById("details");
 
         // Cabecera del artículo
-        detalle.innerHTML = `
+        details.innerHTML = `
     <h1>${item.titulo}</h1>
     <em>${item.fecha}</em>
     <img src="${item.imagen}" alt="${item.titulo}">
@@ -44,15 +44,15 @@ fetch(archivo)
                         html = `<p><a href="${bloque.url}" target="_blank">${bloque.texto}</a></p>`;
                         break;
                 }
-                detalle.innerHTML += html;
+                details.innerHTML += html;
             });
         } else {
             // Fallback si no hay bloques extendidos
-            detalle.innerHTML += `<p>${item.texto}</p>`;
+            details.innerHTML += `<p>${item.texto}</p>`;
         }
     })
     .catch(err => {
-        console.error("Error cargando detalle:", err);
-        document.getElementById("detalle").innerHTML =
+        console.error("Error cargando details:", err);
+        document.getElementById("details").innerHTML =
             "<p>Error al cargar el contenido. Intenta más tarde.</p>";
     });
