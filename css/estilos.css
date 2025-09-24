@@ -919,6 +919,56 @@ article a {
   text-decoration: none;
   color: #ffb347; }
 
+.streamers-section {
+  background: #1a1a1a;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-top: 30px; }
+  .streamers-section .streamer-card {
+    position: relative;
+    background: #2b2b2b;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    color: #ddd;
+    transition: all 0.3s ease; }
+    .streamers-section .streamer-card:hover {
+      transform: translateY(-5px);
+      border-color: #f0b63a;
+      box-shadow: 0 0 15px rgba(240, 182, 58, 0.5); }
+    .streamers-section .streamer-card img.avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid #444;
+      margin-bottom: 15px; }
+    .streamers-section .streamer-card h5 {
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #fff; }
+    .streamers-section .streamer-card .btn {
+      margin-top: 10px;
+      background: #f0b63a;
+      color: #000;
+      border: none;
+      font-weight: bold; }
+      .streamers-section .streamer-card .btn:hover {
+        background: #ffcc4d; }
+  .streamers-section .streamer-card.offline {
+    background: #2b2b2b url("../img/logo-legion.svg") no-repeat center center;
+    background-size: 120px;
+    opacity: 0.9; }
+  .streamers-section .streamer-card.online {
+    background: #1f1f1f;
+    border: 1px solid #4caf50;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.4); }
+  .streamers-section .status-offline {
+    color: #999; }
+  .streamers-section .status-online {
+    color: #4caf50;
+    font-weight: bold; }
+
 footer {
   background-color: #111111;
   padding: 1%; }
