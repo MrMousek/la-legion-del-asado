@@ -726,7 +726,14 @@ main {
 }
 
 .container {
-    background: #232326;
+    background: #1b1b1f;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); */
+    padding: 32px;
+}
+
+.ourMeta {
+    background: #1b1b1f;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     padding: 32px;
@@ -1069,5 +1076,121 @@ article {
     .status-online {
         color: #4caf50;
         font-weight: bold;
+    }
+}
+
+/* weekly-affixes.css */
+.weekly-section {
+    background: #1a1a2e;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #ff6b35;
+}
+
+.weekly-header h2 {
+    color: #ffd700;
+    margin: 0 0 5px 0;
+    font-size: 1.5em;
+}
+
+.weekly-date {
+    color: #aaa;
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.weekly-text {
+    color: #fff;
+    font-weight: bold;
+    background: #2a2a4a;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.affixes-container h3,
+.maps-container h3 {
+    color: #ff6b35;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.affixes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.affix-card {
+    background: #16213e;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #2a2a4a;
+}
+
+.affix-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.affix-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.affix-header h4 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.affix-desc {
+    color: #ccc;
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.maps-list {
+    columns: 2;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.maps-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #2a2a4a;
+    color: #ddd;
+    break-inside: avoid;
+}
+
+.weekly-error {
+    background: #442222;
+    color: #ff8888;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .maps-list {
+        columns: 1;
+    }
+    
+    .affixes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .weekly-section {
+        padding: 15px;
     }
 }

@@ -1,8 +1,61 @@
 [
     {
+        "id": "noticia2",
+        "titulo": "¿Gloria del Asaltante Nerub'ar te sumas?",
+        "fecha": "26/09/2025",
+        "texto": "El sábado 27 de septiembre la Legión del Asado junto a FROGEN realizará una Gloria en busca de la montura Riendas del Enjambrillo Sombrío. Cupos limitados, ¡no te quedes afuera!",
+        "imagen": "../img/nerubar.webp",
+        "categoria": "noticia",
+        "contenido": [
+            {
+                "tipo": "parrafo",
+                "texto": "La Legión del Asado, en colaboración con FROGEN, invita a toda la comunidad a participar en una actividad especial: la <b> Gloria del Asaltante Nerub'ar </b>. El objetivo será completar los logros necesarios para obtener la montura <b> Riendas del Enjambrillo Sombrío </b>."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Detalles del evento"
+            },
+            {
+                "tipo": "lista",
+                "items": [
+                    "📅 Fecha: Sábado 27 de septiembre",
+                    "🕘 Hora: 9:00 PM server time (11:00 PM Argentina)",
+                    "🎯 Actividad: Gloria del Asaltante Nerub’ar",
+                    "🏆 Recompensa: Montura Riendas del Enjambrillo Sombrío"
+                ]
+            },
+            {
+                "tipo": "link",
+                "texto": "Montura Riendas del Enjambrillo Sombrío",
+                "url": "https://www.wowhead.com/es/item=223266/riendas-del-enjambrille-sombr%C3%ADo"
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Cupos disponibles"
+            },
+            {
+                "tipo": "blockquote",
+                "texto": "La actividad contará con un máximo de <b>30 participantes</b>. No pierdas tu lugar."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Cómo participar"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Para sumarte a la actividad, deberás unirte al Discord de <b>FROGEN</b>, que patrocinará este evento junto a La Legión del Asado."
+            },
+            {
+                "tipo": "link",
+                "texto": "Unirme al Discord de FROGEN",
+                "url": "https://discord.gg/jhcePpuMt5"
+            }
+        ]
+    },
+    {
         "id": "noticia1",
         "titulo": "La Legión del Asado recluta para la raid Manaforge Omega",
-        "fecha": "Hace 1 día",
+        "fecha": "12/08/2025",
         "texto": "Estamos reclutando para enfrentar la nueva raid en The War Within.",
         "imagen": "../img/noticias1.webp",
         "categoria": "noticia",
@@ -45,13 +98,5 @@
                 "url": "https://discord.gg/RsEyM5frhT"
             }
         ]
-    },
-    {
-        "id": "noticia2",
-        "titulo": "Streamers de La Legión del Asado",
-        "fecha": "Hace 3 días",
-        "texto": "Sigue a nuestros streamers y no te pierdas sus aventuras.",
-        "imagen": "./img/noticia2.jpg",
-        "categoria": "noticia"
-    }
+    }    
 ]

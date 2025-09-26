@@ -3,84 +3,46 @@
         "id": "guia-guerrero-arms",
         "titulo": "Guía de Guerrero Armas - Season 3 (The War Within)",
         "fecha": "Hace 2 días",
-        "texto": "Todo lo que necesitás saber para optimizar tu Guerrero Armas en raids y míticas+.",
-        "imagen": "./img/guias/warrior-arms.jpg",
+        "texto": "Muy pronto vas a poder leer la guía completa para optimizar tu Guerrero Armas en raids y míticas+. 🚧",
+        "imagen": "https://wow.zamimg.com/images/content/tall-headers/retail/categories/classes-warrior-arms.jpg",
         "categoria": "guia",
         "contenido": [
             {
                 "tipo": "parrafo",
-                "texto": "El Guerrero Arms se mantiene como una de las clases más sólidas en daño físico a un solo objetivo. En esta guía vas a encontrar talentos, rotación, mejores stats y equipo recomendado para la Season 3 de The War Within."
-            },
-            {
-                "tipo": "subtitulo",
-                "texto": "Talentos recomendados"
+                "texto": "🚧 Esta guía está actualmente en construcción. Estamos preparando los mejores talentos, rotación y BiS para que tu Guerrero Armas rinda al máximo en la Season 3 de The War Within."
             },
             {
                 "tipo": "parrafo",
-                "texto": "Este es el árbol de talentos más usado en míticas+ y raids. Adaptalo según tu grupo y estilo de juego."
+                "texto": "Vuelve pronto para ver la versión completa. Mientras tanto, unite a la comunidad de La Legión del Asado en Discord para charlar y compartir builds."
             },
             {
-                "tipo": "imagen",
-                "src": "./img/guias/warrior-arms-talents.png",
-                "alt": "Talentos recomendados para Guerrero Arms"
-            },
-            {
-                "tipo": "subtitulo",
-                "texto": "Rotación básica"
-            },
-            {
-                "tipo": "lista",
-                "items": [
-                    "Mantén activo Rend.",
-                    "Usa Mortal Strike siempre que esté disponible.",
-                    "Overpower para buffear Mortal Strike.",
-                    "Execute cuando el objetivo esté en fase de ejecución.",
-                    "Whirlwind para cleave en múltiples objetivos."
-                ]
-            },
-            {
-                "tipo": "subtitulo",
-                "texto": "Mejores estadísticas"
-            },
-            {
-                "tipo": "lista",
-                "items": [
-                    "Fuerza > Crítico > Celeridad > Maestría > Versatilidad"
-                ]
-            },
-            {
-                "tipo": "subtitulo",
-                "texto": "BiS (Best in Slot)"
-            },
-            {
-                "tipo": "parrafo",
-                "texto": "Estas piezas son las más fuertes actualmente, aunque todo depende de tus drops y composición de grupo:"
-            },
-            {
-                "tipo": "lista",
-                "items": [
-                    "Arma: Coloso de Manaforge",
-                    "Casco: Yelmo del Campeón de Quel'Thalas",
-                    "Pecho: Coraza de los Ecos Ardientes"
-                ]
-            },
-            {
-                "tipo": "subtitulo",
-                "texto": "Conclusión"
-            },
-            {
-                "tipo": "parrafo",
-                "texto": "El Guerrero Arms sigue siendo un DPS confiable y poderoso. Con la build correcta vas a brillar en raids y míticas+."
+                "tipo": "link",
+                "texto": "👉 Unirme al Discord",
+                "url": "https://discord.gg/RsEyM5frhT"
             }
         ]
-    }
-    ,
+    },
     {
         "id": "guia-sacerdote-shadow",
-        "titulo": "Guía de Sacerdote Shadow - Season 3",
+        "titulo": "Guía de Sacerdote Sombras - Season 3",
         "fecha": "Hace 4 días",
-        "texto": "Optimiza tu daño en míticas+ y raids.",
-        "imagen": "./img/guia-priest.jpg",
-        "categoria": "guia"
+        "texto": "Muy pronto estará disponible la guía del Sacerdote Shadow con consejos de talentos y rotación. 🚧",
+        "imagen": "https://wow.zamimg.com/images/content/tall-headers/retail/categories/classes-priest-shadow.jpg",
+        "categoria": "guia",
+        "contenido": [
+            {
+                "tipo": "parrafo",
+                "texto": "🚧 Esta guía todavía está en construcción. Pronto vas a poder consultar builds, rotación y mejores piezas de equipo para tu Sacerdote Shadow en la nueva temporada."
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Te invitamos a seguir las noticias y sumarte al Discord de La Legión del Asado donde vamos compartiendo tips y discusiones sobre clases."
+            },
+            {
+                "tipo": "link",
+                "texto": "👉 Unirme al Discord",
+                "url": "https://discord.gg/RsEyM5frhT"
+            }
+        ]
     }
 ]

@@ -20,7 +20,8 @@ footer {
         }
 
         .footer-logo {
-            flex: 1;
+            display: flex;
+            justify-content: center;
 
             h3 {
                 text-align: center;
