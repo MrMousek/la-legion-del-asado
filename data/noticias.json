@@ -1,5 +1,53 @@
 [
     {
+        "id": "noticia3",
+        "titulo": "¡Gracias por venir a la Gloria del Asaltante de Nerub'ar!",
+        "fecha": "29/09/2025",
+        "texto": "El sábado 27 de septiembre, La Legión del Asado junto a FROGEN llevaron a cabo una exitosa Gloria en busca de la montura Riendas del Enjambrillo Sombrío. ¡Gracias a todos los que participaron!",
+        "imagen": "../uploads/noticia3.webp",
+        "categoria": "noticia",
+        "contenido": [
+            {
+                "tipo": "parrafo",
+                "texto": "El pasado <b>sábado 27 de septiembre</b>, la comunidad de <b>La Legión del Asado</b>, en colaboración con <b>FROGEN</b>, organizó una gran actividad para completar la <b>Gloria del Asaltante de Nerub’ar</b>. El objetivo fue desbloquear la codiciada montura <b>Riendas del Enjambrillo Sombrío</b>, y la respuesta de la comunidad fue increíble."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Una noche de comunidad"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Jugadores de toda la región se reunieron para afrontar los desafíos de la banda Nerub’ar. Con organización, risas y espíritu de equipo, se completaron los logros necesarios en un ambiente ameno y colaborativo."
+            },
+            {
+                "tipo": "link",
+                "texto": "Ver montura en Wowhead",
+                "url": "https://www.wowhead.com/es/item=223266/riendas-del-enjambrille-sombr%C3%ADo"
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Un agradecimiento especial"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Queremos agradecer especialmente a <b>FROGEN</b> por el patrocinio y la colaboración en la organización del evento, así como a todos los <b>15 participantes</b> que se sumaron a esta aventura. Sin ustedes, este tipo de actividades no serían posibles."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "¡Y esto recién empieza!"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "La Legión del Asado seguirá organizando actividades comunitarias para que todos puedan disfrutar del contenido de <i>World of Warcraft</i> en buena compañía. Si querés enterarte de las próximas, unite a nuestro Discord."
+            },
+            {
+                "tipo": "link",
+                "texto": "👉 Unirme al Discord de la Legión",
+                "url": "https://discord.gg/RsEyM5frhT"
+            }
+        ]
+    },
+    {
         "id": "noticia2",
         "titulo": "¿Gloria del Asaltante Nerub'ar te sumas?",
         "fecha": "26/09/2025",
@@ -98,5 +146,5 @@
                 "url": "https://discord.gg/RsEyM5frhT"
             }
         ]
-    }    
+    }
 ]
