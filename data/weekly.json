@@ -1,10 +1,68 @@
 [
+        {
+        "id": "weekly-s3w8",
+        "titulo": "Aflijos semanales - Semana 8",
+        "fecha": "30 Septiembre - 7 de Octubre 2025",
+        "texto": "Esta semana toca  👉 Devour, Tyrannical, Fortified, + Xal'atath's Guile",
+        "imagen": "../uploads/affix.webp",
+        "afijos": [
+            {
+                "nombre": "Devour",
+                "icono": "../uploads/affix_images/devour.jpg",
+                "descripcion": "Cuando está en combate. Xal'atath abre fallas que devoran la esencia de los jugadores."
+            },
+            {
+                "nombre": "Tyrannical",
+                "icono": "../uploads/affix_images/tyrannical.jpg",
+                "descripcion": "Los jefes tienen un 25% más de salud. Los jefes y sus esbirros infligen hasta un 15% más de daño."
+            },
+            {
+                "nombre": "Fortified",
+                "icono": "../uploads/affix_images/fortified.jpg",
+                "descripcion": "Los enemigos que no son jefes tienen un 20% más de salud e infligen hasta un 20% más de daño."
+            },
+            {
+                "nombre": "Xal'atath's Guile",
+                "icono": "../uploads/affix_images/guile.jpg",
+                "descripcion": "Xal'atath traiciona a los jugadores, lo que anula sus pactos y provoca que, al morir, se reduzca en 15 s tiempo restante."
+            }
+        ],
+        "mapas": [
+                "ARAK Ara-Kara, City of Echoes",
+                "EDA: Eco-Dome Al'dani",
+                "HOA: Halls of Atonement",
+                "FLOOD: Operation: Floodgate",
+                "PSF: Priory of the Sacred Flame",
+                "GMBT: Tazavesh: So'leah's Gambit",
+                "STRT: Tazavesh: Streets of Wonder",
+                "DAWN: The Dawnbreaker"
+        ],
+        "categoria": "weekly",
+        "contenido": [
+            {
+                "tipo": "parrafo",
+                "texto": "Esta semana tenemos una combinación interesante de afijos con Voidbound como afijo principal."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Consejos para esta semana"
+            },
+            {
+                "tipo": "lista",
+                "items": [
+                    "Enfócate en controlar las Emisarias del Vacío",
+                    "Los jefes serán más difíciles por Tyrannical",
+                    "Las pulls grandes pueden ser peligrosas por Fortified"
+                ]
+            }
+        ]
+    },
     {
         "id": "weekly-s3w7",
         "titulo": "Aflijos semanales - Semana 7",
         "fecha": "23 - 30 de Septiembre 2025",
-        "texto": "Voidbound, Tyrannical, Fortified, + Xal'atath's Guile",
-        "imagen": "../uploads/s3w7.webp",
+        "texto": "Esta semana toca 👉 Voidbound, Tyrannical, Fortified, + Xal'atath's Guile",
+        "imagen": "../uploads/affix.webp",
         "afijos": [
             {
                 "nombre": "Voidbound",
