@@ -1,5 +1,58 @@
 [
     {
+        "id": "noticia4",
+        "titulo": "¿Gloria del Asaltante de Dazar'alor te sumas?",
+        "fecha": "03/10/2025",
+        "texto": "El viernes 3 de octubre la Legión del Asado junto a FROGEN realizará una Gloria en busca de la montura Atracavientos de Dazar'alor. Cupos limitados, ¡no te quedes afuera!",
+        "imagen": "../uploads/glorydazar.webp",
+        "categoria": "noticia",
+        "contenido": [
+            {
+                "tipo": "parrafo",
+                "texto": "La Legión del Asado, en colaboración con FROGEN, invita a toda la comunidad a participar en una actividad especial: la <b> Gloria del Asaltante de Dazar'alor </b>. El objetivo será completar los logros necesarios para obtener la montura <b> Atracavientos de Dazar'alor </b>."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Detalles del evento"
+            },
+            {
+                "tipo": "lista",
+                "items": [
+                    "📅 Fecha: Viernes 3 de octubre",
+                    "🕘 Hora: 10:00 PM server time (00:00 a.m Argentina)",
+                    "🎯 Actividad: Gloria del Asaltante de Dazar'alor",
+                    "🏆 Recompensa: Atracavientos de Dazar'alor"
+                ]
+            },
+            {
+                "tipo": "link",
+                "texto": "Atracavientos de Dazar'alor",
+                "url": "https://www.wowhead.com/item=166539/dazaralor-windreaver"
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Cupos disponibles"
+            },
+            {
+                "tipo": "blockquote",
+                "texto": "La actividad contará con un máximo de <b>30 participantes</b>. No pierdas tu lugar."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Cómo participar"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Para sumarte a la actividad, deberás unirte al Discord de <b>FROGEN</b>, que patrocinará este evento junto a La Legión del Asado."
+            },
+            {
+                "tipo": "link",
+                "texto": "Unirme al Discord de FROGEN",
+                "url": "https://discord.gg/jhcePpuMt5"
+            }
+        ]
+    },
+    {
         "id": "noticia3",
         "titulo": "¡Gracias por venir a la Gloria del Asaltante de Nerub'ar!",
         "fecha": "29/09/2025",
