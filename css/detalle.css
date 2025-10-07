@@ -139,3 +139,27 @@ ESTILO DETALLE DE ARTÍCULOS
         font-size: 1.6rem;
     }
 }
+
+.like-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.like-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.like-btn:hover {
+    transform: scale(1.2);
+}
+
+.like-count {
+    font-weight: bold;
+    color: #ff5555;
+}

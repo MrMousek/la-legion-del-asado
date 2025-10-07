@@ -22,18 +22,6 @@ h4 {
   font-family: 'Montserrat', sans-serif;
   color: #FF6F00; }
 
-button,
-.cta {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #FF3D00;
-  color: #F5F5F5;
-  border-radius: 6px;
-  padding: 12px 24px; }
-
-button:hover,
-.cta:hover {
-  background-color: #E63A00; }
-
 * {
   margin: 0;
   padding: 0;
@@ -1069,6 +1057,26 @@ article a {
     grid-template-columns: 1fr; }
   .weekly-section {
     padding: 15px; } }
+
+.like-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px; }
+
+.like-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s; }
+
+.like-btn:hover {
+  transform: scale(1.2); }
+
+.like-count {
+  font-weight: bold;
+  color: #ff5555; }
 
 footer {
   background-color: #111111;

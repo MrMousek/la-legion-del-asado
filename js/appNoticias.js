@@ -3,12 +3,16 @@ function renderItems(jsonFile, containerId) {
         .then(res => res.json())
         .then(items => {
             const container = document.getElementById(containerId);
-            // Limpiar contenedor primero
             container.innerHTML = '';
-            
+
             items.forEach(item => {
                 const article = document.createElement('article');
                 article.className = 'news-item';
+
+                // Generar ID único para likes
+                const likeKey = `likes_${item.id}`;
+                let likeCount = parseInt(localStorage.getItem(likeKey)) || 0;
+
                 article.innerHTML = `
                     <img src="${item.imagen}" alt="${item.titulo}">
                     <div class="news-content">
@@ -19,19 +23,74 @@ function renderItems(jsonFile, containerId) {
                         </h3>
                         <p class="news-meta">${item.fecha}</p>
                         <p class="news-text">${item.texto}</p>
+                        <div class="like-section" data-id="${item.id}">
+                            <button class="like-btn">❤️</button>
+                            <span class="like-count">${likeCount}</span>
+                        </div>
                     </div>
                 `;
+
                 container.appendChild(article);
+            });
+
+            // Delegar evento de likes
+            container.addEventListener('click', (e) => {
+                if (e.target.classList.contains('like-btn')) {
+                    const section = e.target.closest('.like-section');
+                    const itemId = section.getAttribute('data-id');
+                    const likeKey = `likes_${itemId}`;
+                    let current = parseInt(localStorage.getItem(likeKey)) || 0;
+
+                    // Evitar múltiples likes del mismo usuario
+                    const userLikedKey = `userLiked_${itemId}`;
+                    if (localStorage.getItem(userLikedKey)) return;
+
+                    current++;
+                    localStorage.setItem(likeKey, current);
+                    localStorage.setItem(userLikedKey, 'true');
+                    section.querySelector('.like-count').textContent = current;
+                }
             });
         })
         .catch(error => {
             console.error('Error loading', jsonFile, error);
-            const container = document.getElementById(containerId);
-            container.innerHTML = '<p>Error cargando contenido</p>';
+            document.getElementById(containerId).innerHTML = '<p>Error cargando contenido</p>';
         });
 }
+function inicializarLikes() {
+    document.querySelectorAll('.like-section').forEach(section => {
+        const slug = section.dataset.id;
+        const countEl = section.querySelector('.like-count');
+        const btn = section.querySelector('.like-btn');
+
+        // Obtener likes actuales desde Netlify
+        fetch(`/.netlify/functions/getLikes?slug=${slug}`)
+            .then(res => res.json())
+            .then(data => {
+                countEl.textContent = data.likes;
+            });
+
+        btn.addEventListener('click', () => {
+            if (localStorage.getItem(`liked_${slug}`)) return;
+
+            fetch('/.netlify/functions/like', {
+                method: 'POST',
+                body: JSON.stringify({ slug }),
+            })
+                .then(res => res.json())
+                .then(data => {
+                    countEl.textContent = data.likes;
+                    localStorage.setItem(`liked_${slug}`, true);
+                });
+        });
+    });
+}
+
 
 // Cargar bloques - CORREGIR RUTAS
 renderItems('./data/noticias.json', 'news-container');
 renderItems('./data/weekly.json', 'weekly-container');
 renderItems('./data/guias.json', 'guides-container');
+
+// 👇 Esto va al final del render
+setTimeout(inicializarLikes, 500);

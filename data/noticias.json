@@ -1,5 +1,53 @@
 [
     {
+        "id": "noticia5",
+        "titulo": "¡Gloria del Asaltante de Dazar'alor completada!",
+        "fecha": "07/10/2025",
+        "texto": "El viernes 3 de octubre, La Legión del Asado llevó a cabo la Gloria del Asaltante de Dazar'alor junto a miembros de la comunidad. ¡10 jugadores participaron y consiguieron la montura Atracavientos de Dazar'alor!",
+        "imagen": "../uploads/noticia5.webp",
+        "categoria": "noticia",
+        "contenido": [
+            {
+                "tipo": "parrafo",
+                "texto": "El pasado <b>viernes 3 de octubre</b>, <b>La Legión del Asado</b> organizó una nueva actividad comunitaria: la <b>Gloria del Asaltante de Dazar'alor</b>. Con gran entusiasmo, un grupo de aventureros se reunió para completar juntos los logros de esta emblemática banda."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Una noche épica en Dazar'alor"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "La raid se desarrolló en un ambiente distendido y lleno de buena onda. Con coordinación, risas y espíritu de equipo, se fueron completando los logros uno a uno hasta conseguir el objetivo final: desbloquear la <b>montura Atracavientos de Dazar’alor</b> 🐉✨."
+            },
+            {
+                "tipo": "link",
+                "texto": "Ver montura en Wowhead",
+                "url": "https://www.wowhead.com/es/item=166539/riendas-del-atracavientos-de-dazaralor"
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Participantes del evento"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Agradecemos a todos los jugadores que se sumaron a esta aventura: <b>Pumaruna-Quel'Thalas-US</b>, <b>Niusi-Quel'Thalas-US</b>, <b>Lyamn-Quel'Thalas-US</b>, <b>Frayes-Quel'Thalas-US</b>, <b>Zarpariel-Quel'Thalas-US</b>, <b>Johncr-Quel'Thalas-US</b>, <b>Illidanyecon-Quel'Thalas-US</b>, <b>Melenäblanca-Quel'Thalas-US</b> y <b>Dnoob-Quel'Thalas-US</b>. ¡Sin ustedes no hubiera sido posible!"
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Esto recién comienza…"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Este tipo de actividades son el corazón de nuestra comunidad. Seguiremos organizando más <b>Glorias</b>, raids y eventos sociales para que todos puedan disfrutar del contenido de <i>World of Warcraft</i> en buena compañía 🍻🔥."
+            },
+            {
+                "tipo": "link",
+                "texto": "👉 Unite al Discord de la Legión del Asado y no te pierdas ningún evento.",
+                "url": "https://discord.gg/RsEyM5frhT"
+            }
+        ]
+    },
+    {
         "id": "noticia4",
         "titulo": "¿Gloria del Asaltante de Dazar'alor te sumas?",
         "fecha": "03/10/2025",
