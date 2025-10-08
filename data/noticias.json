@@ -1,5 +1,58 @@
 [
     {
+        "id": "noticia6",
+        "titulo": "¡Gloria del Asaltante del Sueño - Sumate a la próxima aventura!",
+        "fecha": "08/10/2025",
+        "texto": "La Legión del Asado realizará la Gloria del Asaltante del Sueño en busca de la montura Sableonírico del Anochecer sombrío. ¡Cupos limitados, no te quedes afuera!",
+        "imagen": "../uploads/glorydream.webp",
+        "categoria": "noticia",
+        "contenido": [
+            {
+                "tipo": "parrafo",
+                "texto": "<b>La Legión del Asado</b> invita a toda la comunidad a participar en una nueva actividad especial: la <b>Gloria del Asaltante del Sueño</b>. El objetivo será completar juntos los logros necesarios para obtener la espectacular montura <b>Sableonírico del Anochecer sombrío</b>."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Detalles del evento"
+            },
+            {
+                "tipo": "lista",
+                "items": [
+                    "📅 Fecha: Sábado 11 de octubre",
+                    "🕘 Hora: 9:00 p.m server time (11:00 p.m Argentina)",
+                    "🎯 Actividad: Gloria del Asaltante del Sueño",
+                    "🏆 Recompensa: Riendas del Sableonírico del Anochecer sombrío"
+                ]
+            },
+            {
+                "tipo": "link",
+                "texto": "Ver logro en Wowhead",
+                "url": "https://www.wowhead.com/achievement=19349/glory-of-the-dream-raider"
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Cupos disponibles"
+            },
+            {
+                "tipo": "blockquote",
+                "texto": "La actividad contará con un máximo de <b>30 participantes</b>. Reservá tu lugar y no te quedes afuera."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "Cómo participar"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Para sumarte a la actividad, simplemente unite al <b>Discord de La Legión del Asado</b>, donde coordinaremos roles, besos y organización previa."
+            },
+            {
+                "tipo": "link",
+                "texto": "👉 Unirme al Discord de La Legión del Asado",
+                "url": "https://discord.gg/RsEyM5frhT"
+            }
+        ]
+    },
+    {
         "id": "noticia5",
         "titulo": "¡Gloria del Asaltante de Dazar'alor completada!",
         "fecha": "07/10/2025",
