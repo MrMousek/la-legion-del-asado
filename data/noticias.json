@@ -3,7 +3,7 @@
     {
         "id": "noticia3",
         "titulo": "¡Gracias por venir a la Gloria del Asaltante de Nerub'ar!",
-        "fecha": "29/09/2025",
+        "fecha": "2025-09-29T23:00:00",
         "texto": "El sábado 27 de septiembre, La Legión del Asado junto a FROGEN llevaron a cabo una exitosa Gloria en busca de la montura Riendas del Enjambrillo Sombrío. ¡Gracias a todos los que participaron!",
         "imagen": "../uploads/noticia3.webp",
         "categoria": "noticia",
@@ -51,7 +51,7 @@
     {
         "id": "noticia2",
         "titulo": "¿Gloria del Asaltante Nerub'ar te sumas?",
-        "fecha": "26/09/2025",
+        "fecha": "2025-09-26T23:00:00",
         "texto": "El sábado 27 de septiembre la Legión del Asado junto a FROGEN realizará una Gloria en busca de la montura Riendas del Enjambrillo Sombrío. Cupos limitados, ¡no te quedes afuera!",
         "imagen": "../img/nerubar.webp",
         "categoria": "noticia",

@@ -21,17 +21,36 @@ function renderItems(jsonFile, containerId) {
                                 ${item.titulo}
                             </a>
                         </h3>
-                        <p class="news-meta">${item.fecha}</p>
+                        <span class="fecha">
+                            ${tiempoRelativo(item.fecha)}
+                        </span>
                         <p class="news-text">${item.texto}</p>
-                        <div class="like-section" data-id="${item.id}">
-                            <button class="like-btn">❤️</button>
-                            <span class="like-count">${likeCount}</span>
-                        </div>
                     </div>
                 `;
-
                 container.appendChild(article);
             });
+            function tiempoRelativo(fecha) {
+
+                const ahora = new Date();
+                const fechaNoticia = new Date(fecha);
+
+                const diff = ahora - fechaNoticia;
+
+                const minutos = Math.floor(diff / 60000);
+                const horas = Math.floor(diff / 3600000);
+                const dias = Math.floor(diff / 86400000);
+                const meses = Math.floor(diff / 2592000000);
+
+                if (minutos < 1) return "Recién";
+                if (minutos < 60) return `Hace ${minutos} min`;
+                if (horas < 24) return `Hace ${horas} horas`;
+                if (dias === 0) return "Hoy";
+                if (dias === 1) return "Ayer";
+                if (dias < 30) return `Hace ${dias} días`;
+
+                return `Hace ${meses} meses`;
+
+            }
 
             // Delegar evento de likes
             container.addEventListener('click', (e) => {
@@ -85,7 +104,6 @@ function inicializarLikes() {
         });
     });
 }
-
 
 // Cargar bloques - CORREGIR RUTAS
 renderItems('./data/noticias.json', 'news-container');
