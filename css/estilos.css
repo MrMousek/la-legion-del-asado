@@ -810,7 +810,6 @@ main .hero .heromain {
 }
 
 .container {
-  background: #1b1b1f;
   border-radius: 10px;
   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); */
   padding: 32px;
@@ -1277,6 +1276,18 @@ article a {
 .like-count {
   font-weight: bold;
   color: #ff5555;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  align-content: space-between;
+  justify-content: center;
 }
 
 footer {
