@@ -1,22 +1,48 @@
-fetch('raid.json')
-    .then(response => response.json())
+fetch('./raid.json')
+    .then(res => res.json())
     .then(data => {
         const container = document.getElementById('raid');
 
-        let html = `
-    <h2>${data.title}</h2>
-    <p>${data.description}</p>
-    <h3>Inscritos:</h3>
-    `;
+        const roles = {
+            Tanks: [],
+            Healers: [],
+            Melee: [],
+            Ranged: []
+        };
 
         data.signUps.forEach(p => {
-            html += `
-        <div>
-        ${p.name} - ${p.className} (${p.specName})
-        </div>
-    `;
+            if (roles[p.roleName]) {
+                roles[p.roleName].push(p);
+            }
         });
 
-        container.innerHTML = html;
-    })
-    .catch(error => console.error('Error:', error));
+        function renderRole(title, players) {
+            if (players.length === 0) return "";
+
+            return `
+        <div class="raid-role">
+        <h4>${title}</h4>
+        ${players.map(p => `
+            <div class="raid-player ${p.className}">
+            <span class="name">${p.name}</span>
+            <span class="spec">${p.specName}</span>
+            </div>
+        `).join("")}
+        </div>
+    `;
+        }
+
+        container.innerHTML = `
+    <div class="raid-card">
+        <h2>${data.title}</h2>
+        <p class="raid-desc">${data.description}</p>
+
+        <div class="raid-roles">
+        ${renderRole("Tanks", roles.Tanks)}
+        ${renderRole("Healers", roles.Healers)}
+        ${renderRole("Melee", roles.Melee)}
+        ${renderRole("Ranged", roles.Ranged)}
+        </div>
+    </div>
+    `;
+    });

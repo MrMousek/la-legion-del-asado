@@ -1290,6 +1290,105 @@ article a {
   justify-content: center;
 }
 
+.raid-card {
+  background: rgba(20, 20, 30, 0.9);
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  color: #ddd;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.raid-card h2 {
+  color: #f0a500;
+  margin-bottom: 10px;
+}
+
+.raid-desc {
+  font-size: 14px;
+  white-space: pre-line;
+  margin-bottom: 20px;
+}
+
+.raid-roles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.raid-role {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.raid-role h4 {
+  border-bottom: 1px solid #555;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.raid-player {
+  padding: 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 🎮 Colores por clase estilo WoW */
+.DK {
+  color: #C41E3A;
+}
+
+.Warrior {
+  color: #C79C6E;
+}
+
+.Mage {
+  color: #69CCF0;
+}
+
+.Rogue {
+  color: #FFF569;
+}
+
+.Druid {
+  color: #FF7D0A;
+}
+
+.Hunter {
+  color: #ABD473;
+}
+
+.Priest {
+  color: #FFFFFF;
+}
+
+.Warlock {
+  color: #9482C9;
+}
+
+.Paladin {
+  color: #F58CBA;
+}
+
+.Shaman {
+  color: #0070DE;
+}
+
+.Monk {
+  color: #00FF96;
+}
+
+.DH {
+  color: #A330C9;
+}
+
+.Evoker {
+  color: #33937F;
+}
+
 footer {
   background-color: #111111;
   padding: 1%;
