@@ -53,7 +53,7 @@
         "titulo": "¿Gloria del Asaltante Nerub'ar te sumas?",
         "fecha": "2025-09-26T23:00:00",
         "texto": "El sábado 27 de septiembre la Legión del Asado junto a FROGEN realizará una Gloria en busca de la montura Riendas del Enjambrillo Sombrío. Cupos limitados, ¡no te quedes afuera!",
-        "imagen": "../img/nerubar.webp",
+        "imagen": "../img/nerubar.avif",
         "categoria": "noticia",
         "contenido": [
             {
@@ -106,7 +106,7 @@
         "titulo": "La Legión del Asado recluta para la raid Manaforge Omega",
         "fecha": "12/08/2025",
         "texto": "Estamos reclutando para enfrentar la nueva raid en The War Within.",
-        "imagen": "../img/noticias1.webp",
+        "imagen": "../img/noticias1.avif",
         "categoria": "noticia",
         "contenido": [
             {
