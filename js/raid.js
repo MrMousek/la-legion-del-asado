@@ -36,8 +36,9 @@ fetch('./raid.json')
     <div class="raid-card">
         <h2>${data.title}</h2>
         <p class="raid-desc">${data.description}</p>
-                                <p> Anotate al core en nuestro Discord.
-                                <a target="_blank" class="join-action" href="https://discord.com/invite/RsEyM5frhT">¡QUIERO UNIRME!</a> 
+                                <p> Anotate al core en nuestro Discord. </p>
+                                <a target="_blank" class="join-action" href="https://discord.com/invite/RsEyM5frhT">¡QUIERO UNIRME!</a>
+                                
         <div class="raid-roles">
         ${renderRole("Tanks", roles.Tanks)}
         ${renderRole("Healers", roles.Healers)}
