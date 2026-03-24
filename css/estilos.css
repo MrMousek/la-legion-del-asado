@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
-footer .footer-container .footer-sections .footer-column ul li a, footer .footer-container .footer-sections .footer-column a, .rojo, .quienes-somos a, .productos div a, .eventos-grid a, .join-action, .cta-button-mas, .cta-button {
+footer .footer-container .footer-sections .footer-column ul li a, footer .footer-container .footer-sections .footer-column a, .rojo, .quienes-somos a, .productos div a, .eventos-grid a, .join-action, .cta-button-core, .cta-button-mas, .cta-button {
   text-decoration: none;
 }
 
@@ -197,6 +197,20 @@ main .hero .heromain {
 }
 .cta-button-mas:hover {
   background-color: #FFFFFF;
+  color: #000000;
+}
+
+.cta-button-core {
+  background-color: violet;
+  color: #1B1B1F;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.cta-button-core:hover {
+  background-color: #ff0000;
   color: #000000;
 }
 
@@ -1334,6 +1348,60 @@ article a {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
+}
+
+.raid-header {
+  margin-bottom: 20px;
+}
+
+.raid-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+.raid-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.player-right {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.player-ilvl {
+  margin-right: 5px;
+}
+
+.player-note {
+  font-style: italic;
+}
+
+.raid-bench {
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+.class-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.player-left {
+  display: flex;
+  align-items: center;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
 }
 
 /* 🎮 Colores por clase estilo WoW */
