@@ -25,6 +25,72 @@ const CLASS_ICONS = {
     DH: "https://wow.zamimg.com/images/wow/icons/medium/classicon_demonhunter.jpg",
     Evoker: "https://wow.zamimg.com/images/wow/icons/medium/classicon_evoker.jpg"
 };
+const SPEC_ICONS = {
+    // WARRIOR
+    Arms: "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_savageblow.jpg",
+    Fury: "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_innerrage.jpg",
+    Protection: "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_defensivestance.jpg",
+
+    // PALADIN
+    HolyPaladin: "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_holybolt.jpg",
+    ProtectionPaladin: "https://wow.zamimg.com/images/wow/icons/medium/ability_paladin_shieldofthetemplar.jpg",
+    Retribution: "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_auraoflight.jpg",
+
+    // HUNTER
+    BeastMastery: "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_bestialdiscipline.jpg",
+    Marksmanship: "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_focusedaim.jpg",
+    Survival: "https://wow.zamimg.com/images/wow/icons/medium/ability_hunter_camouflage.jpg",
+
+    // ROGUE
+    Assassination: "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_deadlybrew.jpg",
+    Outlaw: "https://wow.zamimg.com/images/wow/icons/medium/ability_rogue_waylay.jpg",
+    Subtlety: "https://wow.zamimg.com/images/wow/icons/medium/ability_stealth.jpg",
+
+    // PRIEST
+    Discipline: "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_powerwordshield.jpg",
+    Holy: "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_guardianspirit.jpg",
+    Shadow: "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_shadowwordpain.jpg",
+
+    // DEATH KNIGHT
+    Blood: "https://wow.zamimg.com/images/wow/icons/medium/spell_deathknight_bloodpresence.jpg",
+    FrostDK: "https://wow.zamimg.com/images/wow/icons/medium/spell_deathknight_frostpresence.jpg",
+    Unholy: "https://wow.zamimg.com/images/wow/icons/medium/spell_deathknight_unholypresence.jpg",
+
+    // SHAMAN
+    Elemental: "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_lightning.jpg",
+    Enhancement: "https://wow.zamimg.com/images/wow/icons/medium/spell_shaman_improvedstormstrike.jpg",
+    RestorationShaman: "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_magicimmunity.jpg",
+
+    // MAGE
+    Arcane: "https://wow.zamimg.com/images/wow/icons/medium/spell_holy_magicalsentry.jpg",
+    Fire: "https://wow.zamimg.com/images/wow/icons/medium/spell_fire_firebolt02.jpg",
+    Frost: "https://wow.zamimg.com/images/wow/icons/medium/spell_frost_frostbolt02.jpg",
+
+    // WARLOCK
+    Affliction: "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_deathcoil.jpg",
+    Demonology: "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_metamorphosis.jpg",
+    Destruction: "https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_rainoffire.jpg",
+
+    // MONK
+    Brewmaster: "https://wow.zamimg.com/images/wow/icons/medium/spell_monk_brewmaster_spec.jpg",
+    Mistweaver: "https://wow.zamimg.com/images/wow/icons/medium/spell_monk_mistweaver_spec.jpg",
+    Windwalker: "https://wow.zamimg.com/images/wow/icons/medium/spell_monk_windwalker_spec.jpg",
+
+    // DRUID
+    Balance: "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_starfall.jpg",
+    Feral: "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_catform.jpg",
+    Guardian: "https://wow.zamimg.com/images/wow/icons/medium/ability_racial_bearform.jpg",
+    RestorationDruid: "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_healingtouch.jpg",
+
+    // DEMON HUNTER
+    Havoc: "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_specdps.jpg",
+    Vengeance: "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_spectank.jpg",
+
+    // EVOKER
+    Devastation: "https://wow.zamimg.com/images/wow/icons/medium/classicon_evoker_devastation.jpg",
+    Preservation: "https://wow.zamimg.com/images/wow/icons/medium/classicon_evoker_preservation.jpg",
+    Augmentation: "https://wow.zamimg.com/images/wow/icons/medium/classicon_evoker_augmentation.jpg"
+};
 function renderRaid(data) {
     const container = document.getElementById('raid');
 
@@ -78,7 +144,7 @@ function renderRole(title, players) {
 }
 
 function renderPlayer(p) {
-    const icon = CLASS_ICONS[p.class] || "";
+    const icon = SPEC_ICONS[p.spec] || CLASS_ICONS[p.class];
 
     return `
     <div class="raid-player ${p.class || 'Unknown'}">
