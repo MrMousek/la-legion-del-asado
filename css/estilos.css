@@ -1539,6 +1539,12 @@ footer .footer-bottom p {
     height: auto;
     padding: 10px;
   }
+  .boss-progress-rect-widget {
+    height: 200px;
+    position: relative;
+    text-shadow: 2px 2px 2px #000;
+    width: 200px;
+  }
   header {
     background-color: #111111;
     padding: 20px;

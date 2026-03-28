@@ -1401,3 +1401,32 @@ article {
 .Evoker {
     color: #33937F;
 }
+
+.contenedor-iframe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    iframe {
+        width: 620px; // ancho REAL del widget
+        height: 420px;
+        border: none;
+    }
+
+    @media (max-width: 768px) {
+        iframe {
+            transform: scale(0.8);
+            transform-origin: top center;
+            height: 520px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        iframe {
+            transform: scale(0.65);
+            height: 620px;
+        }
+    }
+    
+}

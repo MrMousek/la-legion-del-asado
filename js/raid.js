@@ -128,6 +128,14 @@ function renderHeader(event) {
     <p class="raid-desc">${event.description}</p>
     <a href="https://discord.gg/wtXmtEvSXJ" class="cta-button-core">¡ME QUIERO UNIR AL CORE!</a>
     </div>
+<section class="contenedor-iframe">
+<iframe
+    src="https://raider.io/widgets/boss-progress?raid=latest&name_style=logo&difficulty=latest&region=us&realm=quelthalas&guild=La+Legi%C3%B3n+del+Asado&boss=latest&period=until_kill&orientation=rect&hide=&chromargb=transparent&theme=dragonflight"
+    frameborder="0">
+</iframe>
+
+</section>
+                    
 `;
 }
 

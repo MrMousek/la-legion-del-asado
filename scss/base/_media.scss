@@ -1,102 +1,130 @@
 /* Media Query para dispositivos pequeños (max-width: 768px) */
 @media screen and (max-width: 991px) {
-    .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
-        width: 200px;
-        height: auto;
-        padding: 10px;
-    }
 
-    header {
-        background-color: #111111;
-        padding: 20px;
-        margin: auto;
-        display: flex;
-        align-items: center;
+    .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys {
 
         img {
-            width: 100px;
+            width: 200px;
             height: auto;
-        }
-
-        h1 {
-            // text-align: center;
-            // margin: 0;
-            // padding: 20px;
-            // flex: 1;
-            // font-size: 1.2rem;
-            // font-family: "Sedgwick Ave", cursive;
-            // color: $text-color-light;
-            display: none;
-        }
-
-        .navbar-nav .dropdown-menu {
-            position: static;
+            padding: 10px;
         }
     }
 
-    @media (min-width: 992px) {
-        .navbar-expand-lg .navbar-nav .dropdown-menu {
-            position: relative;
-        }
-    }
 
-    .eventos-grid img {
-        width: 100%;
+.boss-progress-rect-widget {
+    height: 200px;
+    position: relative;
+    text-shadow: 2px 2px 2px #000;
+    width: 200px;
+
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    iframe {
+        height: 500px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    iframe {
+        height: 600px;
+    }
+}
+
+
+
+header {
+    background-color: #111111;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 100px;
         height: auto;
-        border-radius: 10px 10px 0 0;
-        display: block;
     }
 
-    .hero .hero-content p {
+    h1 {
+        // text-align: center;
+        // margin: 0;
+        // padding: 20px;
+        // flex: 1;
+        // font-size: 1.2rem;
+        // font-family: "Sedgwick Ave", cursive;
+        // color: $text-color-light;
+        display: none;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: relative;
+    }
+}
+
+.eventos-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+
+.hero .hero-content p {
+    text-align: center;
+}
+
+.logo-no-broken {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+    flex-wrap: wrap;
+}
+
+footer .footer-logo {
+    flex: 1;
+
+    h3 {
         text-align: center;
+        font-family: "Sedgwick Ave", cursive;
+        font-size: 1.2rem;
     }
 
-    .logo-no-broken {
-        display: inline-flex;
-        justify-content: center;
+    .footer-container .footer-sections .footer-column {
+        margin: 0 1em;
     }
 
-    .footer-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1em;
-        flex-wrap: wrap;
+    .footer-column a {
+        color: $text-color-light;
+        text-decoration: none;
+        transition: color 0.3s;
+        display: flex;
     }
+}
 
-    footer .footer-logo {
-        flex: 1;
+.galeria-guild {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    padding: 0;
+    margin: 5px;
+    grid-auto-rows: 1fr;
+}
 
-        h3 {
-            text-align: center;
-            font-family: "Sedgwick Ave", cursive;
-            font-size: 1.2rem;
-        }
-
-        .footer-container .footer-sections .footer-column {
-            margin: 0 1em;
-        }
-
-        .footer-column a {
-            color: $text-color-light;
-            text-decoration: none;
-            transition: color 0.3s;
-            display: flex;
-        }
-    }
-
-    .galeria-guild {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 5px;
-        padding: 0;
-        margin: 5px;
-        grid-auto-rows: 1fr;
-    }
-
-    .nuestro-goal {
-        background-color: #222;
-        margin: auto;
-    }
+.nuestro-goal {
+    background-color: #222;
+    margin: auto;
 }
 
 @media screen and (max-width: 1199px) {
@@ -245,4 +273,5 @@
         font-size: 1.2rem;
         /* títulos más chicos */
     }
+}
 }
