@@ -85,6 +85,7 @@ const SPEC_ICONS = {
     // DEMON HUNTER
     Havoc: "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_specdps.jpg",
     Vengeance: "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_spectank.jpg",
+    Devourer: "https://wow.zamimg.com/images/player-class-components/spec-portrait-demon-hunter-devourer.jpg",
 
     // EVOKER
     Devastation: "https://wow.zamimg.com/images/wow/icons/medium/classicon_evoker_devastation.jpg",

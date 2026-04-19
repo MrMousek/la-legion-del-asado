@@ -1,13 +1,14 @@
 {
     "event": {
-        "title": "Raid Midnight - Todas las raids en (Normal) después (Heroico) con progresión para mítico.",
+        "title": "Raid Midnight - Todas las raids en (Heroico) con miras para mítico.",
         "days": [
-            "Domingo",
-            "Lunes"
+            "Martes",
+            "Miercoles",
+            "Jueves"
         ],
         "timeST": "21:00",
         "timeAR": "23:00",
-        "ilvlRequired": 230,
+        "ilvlRequired": 250,
         "description": "Progreso constante + clean semanal. Buscamos gente con buena onda y compromiso.",
         "leader": "Mouse"
     },
@@ -17,13 +18,13 @@
                 "name": "Shelania",
                 "class": "Paladin",
                 "spec": "Protection",
-                "note": "250 ilvl"
+                "note": ""
             },
             {
                 "name": "Dextrial",
                 "class": "DH",
                 "spec": "Vengeance",
-                "note": "250 ilvl"
+                "note": ""
             }
         ],
         "healers": [
@@ -31,49 +32,44 @@
                 "name": "Yadou",
                 "class": "Monk",
                 "spec": "Mistweaver",
-                "note": "244 ilvl"
-            },
-            {
-                "name": "Astien",
-                "class": "Paladin",
-                "spec": "HolyPaladin",
-                "note": "239 ilvl"
+                "note": ""
             }
         ],
         "melee": [
             {
                 "name": "Hache",
-                "class": "DK",
-                "spec": "Unholy",
-                "note": "246 ilvl"
+                "class": "Mage",
+                "spec": "Frost",
+                "note": ""
             },
             {
                 "name": "Mouse",
                 "class": "Warrior",
-                "spec": "Fury",
-                "note": "246 ilvl"
+                "spec": "Arms",
+                "note": ""
             },
             {
                 "name": "Toñonieto",
                 "class": "Rogue",
                 "spec": "Outlaw",
-                "note": "244 ilvl"
+                "note": ""
             }
         ],
         "ranged": [
             {
                 "name": "Ch0zen",
-                "class": "Evoker",
-                "spec": "Devastation",
-                "note": "238 ilvl"
+                "class": "DH",
+                "spec": "Devourer",
+                "note": ""
             }
         ]
     },
     "bench": [
         {
-            "name": "Aimibloom",
+            "name": "No hay nadie en el bench por ahora",
             "class": "Paladin",
-            "spec": "Retribution"
+            "spec": "Protection",
+            "note": ""
         }
     ]
 }
