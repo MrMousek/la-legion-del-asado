@@ -8,68 +8,23 @@
         ],
         "timeST": "21:00",
         "timeAR": "23:00",
-        "ilvlRequired": 250,
+        "ilvlRequired": 310,
         "description": "Progreso constante + clean semanal. Buscamos gente con buena onda y compromiso.",
         "leader": "Mouse"
     },
     "roster": {
-        "tanks": [
-            {
-                "name": "Shelania",
-                "class": "Paladin",
-                "spec": "Protection",
-                "note": ""
-            },
-            {
-                "name": "Dextrial",
-                "class": "DH",
-                "spec": "Vengeance",
-                "note": ""
-            }
-        ],
+        "tanks": [],
         "healers": [
             {
-                "name": "Yadou",
-                "class": "Monk",
-                "spec": "Mistweaver",
-                "note": ""
+                "name": "Moostache-Quel'thalas",
+                "class": "Druid",
+                "spec": "RestorationDruid",
+                "ilvl": "321",
+                "note": "RL / Main Heal"
             }
         ],
-        "melee": [
-            {
-                "name": "Hache",
-                "class": "Mage",
-                "spec": "Frost",
-                "note": ""
-            },
-            {
-                "name": "Mouse",
-                "class": "Warrior",
-                "spec": "Arms",
-                "note": ""
-            },
-            {
-                "name": "Toñonieto",
-                "class": "Rogue",
-                "spec": "Outlaw",
-                "note": ""
-            }
-        ],
-        "ranged": [
-            {
-                "name": "Ch0zen",
-                "class": "DH",
-                "spec": "Devourer",
-                "note": ""
-            }
-        ]
+        "melee": [],
+        "ranged": []
     },
-    "bench": [
-        {
-            "name": "No hay nadie en el bench por ahora",
-            "class": "Paladin",
-            "spec": "Protection",
-            "note": ""
-        }
-    ]
+    "bench": []
 }
