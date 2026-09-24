@@ -1,6 +1,6 @@
 {
     "event": {
-        "title": "Raid Midnight - Todas las raids en (Heroico) con miras para mítico.",
+        "title": "Raid Midnight - El abismo venenoso en (Heroico) con miras para mítico.",
         "days": [
             "Martes",
             "Miercoles",
@@ -18,9 +18,9 @@
             {
                 "name": "Moostache-Quel'thalas",
                 "class": "Druid",
-                "spec": "RestorationDruid",
+                "spec": "Restoration",
                 "ilvl": "321",
-                "note": "RL / Main Heal"
+                "note": "RL / Main Healer actualmente"
             }
         ],
         "melee": [],
