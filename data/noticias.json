@@ -182,52 +182,5 @@
                 "url": "https://discord.gg/jhcePpuMt5"
             }
         ]
-    },
-    {
-        "id": "noticia1",
-        "titulo": "La Legión del Asado recluta para la raid Manaforge Omega",
-        "fecha": "12/08/2025",
-        "texto": "Estamos reclutando para enfrentar la nueva raid en The War Within.",
-        "imagen": "../img/noticias1.avif",
-        "categoria": "noticia",
-        "contenido": [
-            {
-                "tipo": "parrafo",
-                "texto": "La Legión del Asado abre sus puertas a nuevos héroes. Con el lanzamiento de The War Within Season 3, necesitamos refuerzos para encarar Manaforge Omega."
-            },
-            {
-                "tipo": "subtitulo",
-                "texto": "Requisitos"
-            },
-            {
-                "tipo": "lista",
-                "items": [
-                    "Experiencia previa en raids heroicas o míticas",
-                    "Disponibilidad 3 noches por semana",
-                    "Actitud positiva y compromiso con el equipo"
-                ]
-            },
-            {
-                "tipo": "subtitulo",
-                "texto": "Horarios de raid"
-            },
-            {
-                "tipo": "blockquote",
-                "texto": "Martes, Miercoles y Jueves - 23:00 a 1:00 (hora Argentina)"
-            },
-            {
-                "tipo": "subtitulo",
-                "texto": "Cómo unirte"
-            },
-            {
-                "tipo": "parrafo",
-                "texto": "Si querés sumarte a la Legión del Asado, unite a nuestro Discord oficial y hablá con un oficial o directamente al GM."
-            },
-            {
-                "tipo": "link",
-                "texto": "Unirme al Discord",
-                "url": "https://discord.gg/RsEyM5frhT"
-            }
-        ]
-    }
+    } 
 ]
