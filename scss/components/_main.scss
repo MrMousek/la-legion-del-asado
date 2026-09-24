@@ -1263,10 +1263,10 @@ article {
     margin-bottom: 10px;
 }
 
-.raid-card img 
-{
+.raid-card img {
     align-items: center;
 }
+
 .raid-desc {
     font-size: 14px;
     white-space: pre-line;
@@ -1432,4 +1432,71 @@ article {
             height: 620px;
         }
     }
+}
+
+/* Estilos Memorial Assa */
+.memorial-section {
+    padding: 3rem 1.5rem;
+    background: linear-gradient(180deg, rgba(20, 15, 25, 0.95), rgba(10, 8, 15, 1));
+    border-top: 2px solid #d4af37;
+    border-bottom: 2px solid #d4af37;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.memorial-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+.memorial-pennant {
+    color: #d4af37;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.memorial-title {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    font-family: 'Cinzel', serif;
+}
+
+.memorial-subtitle {
+    color: #f39c12;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.memorial-divider {
+    color: #d4af37;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.memorial-text {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Badges para Novedades */
+.badge {
+    background-color: #8e44ad;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.badge.classic {
+    background-color: #d35400;
 }
