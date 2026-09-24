@@ -1587,6 +1587,13 @@ article a {
     box-shadow: 0 0 0 0 rgba(46, 196, 182, 0);
   }
 }
+.live-counter-badge {
+  margin: 10px auto;
+  display: flex !important;
+  justify-content: center;
+  width: fit-content;
+}
+
 footer {
   background-color: #111111;
   padding: 1%;

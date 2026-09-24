@@ -31,6 +31,6 @@ onValue(presenceRef, (snap) => {
     const counterElement = document.getElementById("live-counter-text");
     
     if (counterElement) {
-        counterElement.innerText = `${count} ${count === 1 ? 'adalid viendo' : 'heroes de azeroth viendo'} la web`;
+        counterElement.innerText = `${count} ${count === 1 ? 'Adalid chusmeando' : 'Héroes de Azeroth viendo'} nuestro sitio Web`;
     }
 });
