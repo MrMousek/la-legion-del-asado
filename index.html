@@ -181,6 +181,30 @@
     <script src="./js/enano.js"></script>
     <script src="./js/raid.js"></script>
     <script src="./js/counter.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAXbhRJf3105-3vAjdLPOIqbqFHF1R796E",
+            authDomain: "la-legion-del-asado.firebaseapp.com",
+            databaseURL: "https://la-legion-del-asado-default-rtdb.firebaseio.com",
+            projectId: "la-legion-del-asado",
+            storageBucket: "la-legion-del-asado.firebasestorage.app",
+            messagingSenderId: "274490441980",
+            appId: "1:274490441980:web:701aa2041be5e543091779",
+            measurementId: "G-0M4BYCT8FC"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </body>
 
 </html>
