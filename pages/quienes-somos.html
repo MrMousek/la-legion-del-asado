@@ -11,6 +11,8 @@
     <meta name="google-adsense-account" content="ca-pub-4581147465337293">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="../img/favicon.avif" type="image">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -21,7 +23,7 @@
             <img src="../img/nuevoLLAN.avif" alt="La Legión del Asado - Logo">
         </a>
         <h1>Una comunidad Argentina de WoW  
-            <img src="https://images.emojiterra.com/google/noto-emoji/unicode-17.0/color/svg/1f1e6-1f1f7.svg" alt="" srcset="">
+            <img src="https://images.emojiterra.com/google/noto-emoji/unicode-17.0/color/svg/1f1e6-1f1f7.svg" alt="Bandera Argentina">
         </h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -50,182 +52,97 @@
         <div class="main-content-wrapper">
             <main class="content-column">
                 <div class="container py-5">
-                    <div class="row mb-5">
-                        <div class="col-12">
-                            <div class="borde-quienes-somos p-4 rounded">
-                                <h2 class="text-center mb-3">¿Quiénes Somos?</h2>
-                                <h3 class="text-center text-warning">La Legión del Asado</h3>
-                                <p class="text-center">Fundada en 2020 por "Mouse", <i>Whisky and WoW</i>, nombre
-                                    anterior a
-                                    la evolución de ser <b>La Legión del Asado</b> en 2023, es una guild de World of
-                                    Warcraft
-                                    que busca
-                                    convertirse en una comunidad bien piola :D .</p>
+                    
+                    <!-- Historia de la Hermandad -->
+                    <div class="row mb-5 justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="borde-quienes-somos p-4 p-md-5 rounded shadow-lg text-center">
+                                <h2 class="mb-3">Nuestra Historia</h2>
+                                <h3 class="text-warning mb-4">La Legión del Asado</h3>
+                                <p class="lead">Fundada en 2020 por <b>Mouse</b> bajo el nombre inicial de <i>Whisky and WoW</i>, nuestra comunidad evolucionó en 2023 para convertirse en <b>La Legión del Asado</b>.</p>
+                                <p>Somos una hermandad argentina dedicada a construir una comunidad unida, competitiva y por sobre todas las cosas, llena de buen clima, amistad y pasión por World of Warcraft.</p>
 
-                                <p class="text-center">En La Legión del Asado, la comunidad es la clave para el exito, así que no nos abandones :c </p>
-
-                                <div class="text-center mt-4">
-                                    <a href="#galeria" class="btn btn-warning btn-lg" tabindex="-1" role="button"
-                                        aria-disabled="true">Haz clic aquí para ver fotos de
-                                        la hermandad</a>
+                                <div class="mt-4">
+                                    <a href="#galeria" class="btn btn-warning btn-lg px-4 font-weight-bold">
+                                        <i class="fas fa-camera me-2"></i> Ver fotos de la hermandad
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row mb-5">
-                        <div class="col-md-6 mb-4">
-                            <div class="borde-quienes-somos p-4 rounded h-100">
-                                <h2 class="text-center mb-3">Nuestra misión</h2>
-                                <p class="text-center">Defender a las comunidades, unidas por nuestra pasión compartida
-                                    por los
-                                    videojuegos, y
-                                    proporcionarles oportunidades inclusivas de crecimiento a través de experiencias de
-                                    entretenimiento
-                                    de clase mundial y recursos educativos.</p>
+                    <!-- Misión y Visión -->
+                    <div class="row mb-5 g-4 justify-content-center">
+                        <div class="col-md-6">
+                            <div class="borde-quienes-somos p-4 rounded h-100 text-center">
+                                <h3 class="text-warning mb-3"><i class="fas fa-shield-alt me-2"></i>Nuestra Misión</h3>
+                                <p>Promover un espacio de integración para jugadores de WoW en Argentina y Latinoamérica. Buscamos encarar el contenido PVE (Raids, Míticas+ y Classic) con seriedad y compromiso, manteniendo siempre los valores comunitarios.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="borde-quienes-somos p-4 rounded h-100">
-                                <h2 class="text-center mb-3">Nuestro equipo</h2>
-                                <p class="text-center">Un equipo unido, apasionado y con mucha experiencia. Un equipo
-                                    comprometido con la innovación, la
-                                    creación y con llevar los límites del entretenimiento en esports más allá de lo que
-                                    nunca
-                                    antes se
-                                    ha logrado.</p>
+                        <div class="col-md-6">
+                            <div class="borde-quienes-somos p-4 rounded h-100 text-center">
+                                <h3 class="text-warning mb-3"><i class="fas fa-users me-2"></i>Nuestra Filosofía</h3>
+                                <p>En La Legión del Asado la comunidad es la clave del éxito. Fomentamos el compañerismo dentro y fuera de Azeroth, organizando eventos, juntadas y actividades para compartir más allá del juego.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Sección del equipo -->
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="text-center team-section-title">Conoce a nuestro equipo</h2>
+                    <!-- Sección del equipo de liderazgo -->
+                    <div class="row mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="team-section-title">Liderazgo de la Hermandad</h2>
+                            <p class="text-muted">Quienes llevan adelante la organización y el espíritu de la legión.</p>
                         </div>
                     </div>
 
-                    <div class="row g-4">
-                        <!-- Miembro 1: Mouse -->
+                    <div class="row g-4 justify-content-center mb-5">
+                        
+                        <!-- LÍDER 1: Mouse -->
                         <div class="col-md-6 col-lg-4">
-                            <div class="team-member-card">
+                            <div class="team-member-card h-100">
                                 <div class="member-avatar" style="background-image: url('../img/Mouzjorn.avif')"></div>
-                                <div class="member-info">
-                                    <div class="member-name">Mouse de Córdoba, Argentina.</div>
-                                    <div class="member-role">Guild Master</div>
-                                    <p class="member-details">Fundador de la guild y líder experimentado con visión
-                                        estratégica.
-                                    </p>
+                                <div class="member-info text-center">
+                                    <div class="member-name">Mouse</div>
+                                    <div class="member-role text-warning">Guild Master & Fundador</div>
+                                    <p class="member-details">Córdoba, Argentina. Liderando la legión desde sus inicios con visión estratégica y compromiso comunitario.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Miembro 2: Zailok -->
+
+                        <!-- LÍDER 2: Zailok -->
                         <div class="col-md-6 col-lg-4">
-                            <div class="team-member-card">
+                            <div class="team-member-card h-100">
                                 <div class="member-avatar" style="background-image: url('../img/Zâilok.avif')"></div>
-                                <div class="member-info">
-                                    <div class="member-name">Zailok de Córdoba, Argentina.</div>
-                                    <div class="member-role">Oficial - DPS principal</div>
-                                    <p class="member-details">Especialista en putear boluditos.</p>
+                                <div class="member-info text-center">
+                                    <div class="member-name">Zailok</div>
+                                    <div class="member-role text-warning">Oficial - DPS Core</div>
+                                    <p class="member-details">Córdoba, Argentina. Pilar fundamental del equipo de oficiales, encargado del avance y el empuje de la guild.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Miembro 3: Assa -->
+
+                        <!-- LÍDER 3: MEMORIAL ASSA -->
                         <div class="col-md-6 col-lg-4">
-                            <div class="team-member-card">
-                                <div class="member-avatar" style="background-image: url('../img/Assâ.avif')"></div>
-                                <div class="member-info">
-                                    <div class="member-name">Assa de Córdoba, Argentina.</div>
-                                    <div class="member-role">Oficial - TANQUE/DPS</div>
-                                    <p class="member-details">Un miembro dinstinguido y respetado por su tiempo en la guild y habilidades en el juego.</p>
-                                    <div class="social-links">
-                                        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
-                                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                                    </div>
+                            <div class="team-member-card memorial-card h-100 border border-warning">
+                                <div class="memorial-badge mb-2"><i class="fas fa-star text-warning"></i> In Memoriam</div>
+                                <div class="member-avatar" style="background-image: url('../img/Assâ.avif'); filter: grayscale(30%);"></div>
+                                <div class="member-info text-center">
+                                    <div class="member-name text-light">Agustín «Assa» Assadourian</div>
+                                    <div class="member-role text-warning">Eterno Oficial & Tanque</div>
+                                    <p class="member-details fst-italic">Córdoba, Argentina. Nuestro pilar inquebrantable al frente de la batalla. Tu valor y tu escudo protegerán siempre el corazón de esta legión.</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Miembro 4: Hache -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="team-member-card">
-                                <div class="member-avatar" style="background-image: url('../img/Elhempalador.avif')">
-                                </div>
-                                <div class="member-info">
-                                    <div class="member-name">Hache de Chaco, Argentina.</div>
-                                    <div class="member-role">Oficial - TANQUE</div>
-                                    <p class="member-details">Mantiene al grupo con vida en las situaciones más críticas
-                                        (ponele).</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Miembro 5: Tonelt -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="team-member-card">
-                                <div class="member-avatar" style="background-image: url('../img/Kathlin.avif')"></div>
-                                <div class="member-info">
-                                    <div class="member-name">Tonelt Buenos aires, Argentina.</div>
-                                    <div class="member-role">Oficial - ex Healer - DPS ahora</div>
-                                    <p class="member-details">Mantenia al grupito vivo pero ahora pega bifes.</p>
-                                    <div class="social-links">
-                                        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
-                                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Miembro 6: Kyalu -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="team-member-card">
-                                <div class="member-avatar" style="background-image: url('../img/Kyalu.avif')"></div>
-                                <div class="member-info">
-                                    <div class="member-name">Kyalu Buenos aires, Argentina.</div>
-                                    <div class="member-role">Oficial - DPS</div>
-                                    <p class="member-details">Un brujo moy bueno que topea en daño.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="team-member-card">
-                                <div class="member-avatar" style="background-image: url('../img/Stormshadows.avif')">
-                                </div>
-                                <div class="member-info">
-                                    <div class="member-name">Apolo Buenos aires, Argentina.</div>
-                                    <div class="member-role">Oficial - ex DPS ahora HEALER</div>
-                                    <p class="member-details">Entregaba bifes a la madrugada pero ahora se encarga de
-                                        curar a
-                                        los pibes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="team-member-card">
-                                <div class="member-avatar" style="background-image: url('../img/Yadou.avif')"></div>
-                                <div class="member-info">
-                                    <div class="member-name">Yadou Buenos aires, Argentina.</div>
-                                    <div class="member-role">Oficial - Healer</div>
-                                    <p class="member-details">Un crack, fiel a su rol, nunca deja de curar.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="team-member-card">
-                                <div class="member-avatar" style="background-image: url('../img/Chozencha.avif')"></div>
-                                <div class="member-info">
-                                    <div class="member-name">Chozen Buenos aires, Argentina.</div>
-                                    <div class="member-role">Oficial - DPS</div>
-                                    <p class="member-details">Un pendejo crack, siempre aporta a la guild y juega bien
-                                        multi-clases.</p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                     
-                    <section id="galeria" class="shop-titulo">
-                        <h2>Los mejores momentos de la Legión del Asado</h2>
-                        <p>En este espacio vamos a compartir imagenes de algunos momentos que compartimos juntos</p>
+                    <!-- Galería de momentos -->
+                    <section id="galeria" class="shop-titulo text-center my-5">
+                        <h2>Los mejores momentos de La Legión del Asado</h2>
+                        <p>Imágenes y recuerdos de las aventuras compartidas por la comunidad.</p>
                     </section>
                     
-                    <div id="carouselExample" class="carousel slide">
+                    <div id="carouselExample" class="carousel slide shadow-lg rounded overflow-hidden mb-5">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="../img/grid-wow1.avif" class="d-block w-100" alt="Momentos de la guild 1">
@@ -252,33 +169,33 @@
                                 <img src="../img/grid-wow8.avif" class="d-block w-100" alt="Momentos de la guild 8">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                            <span class="visually-hidden">Anterior</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
+                            <span class="visually-hidden">Siguiente</span>
                         </button>
                     </div>
                     
-                    <section class="contenedor-iframe">
+                    <!-- Progress Raider.io -->
+                    <section class="contenedor-iframe my-5">
                         <iframe
                             src="https://raider.io/widgets/boss-progress?raid=latest&name_style=logo&difficulty=latest&region=us&realm=quelthalas&guild=La+Legi%C3%B3n+del+Asado&boss=latest&period=until_kill&orientation=rect&hide=&chromargb=transparent&theme=dragonflight"
                             frameborder="0" width="100%" height="400"></iframe>
                     </section>
                     
-                    <div>
-                        <div class="equipo-raid">
-                            <h2>¿Te gustaria formar parte del equipo de raid?</h2>
-                            <p> Unete a nuestro canal de Discord.
-                                <a target="_blank" class="join-action" href="https://discord.com/invite/RsEyM5frhT">
-                                    Únete</a>
-                                <img src="../img/warcraft-warcraft-dance.gif"
-                                    alt="Un enano de World of warcraft bailando">
+                    <!-- CTA Discord -->
+                    <div class="text-center my-5">
+                        <div class="equipo-raid p-4 rounded shadow-sm">
+                            <h2>¿Te gustaría formar parte de la hermandad?</h2>
+                            <p class="fs-5">Sumate a nuestro canal oficial de Discord y comenzá a raidear con nosotros. 
+                                <a target="_blank" class="join-action ms-2 btn btn-warning fw-bold" href="https://discord.com/invite/RsEyM5frhT">
+                                    <i class="fab fa-discord me-1"></i> Únete
+                                </a>
                             </p>
+                            <img src="../img/warcraft-warcraft-dance.gif" alt="Enano de WoW bailando" style="max-height: 80px;">
                         </div>
                     </div>
                 </div>
@@ -289,7 +206,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="../img/nuevoLLAN.avif" alt="Logo de LA Legión del Asado">
+                <img src="../img/nuevoLLAN.avif" alt="Logo de La Legión del Asado">
             </div>
             <div class="footer-sections">
                 <div class="footer-column">
@@ -320,7 +237,6 @@ Este sitio no está afiliado ni respaldado por Blizzard. Sitio web creado por Mo
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- Enano flotante -->
     <script src="../js/enano.js"></script>
 </body>
 </html>

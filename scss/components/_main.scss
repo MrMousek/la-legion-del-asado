@@ -1500,3 +1500,16 @@ article {
 .badge.classic {
     background-color: #d35400;
 }
+.memorial-card {
+    background: linear-gradient(180deg, rgba(30, 25, 15, 0.9), rgba(15, 12, 8, 0.95)) !important;
+    border: 1px solid #d4af37 !important;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.25) !important;
+}
+
+.memorial-badge {
+    color: #d4af37;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
