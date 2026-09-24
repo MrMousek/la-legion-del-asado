@@ -25,6 +25,7 @@ const CLASS_ICONS = {
     DH: "https://wow.zamimg.com/images/wow/icons/medium/classicon_demonhunter.jpg",
     Evoker: "https://wow.zamimg.com/images/wow/icons/medium/classicon_evoker.jpg"
 };
+
 const SPEC_ICONS = {
     // WARRIOR
     Arms: "https://wow.zamimg.com/images/wow/icons/medium/ability_warrior_savageblow.jpg",
@@ -92,90 +93,108 @@ const SPEC_ICONS = {
     Preservation: "https://wow.zamimg.com/images/wow/icons/medium/classicon_evoker_preservation.jpg",
     Augmentation: "https://wow.zamimg.com/images/wow/icons/medium/classicon_evoker_augmentation.jpg"
 };
+
 function renderRaid(data) {
     const container = document.getElementById('raid');
+    if (!container) return;
 
-    const { event, roster, bench } = data;
+    const { event = {}, roster = {}, bench = [] } = data || {};
+
+    const tanks = roster.tanks || [];
+    const healers = roster.healers || [];
+    const melee = roster.melee || [];
+    const ranged = roster.ranged || [];
 
     container.innerHTML = `
     <div class="raid-card">
+        ${renderHeader(event)}
 
-    ${renderHeader(event)}
+        <div class="raid-grid">
+            ${renderRole("Tanks", tanks)}
+            ${renderRole("Healers", healers)}
+            ${renderRole("Melee", melee)}
+            ${renderRole("Ranged", ranged)}
+        </div>
 
-    <div class="raid-grid">
-        ${renderRole("Tanks", roster.tanks)}
-        ${renderRole("Healers", roster.healers)}
-        ${renderRole("Melee", roster.melee)}
-        ${renderRole("Ranged", roster.ranged)}
+        ${renderBench(bench)}
     </div>
-
-    ${renderBench(bench)}
-
-    </div>
-`;
+    `;
 }
 
 function renderHeader(event) {
+    const daysStr = event.days ? event.days.join(" / ") : "A definir";
     return `
     <div class="raid-header">
-    <h2>${event.title}</h2>
+        <h2>${event.title || "Core Raid - La Legión del Asado"}</h2>
 
-    <div class="raid-meta">
-        <span>📅 ${event.days.join(" / ")}</span>
-        <span>🕘 ${event.timeST} ST (${event.timeAR} AR)</span>
-        <span>🎯 ilvl ${event.ilvlRequired}+</span>
+        <div class="raid-meta">
+            <span>📅 ${daysStr}</span>
+            <span>🕘 ${event.timeST || "--:--"} ST (${event.timeAR || "--:--"} AR)</span>
+            <span>🎯 ilvl ${event.ilvlRequired || "--"}+</span>
+        </div>
+
+        <p class="raid-desc">${event.description || "Reclutamiento abierto para armar el roster oficial."}</p>
+        <a href="https://discord.gg/wtXmtEvSXJ" class="cta-button-core">¡ME QUIERO UNIR AL CORE!</a>
     </div>
 
-    <p class="raid-desc">${event.description}</p>
-    <a href="https://discord.gg/wtXmtEvSXJ" class="cta-button-core">¡ME QUIERO UNIR AL CORE!</a>
-    </div>
-                            <a href="https://www.wowprogress.com/guild/us/quel-thalas/La+Legi%C3%B3n+del+Asado"><img alt="WoW Guild Rankings"
-                                src="./img/type.png"/></a>
-<section class="contenedor-iframe">
-<iframe
-    src="https://raider.io/widgets/boss-progress?raid=latest&name_style=logo&difficulty=latest&region=us&realm=quelthalas&guild=La+Legi%C3%B3n+del+Asado&boss=latest&period=until_kill&orientation=rect&hide=&chromargb=transparent&theme=dragonflight"
-    frameborder="0">
-</iframe>
+    <a href="https://www.wowprogress.com/guild/us/quel-thalas/La+Legi%C3%B3n+del+Asado">
+        <img alt="WoW Guild Rankings" src="./img/type.png"/>
+    </a>
 
-</section>
-                    
-`;
+    <section class="contenedor-iframe">
+        <iframe
+            src="https://raider.io/widgets/boss-progress?raid=latest&name_style=logo&difficulty=latest&region=us&realm=quelthalas&guild=La+Legi%C3%B3n+del+Asado&boss=latest&period=until_kill&orientation=rect&hide=&chromargb=transparent&theme=dragonflight"
+            frameborder="0">
+        </iframe>
+    </section>
+    `;
 }
 
 function renderRole(title, players) {
-    if (!players || players.length === 0) return "";
+    const count = players ? players.length : 0;
+
+    let contentHTML = "";
+    if (count === 0) {
+        contentHTML = `
+        <div class="raid-player open-slot">
+            <div class="player-info">
+                <span class="player-name">¡Buscando ${title}!</span>
+                <span class="player-spec">Reclutamiento abierto</span>
+            </div>
+        </div>
+        `;
+    } else {
+        contentHTML = players.map(p => renderPlayer(p)).join("");
+    }
 
     return `
     <div class="raid-role">
-    <h3>${title} (${players.length})</h3>
-
-    ${players.map(p => renderPlayer(p)).join("")}
+        <h3>${title} (${count})</h3>
+        ${contentHTML}
     </div>
-`;
+    `;
 }
 
 function renderPlayer(p) {
-    const icon = SPEC_ICONS[p.spec] || CLASS_ICONS[p.class];
+    const icon = SPEC_ICONS[p.spec] || CLASS_ICONS[p.class] || "https://wow.zamimg.com/images/wow/icons/medium/inv_misc_questionmark.jpg";
 
     return `
     <div class="raid-player ${p.class || 'Unknown'}">
+        <div class="player-left">
+            <img src="${icon}" class="class-icon" alt="${p.class || 'Clase'}">
+            
+            <div class="player-info">
+                <span class="player-name">${p.name}</span>
+                <span class="player-spec">${p.spec || ""}</span>
+            </div>
+        </div>
 
-    <div class="player-left">
-        <img src="${icon}" class="class-icon" alt="${p.class}">
-        
-        <div class="player-info">
-        <span class="player-name">${p.name}</span>
-        <span class="player-spec">${p.spec || ""}</span>
+        <div class="player-right">
+            ${p.ilvl ? `<span class="player-ilvl">${p.ilvl}</span>` : ""}
+            ${p.note ? `<span class="player-note">${p.note}</span>` : ""}
         </div>
     </div>
-
-    <div class="player-right">
-        ${p.ilvl ? `<span class="player-ilvl">${p.ilvl}</span>` : ""}
-        ${p.note ? `<span class="player-note">${p.note}</span>` : ""}
-    </div>
-
-    </div>
-`;
+    `;
 }
 
 function renderBench(bench) {
@@ -183,10 +202,10 @@ function renderBench(bench) {
 
     return `
     <div class="raid-bench">
-    <h3>Bench (${bench.length})</h3>
-    ${bench.map(p => renderPlayer(p)).join("")}
+        <h3>Bench / Reserva (${bench.length})</h3>
+        ${bench.map(p => renderPlayer(p)).join("")}
     </div>
-`;
+    `;
 }
 
 // INIT

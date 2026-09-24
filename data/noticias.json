@@ -1,5 +1,82 @@
 [
-
+    {
+        "id": "noticia5",
+        "titulo": "¡Reclutamiento abierto para WoW Classic Forever y Raids!",
+        "fecha": "2026-09-24T18:00:00",
+        "texto": "La Legión del Asado abre sus puertas en los reinos de WoW Classic Forever. Buscamos jugadores de todas las clases para armar nuestro roster de raideo y revivir la era clásica.",
+        "imagen": "../img/classic-forever.avif",
+        "categoria": "noticia",
+        "contenido": [
+            {
+                "tipo": "parrafo",
+                "texto": "¡La nostalgia y el desafío clásico están más vivos que nunca! En <b>La Legión del Asado</b> reabrimos las convocatorias de reclutamiento para todos los amantes de <b>WoW Classic Forever</b>. Queremos consolidar un grupo sólido y afianzado para encarar todo el contenido de banda en hermandad."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "¿Qué estamos buscando?"
+            },
+            {
+                "tipo": "lista",
+                "items": [
+                    "🛡️ Tanques, Healers y DPS para conformar nuestro Core de Raid",
+                    "👥 Jugadores activos, tanto veteranos como nuevos que quieran aprender",
+                    "💬 Buena onda, compañerismo y ganas de progresar en equipo"
+                ]
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "¿Cómo sumarte al roster?"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Si querés formar parte de la hermandad en Classic Forever, unite a nuestro servidor de Discord y dejá tu postulación o hablá con los oficiales encargados."
+            },
+            {
+                "tipo": "link",
+                "texto": "👉 Sumarme al Discord de La Legión",
+                "url": "https://discord.gg/RsEyM5frhT"
+            }
+        ]
+    },
+    {
+        "id": "noticia4",
+        "titulo": "¡Convocatoria Cordobesa! Buscamos jugadores de Córdoba Capital para un evento presencial",
+        "fecha": "2026-09-24T15:00:00",
+        "texto": "¡Atención legión de Córdoba! Estamos organizando un encuentro presencial (LAN / Asado) con la comunidad local en Córdoba Capital. ¡Sumate al grupo!",
+        "imagen": "../img/junte-cordoba.avif",
+        "categoria": "noticia",
+        "contenido": [
+            {
+                "tipo": "parrafo",
+                "texto": "Porque no todo es Azeroth y el Fernandito con Coca se disfruta más en comunidad, desde la dirección de <b>La Legión del Asado</b> estamos buscando a todos los jugadores de <i>World of Warcraft</i> que vivan en <b>Córdoba Capital y alrededores</b>."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "¿De qué se trata la propuesta?"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Queremos organizar una juntada presencial de la comunidad: un asado / juntada cordobesa para conocernos, compartir anécdotas del juego, viciar un rato y fortalecer los lazos de la hermandad fuera de la pantalla."
+            },
+            {
+                "tipo": "blockquote",
+                "texto": "Si vivís en Córdoba Capital o zona metropolitana, ¡este llamado es para vos!"
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "¿Cómo participar?"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Ingresá a nuestro Discord oficial y buscá el canal de <b>#juntada-cordoba</b> o contactate directamente con el GM para sumarte al grupo de organización."
+            },
+            {
+                "tipo": "link",
+                "texto": "👉 Sumarme al canal de Córdoba en Discord",
+                "url": "https://discord.gg/RsEyM5frhT"
+            }
+        ]
+    },
     {
         "id": "noticia3",
         "titulo": "¡Gracias por venir a la Gloria del Asaltante de Nerub'ar!",
