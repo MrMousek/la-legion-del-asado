@@ -1489,9 +1489,6 @@ article a {
 /* Estilos Memorial Assa */
 .memorial-section {
   padding: 3rem 1.5rem;
-  background: linear-gradient(180deg, rgba(20, 15, 25, 0.95), rgb(10, 8, 15));
-  border-top: 2px solid #d4af37;
-  border-bottom: 2px solid #d4af37;
   text-align: center;
   margin: 2rem 0;
 }
