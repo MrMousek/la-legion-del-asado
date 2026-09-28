@@ -12,6 +12,8 @@
     <meta name="google-adsense-account" content="ca-pub-4581147465337293">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="./img/favicon.avif" type="image">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
@@ -22,8 +24,7 @@
             <img class="logo" src="./img/nuevoLLAN.avif" alt="La Legión del Asado - Logo">
         </a>
         <h1>Una comunidad Argentina de WoW
-            <img src="https://images.emojiterra.com/google/noto-emoji/unicode-17.0/color/svg/1f1e6-1f1f7.svg" alt=""
-                srcset="">
+            <img src="https://images.emojiterra.com/google/noto-emoji/unicode-17.0/color/svg/1f1e6-1f1f7.svg" alt="" srcset="">
         </h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -47,6 +48,7 @@
             </div>
         </nav>
     </header>
+
     <!-- Seccion Memorial Assa -->
     <section class="memorial-section">
         <div class="memorial-card">
@@ -61,61 +63,113 @@
             </p>
         </div>
     </section>
+
     <div class="page-wrapper">
         <div class="main-content-wrapper">
             <main class="content-column">
                 <div class="container">
+                    
+                    <!-- HERO -->
                     <section class="hero">
                         <div class="video-container">
-                            <img src="./img/ulatek_hero.jpg"
-                                alt="Imagen de fondo del hero">
+                            <img src="./img/ulatek_hero.jpg" alt="Imagen de fondo del hero">
                         </div>
                         <div class="hero-content">
                             <h2>Bienvenidos a La Legión del Asado</h2>
-                            <p>Una guild de World of Warcraft
-                            </p>
+                            <p>Una guild de World of Warcraft</p>
                             <a href="./pages/unete.html" class="cta-button">¡QUIERO SER PARTE!</a>
                         </div>
                     </section>
-                    <div
-                        class="live-counter-badge d-inline-flex align-items-center bg-dark text-light border border-warning rounded-pill px-3 py-1 shadow-sm">
-                        <span class="pulse-dot me-2"></span>
-                        <span id="live-counter-text" class="small fw-bold">Cargando...</span>
+
+                    <!-- CONTADOR EN VIVO CENTRADO -->
+                    <div class="d-flex justify-content-center my-4">
+                        <div class="live-counter-badge d-inline-flex align-items-center bg-dark text-light border border-warning rounded-pill px-3 py-1 shadow-sm">
+                            <span class="pulse-dot me-2"></span>
+                            <span id="live-counter-text" class="small fw-bold">Cargando...</span>
+                        </div>
                     </div>
-                    <section style="background:#0f0f0f; padding:40px; text-align:center; border-radius:12px;">
-                        <h2 style="color:#ff7b00; font-size:28px; margin-bottom:10px;">
-                            🔥 WoW Retail | La Legión del Asado
-                        </h2>
 
-                        <p style="color:#ddd; font-size:16px; max-width:600px; margin:0 auto 20px;">
-                            Sumate a nuestro grupo de WhatsApp para coordinar raids, mythic+, compartir runs
-                            y formar parte de una comunidad activa de World of Warcraft en LATAM.
-                        </p>
+                    <!-- HUB DE COMUNIDAD -->
+                    <section class="py-4">
+                        <div class="text-center mb-4">
+                            <h2 class="text-warning fw-bold">Sumate a la Comunidad</h2>
+                            <p class="text-light lead">Elegí el canal de comunicación que más te convenga para estar en contacto con la hermandad.</p>
+                        </div>
 
-                        <a href="https://chat.whatsapp.com/LhDz9gp6nH22aoNhWsXsXx" target="_blank" style="display:inline-block; background:#25D366; color:#fff; padding:12px 24px; 
-    border-radius:8px; text-decoration:none; font-weight:bold;">
-                            Unirse al grupo de WhatsApp
-                        </a>
-                                        <section style="background:#0f0f0f; padding:40px; text-align:center; border-radius:12px;">
-                        <h2 style="color:#ff7b00; font-size:28px; margin-bottom:10px;">
-                            🔥 WoW en General - grupo exclusivo para Cordobeses | La Legión del Asado
-                        </h2>
+                        <div class="row g-4 justify-content-center">
+                            
+                            <!-- Opcion 1: WhatsApp Retail LATAM -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card community-card h-100 text-light border-secondary shadow-lg p-3 text-center rounded-4">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div>
+                                            <div class="fs-1 text-success mb-2">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </div>
+                                            <h3 class="card-title text-warning fw-bold fs-4 mb-3">WoW Retail | LATAM</h3>
+                                            <p class="card-text text-light-50 small mb-4">
+                                                Coordiná raids, míticas+, compartí runs y formá parte de una comunidad activa de World of Warcraft en LATAM.
+                                            </p>
+                                        </div>
+                                        <a href="https://chat.whatsapp.com/LhDz9gp6nH22aoNhWsXsXx" target="_blank" class="btn btn-whatsapp btn-lg fw-bold rounded-pill shadow-sm">
+                                            <i class="fab fa-whatsapp me-2"></i> Unirme al WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <p style="color:#ddd; font-size:16px; max-width:600px; margin:0 auto 20px;">
-                            Sumate a nuestro grupo de WhatsApp de Córdoba, la idea es hacer juntadas/eventos en la ciudad de Córdoba, jugar WoW Forever/retail y más. El único requisito: Ser de Córdoba y jugar WoW.
-                        </p>
+                            <!-- Opcion 2: WhatsApp Córdoba Capital -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card community-card h-100 text-light border-secondary shadow-lg p-3 text-center rounded-4">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div>
+                                            <div class="fs-1 text-success mb-2">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </div>
+                                            <h3 class="card-title text-warning fw-bold fs-4 mb-3">Grupo Córdoba Capital</h3>
+                                            <p class="card-text text-light-50 small mb-4">
+                                                Grupo exclusivo para cordobeses. Armamos juntadas, asados presenciales, WoW Forever/retail y más. ¡Único requisito: ser de Cba!
+                                            </p>
+                                        </div>
+                                        <a href="https://chat.whatsapp.com/HRsZskTz7LbDH158aijl4A" target="_blank" class="btn btn-whatsapp btn-lg fw-bold rounded-pill shadow-sm">
+                                            <i class="fab fa-whatsapp me-2"></i> Unirme a Córdoba
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <a href="https://chat.whatsapp.com/HRsZskTz7LbDH158aijl4A" target="_blank" style="display:inline-block; background:#25D366; color:#fff; padding:12px 24px; 
-    border-radius:8px; text-decoration:none; font-weight:bold;">
-                            Unirse al grupo de WhatsApp
-                        </a>
+                            <!-- Opcion 3: Discord Oficial -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card community-card h-100 text-light border-secondary shadow-lg p-3 text-center rounded-4">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div>
+                                            <div class="fs-1 text-discord mb-2">
+                                                <i class="fab fa-discord"></i>
+                                            </div>
+                                            <h3 class="card-title text-warning fw-bold fs-4 mb-3">Discord Oficial</h3>
+                                            <p class="card-text text-light-50 small mb-4">
+                                                ¿No te copan los grupos de WhatsApp? Sumate a nuestro Discord para canales de voz, avisos de raid, memes y guías.
+                                            </p>
+                                        </div>
+                                        <a href="https://discord.gg/RsEyM5frhT" target="_blank" class="btn btn-discord btn-lg fw-bold rounded-pill shadow-sm">
+                                            <i class="fab fa-discord me-2"></i> Unirme al Discord
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </section>
-                    <div id="raid">
-                    </div>
+
+                    <div id="raid"></div>
+
+                    <!-- NOTICIAS -->
                     <section class="eventos">
                         <h2>Noticias</h2>
                         <div class="news-list" id="news-container"></div>
                     </section>
+
+                    <!-- STREAMERS -->
                     <div class="eldivdeltano">
                         <section class="streamers-section">
                             <div class="container">
@@ -129,22 +183,23 @@
                                     </div>
                                 </div>
                                 <div class="mt-4 text-center">
-                                    <p>¿Te gustaria aparecer acá?<br>Habla con un oficial en el discord de la guild.</p>
+                                    <p>¿Te gustaría aparecer acá?<br>Habla con un oficial en el discord de la guild.</p>
                                 </div>
                             </div>
                         </section>
                     </div>
 
+                    <!-- GENERADOR ALEATORIO -->
                     <div class="wow-card text-center">
                         <h4><i class="fas fa-random"></i> Generador aleatorio</h4>
-                        <p>¿No podés decidirte que subir de nivel esta vez? ¡Dejá que el enano elija por vos papá!</p>
-                        <img class="randompj" src="./img/randompj.avif" width="300" height="300"
-                            alt="Un enano con cara de sorpresa">
+                        <p>¿No podés decidirte qué subir de nivel esta vez? ¡Dejá que el enano elija por vos papá!</p>
+                        <img class="randompj" src="./img/randompj.avif" width="300" height="300" alt="Un enano con cara de sorpresa">
                         <button id="generateBtn" class="btn btn-wow">
                             <i class="fas fa-dice"></i> Generar Personaje
                         </button>
                         <div id="personaje"></div>
                     </div>
+
                 </div>
             </main>
         </div>
@@ -175,13 +230,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 La Legión del Asado. World of Warcraft y sus imágenes son propiedad de Blizzard
-                Entertainment.
-                Este sitio no está afiliado ni respaldado por Blizzard. Sitio web creado por Mouse. Todos los derechos
-                reservados.</p>
+            <p>&copy; 2026 La Legión del Asado. World of Warcraft y sus imágenes son propiedad de Blizzard Entertainment.
+Este sitio no está afiliado ni respaldado por Blizzard. Sitio web creado por Mouse. Todos los derechos reservados.</p>
         </div>
     </footer>
-
 
     <!-- Scripts al final del body -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -194,30 +246,6 @@
     <script src="./js/enano.js"></script>
     <script src="./js/raid.js"></script>
     <script type="module" src="./js/counter.js"></script>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyAXbhRJf3105-3vAjdLPOIqbqFHF1R796E",
-            authDomain: "la-legion-del-asado.firebaseapp.com",
-            databaseURL: "https://la-legion-del-asado-default-rtdb.firebaseio.com",
-            projectId: "la-legion-del-asado",
-            storageBucket: "la-legion-del-asado.firebasestorage.app",
-            messagingSenderId: "274490441980",
-            appId: "1:274490441980:web:701aa2041be5e543091779",
-            measurementId: "G-0M4BYCT8FC"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
 </body>
 
 </html>

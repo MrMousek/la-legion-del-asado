@@ -1591,6 +1591,38 @@ article a {
   width: fit-content;
 }
 
+.text-discord {
+  color: #5865F2 !important;
+}
+
+.btn-discord {
+  background-color: #5865F2;
+  color: #ffffff;
+  border: none;
+}
+.btn-discord:hover, .btn-discord:focus {
+  background-color: rgb(50.1466666667, 66.0933333333, 239.0533333333);
+  color: #ffffff;
+}
+
+.btn-whatsapp {
+  background-color: #25d366 !important;
+  color: #ffffff !important;
+  border: none;
+}
+.btn-whatsapp:hover, .btn-whatsapp:focus {
+  background-color: #1eb857 !important;
+}
+
+.community-card {
+  background-color: #121212 !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.community-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 193, 7, 0.15) !important;
+}
+
 footer {
   background-color: #111111;
   padding: 1%;

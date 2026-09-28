@@ -1534,9 +1534,58 @@ article {
         box-shadow: 0 0 0 0 rgba(46, 196, 182, 0);
     }
 }
+
 .live-counter-badge {
     margin: 10px auto;
     display: flex !important;
     justify-content: center;
     width: fit-content;
+}
+
+// Variables de color
+$discord-color: #5865F2;
+$whatsapp-color: #25d366;
+$whatsapp-hover: #1eb857;
+$card-bg: #121212;
+$gold-border: #ffc107;
+
+// Icono de Discord
+.text-discord {
+    color: $discord-color !important;
+}
+
+// Botón de Discord personalizado
+.btn-discord {
+    background-color: $discord-color;
+    color: #ffffff;
+    border: none;
+
+    &:hover,
+    &:focus {
+        background-color: darken($discord-color, 8%);
+        color: #ffffff;
+    }
+}
+
+// Botón de WhatsApp
+.btn-whatsapp {
+    background-color: $whatsapp-color !important;
+    color: #ffffff !important;
+    border: none;
+
+    &:hover,
+    &:focus {
+        background-color: $whatsapp-hover !important;
+    }
+}
+
+// Tarjetas de Comunidad
+.community-card {
+    background-color: $card-bg !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(255, 193, 7, 0.15) !important;
+    }
 }
