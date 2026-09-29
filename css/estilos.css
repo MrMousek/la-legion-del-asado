@@ -413,8 +413,7 @@ main .hero .heromain {
 }
 .equipo-raid .join-action {
   display: inline-block;
-  background: #ffffff;
-  color: #F5F5F5;
+  background: #000000;
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
