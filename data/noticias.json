@@ -1,5 +1,84 @@
 [
     {
+    "id": "noticia6",
+    "titulo": "¡Gloria del Asaltante de Ny'alotha! Evento por una montura",
+    "fecha": "2026-10-01T15:00:00",
+    "texto": "Este viernes 2 de octubre nos juntamos para completar la Gloria del Asaltante de Ny'alotha y conseguir la montura Parasito sinuoso. Evento pensado especialmente para la comunidad cordobesa de WoW Retail, pero abierto a todos.",
+    "imagen": "../img/nyalotha.png",
+    "categoria": "noticia",
+    "contenido": [
+        {
+            "tipo": "parrafo",
+            "texto": "¡Nos vamos de raid vieja! Este viernes <b>2 de octubre a las 23:00 hs de Argentina</b>, desde <b>La Legión del Asado</b> vamos a organizar una actividad para completar la <b>Gloria del Asaltante de Ny'alotha</b> y conseguir la montura <b>Parásito sinuoso</b>."
+        },
+        {
+            "tipo": "subtitulo",
+            "texto": "¿A quién está dirigido?"
+        },
+        {
+            "tipo": "parrafo",
+            "texto": "La idea principal es reunir a jugadores de <b>Córdoba, Argentina</b> que jueguen <b>World of Warcraft Retail</b>, pero el evento está abierto a cualquier jugador que quiera sumarse. No es necesario vivir en Córdoba para participar."
+        },
+        {
+            "tipo": "subtitulo",
+            "texto": "Requisitos"
+        },
+        {
+            "tipo": "lista",
+            "items": [
+                "🎮 Jugar World of Warcraft Retail",
+                "🛡️ Tener un personaje de nivel 80 o superior",
+                "🌙 Si tenés Midnight, podés participar normalmente",
+                "📜 Si no tenés la expansión Midnight, también podés participar siempre que tengas un personaje nivel 80",
+                "💬 Estar dentro del Discord de La Legión del Asado"
+            ]
+        },
+        {
+            "tipo": "subtitulo",
+            "texto": "Si sos de Córdoba"
+        },
+        {
+            "tipo": "parrafo",
+            "texto": "Si sos de Córdoba, además del Discord podés sumarte opcionalmente a nuestro grupo de WhatsApp de la comunidad cordobesa. Si sos de otra parte de Argentina o LATAM, con estar en el Discord es suficiente."
+        },
+        {
+            "tipo": "subtitulo",
+            "texto": "Detalles del evento"
+        },
+        {
+            "tipo": "lista",
+            "items": [
+                "📅 Fecha: Viernes 2 de octubre",
+                "🕚 Hora: 23:00 hs Argentina",
+                "🎯 Actividad: Gloria del Asaltante de Ny'alotha",
+                "🏆 Recompensa: Montura Parásito sinuoso"
+            ]
+        },
+        {
+            "tipo": "subtitulo",
+            "texto": "¿Cómo participar?"
+        },
+        {
+            "tipo": "parrafo",
+            "texto": "Entrá a nuestro Discord y buscá el canal #eventos. La organización y comunicación del evento se realizará principalmente por Discord."
+        },
+        {
+            "tipo": "link",
+            "texto": "👉 Unirme al Discord de La Legión del Asado",
+            "url": "[https://discord.gg/RsEyM5frhT](https://discord.gg/RsEyM5frhT)"
+        },
+        {
+            "tipo": "link",
+            "texto": "👉 Grupo de WhatsApp Córdoba",
+            "url": "[https://chat.whatsapp.com/HRsZskTz7LbDH158aijl4A](https://chat.whatsapp.com/HRsZskTz7LbDH158aijl4A)"
+        },
+        {
+            "tipo": "blockquote",
+            "texto": "La prioridad es juntarnos, completar el logro y pasarla bien. Si sos de Córdoba, ¡mucho mejor! Y si no, también sos bienvenido."
+        }
+    ]
+},
+    {
         "id": "noticia5",
         "titulo": "¡Reclutamiento abierto para WoW Classic Forever!",
         "fecha": "2026-09-24T18:00:00",
@@ -87,7 +166,7 @@
         "titulo": "¡Gracias por venir a la Gloria del Asaltante de Nerub'ar!",
         "fecha": "2025-09-29T23:00:00",
         "texto": "El sábado 27 de septiembre, La Legión del Asado junto a FROGEN llevaron a cabo una exitosa Gloria en busca de la montura Riendas del Enjambrillo Sombrío. ¡Gracias a todos los que participaron!",
-        "imagen": "../uploads/noticia3.webp",
+        "imagen": "../img/noticia3.webp",
         "categoria": "noticia",
         "contenido": [
             {
