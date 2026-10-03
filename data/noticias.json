@@ -1,5 +1,45 @@
 [
     {
+    "id": "noticia7",
+    "titulo": "¡Completamos la Gloria del Asaltante de Ny'alotha!",
+    "fecha": "2026-10-03T13:00:00",
+    "texto": "Anoche nos juntamos para completar la Gloria del Asaltante de Ny'alotha y conseguir la montura Parásito sinuoso. ¡Gracias a todos los que se sumaron!",
+    "imagen": "../img/nyalotha_mount.jpg",
+    "categoria": "noticia",
+    "contenido": [
+        {
+            "tipo": "parrafo",
+            "texto": "¡Logro conseguido! Anoche nos juntamos con varios jugadores de la comunidad para completar la <b>Gloria del Asaltante de Ny'alotha</b> y llevarnos la montura <b>Parásito sinuoso</b>."
+        },
+        {
+            "tipo": "parrafo",
+            "texto": "Fue una linda noche para compartir un rato, hacer contenido juntos y seguir conociendo gente de la comunidad. Queremos agradecer especialmente a todos los que se hicieron un lugar y vinieron a participar."
+        },
+        {
+            "tipo": "subtitulo",
+            "texto": "¡Gracias por acompañarnos!"
+        },
+        {
+            "tipo": "parrafo",
+            "texto": "Este fue uno de los primeros eventos que organizamos con la idea de reunir a jugadores de <b>Córdoba y Argentina</b>, y nos alegra mucho ver que de a poco se va sumando más gente."
+        },
+        {
+            "tipo": "blockquote",
+            "texto": "¡Pronto se vienen más eventos, más logros y más juntadas! Gracias por ser parte de La Legión del Asado culiau ❤️"
+        },
+        {
+            "tipo": "link",
+            "texto": "👉 Unirme al Discord de La Legión del Asado",
+            "url": "[https://discord.gg/RsEyM5frhT](https://discord.gg/RsEyM5frhT)"
+        },
+                {
+            "tipo": "link",
+            "texto": "👉 Grupo de WhatsApp Córdoba",
+            "url": "https://chat.whatsapp.com/HRsZskTz7LbDH158aijl4A"
+        }
+    ]
+},
+    {
     "id": "noticia6",
     "titulo": "¡Gloria del Asaltante de Ny'alotha! Evento por una montura",
     "fecha": "2026-10-01T15:00:00",
@@ -166,7 +206,7 @@
         "titulo": "¡Gracias por venir a la Gloria del Asaltante de Nerub'ar!",
         "fecha": "2025-09-29T23:00:00",
         "texto": "El sábado 27 de septiembre, La Legión del Asado junto a FROGEN llevaron a cabo una exitosa Gloria en busca de la montura Riendas del Enjambrillo Sombrío. ¡Gracias a todos los que participaron!",
-        "imagen": "../img/noticia3.webp",
+        "imagen": "../img/nerubar.avif",
         "categoria": "noticia",
         "contenido": [
             {
