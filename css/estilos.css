@@ -1877,44 +1877,34 @@ footer .footer-bottom p {
   color: #B0B0B0;
 }
 
-/* Media Query para dispositivos pequeños (max-width: 768px) */
-@media screen and (max-width: 991px) {
+/* ==========================================================================
+MEDIA QUERIES (DESKTOP & TABLETS LARGAS)
+   ========================================================================== */
+/* Pantallas XL (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .ad-column {
+    flex: 0 0 160px;
+  }
+  b {
+    font-size: 70%;
+  }
+}
+/* Pantallas Larga a Mediana (max-width: 992px) */
+@media (max-width: 992px) {
   .conteiner-who-we-are .borde-quienes-somos .quienes-somos .glorys img {
     width: 200px;
     height: auto;
     padding: 10px;
   }
-  .boss-progress-rect-widget {
-    height: 200px;
-    position: relative;
-    text-shadow: 2px 2px 2px #000;
-    width: 200px;
-  }
-  /* Tablet */
-}
-@media screen and (max-width: 991px) and (max-width: 1024px) {
-  iframe {
-    height: 500px;
-  }
-}
-@media screen and (max-width: 991px) {
-  /* Mobile */
-}
-@media screen and (max-width: 991px) and (max-width: 600px) {
-  iframe {
-    height: 600px;
-  }
-}
-@media screen and (max-width: 991px) {
   header {
     background-color: #111111;
-    padding: 20px;
+    padding: 15px;
     margin: auto;
     display: flex;
     align-items: center;
   }
   header img {
-    width: 100px;
+    width: 80px;
     height: auto;
   }
   header h1 {
@@ -1923,114 +1913,6 @@ footer .footer-bottom p {
   header .navbar-nav .dropdown-menu {
     position: static;
   }
-}
-@media screen and (max-width: 991px) and (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: relative;
-  }
-}
-@media screen and (max-width: 991px) {
-  .eventos-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-    display: block;
-  }
-  .hero .hero-content p {
-    text-align: center;
-  }
-  .logo-no-broken {
-    display: inline-flex;
-    justify-content: center;
-  }
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1em;
-    flex-wrap: wrap;
-  }
-  footer .footer-logo {
-    flex: 1;
-  }
-  footer .footer-logo h3 {
-    text-align: center;
-    font-family: "Sedgwick Ave", cursive;
-    font-size: 1.2rem;
-  }
-  footer .footer-logo .footer-container .footer-sections .footer-column {
-    margin: 0 1em;
-  }
-  footer .footer-logo .footer-column a {
-    color: #F5F5F5;
-    text-decoration: none;
-    transition: color 0.3s;
-    display: flex;
-  }
-  .galeria-guild {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 5px;
-    padding: 0;
-    margin: 5px;
-    grid-auto-rows: 1fr;
-  }
-  .nuestro-goal {
-    background-color: #222;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 991px) and (max-width: 1199px) {
-  b {
-    font-size: 70%;
-  }
-}
-@media screen and (max-width: 991px) {
-  /* Media Query para dispositivos medianos y pequeños (max-width: 576px) */
-}
-@media screen and (max-width: 991px) and (max-width: 600px) {
-  .nuestro-goal iframe {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    margin: 10px;
-  }
-}
-@media screen and (max-width: 991px) {
-  /* Media Query para dispositivos pequeños (max-width: 450px) */
-}
-@media screen and (max-width: 991px) and (max-width: 450px) {
-  .nuestro-goal video {
-    width: 350px;
-    height: auto;
-  }
-}
-@media screen and (max-width: 991px) {
-  /* Media Query para dispositivos muy pequeños (max-width: 400px) */
-}
-@media screen and (max-width: 991px) and (max-width: 400px) {
-  .nuestro-goal video {
-    width: 280px;
-    height: auto;
-  }
-}
-@media screen and (max-width: 991px) and (max-width: 400px) {
-  .nuestro-equipo-simple iframe {
-    width: auto;
-    height: 100%;
-    padding: 10px;
-  }
-}
-@media screen and (max-width: 991px) and (max-width: 768px) {
-  .member-avatar {
-    height: 150px;
-  }
-}
-@media screen and (max-width: 991px) and (max-width: 1200px) {
-  .ad-column {
-    flex: 0 0 160px;
-  }
-}
-@media screen and (max-width: 991px) and (max-width: 992px) {
   .ad-column {
     display: none;
   }
@@ -2038,40 +1920,15 @@ footer .footer-bottom p {
     display: block !important;
   }
 }
-@media screen and (max-width: 991px) and (min-width: 993px) {
+@media (min-width: 993px) {
   .mobile-ad {
     display: none !important;
   }
-}
-@media screen and (max-width: 991px) {
-  .mobile-ad {
-    display: none;
-    width: 100%;
-    margin: 15px 0;
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: relative;
   }
 }
-@media screen and (max-width: 991px) and (max-width: 768px) {
-  #classGrid {
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 columnas en tablets/mobiles */
-  }
-}
-@media screen and (max-width: 991px) and (max-width: 480px) {
-  #classGrid {
-    grid-template-columns: 2fr;
-    /* 1 columna en pantallas muy chicas */
-  }
-}
-@media screen and (max-width: 991px) and (max-width: 500px) {
-  .class-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    border: 2px solid #000000;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 991px) and (min-width: 1400px) {
+@media (min-width: 1400px) {
   .container,
   .container-lg,
   .container-md,
@@ -2081,90 +1938,224 @@ footer .footer-bottom p {
     max-width: 1320px;
   }
 }
-@media screen and (max-width: 991px) and (max-width: 768px) {
+/* ==========================================================================
+   MEDIA QUERIES (TABLETS: max-width 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  iframe {
+    height: 400px;
+  }
+  .member-avatar {
+    height: 150px;
+  }
+  #classGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Reducción de textos en Noticias */
   .news-item {
     flex-direction: column;
-    /* en vez de lado a lado */
     align-items: flex-start;
   }
   .news-item img {
     width: 100%;
-    /* imagen ocupa todo el ancho */
     height: auto;
     margin-bottom: 10px;
   }
   .news-item h2 {
-    font-size: 1.2rem;
-    /* títulos más chicos */
-  }
-}
-@media (max-width: 768px) {
-  .forever-content {
-    min-height: auto;
-    padding: 18px 15px;
-    gap: 18px;
-  }
-  .forever-brand {
-    gap: 10px;
-  }
-  .forever-brand img {
-    width: 48px;
-    height: 48px;
-  }
-  .forever-brand h2 {
-    font-size: 16px;
-    margin-bottom: 4px;
-  }
-  .forever-brand p {
-    font-size: 11px;
+    font-size: 1.1rem;
     line-height: 1.3;
   }
+  .news-item p {
+    font-size: 0.9rem;
+  }
+  /* Reducción de textos en Banner Forever */
+  .forever-content {
+    min-height: auto;
+    padding: 14px 12px;
+    gap: 14px;
+  }
+  .forever-brand {
+    gap: 8px;
+  }
+  .forever-brand img {
+    width: 40px;
+    height: 40px;
+  }
+  .forever-brand h2 {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  .forever-brand p {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  /* Ajuste de Contactor / Countdown */
   .countdown {
-    gap: 10px;
+    gap: 8px;
   }
   .countdown div {
-    min-width: 48px;
+    min-width: 40px;
   }
   .countdown span {
-    font-size: 28px;
-    letter-spacing: 1px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
   }
   .countdown small {
     font-size: 8px;
-    margin-top: 5px;
+    margin-top: 2px;
   }
   .forever-bottom {
-    font-size: 10px;
-    padding: 7px 10px;
+    font-size: 9px;
+    padding: 5px 8px;
   }
   .forever-bottom span {
-    margin: 0 4px;
+    margin: 0 3px;
   }
 }
+/* ==========================================================================
+   MEDIA QUERIES (MOBILE: max-width 600px)
+   ========================================================================== */
 @media (max-width: 600px) {
+  iframe {
+    height: 350px;
+  }
+  .nuestro-goal iframe {
+    width: 100%;
+    height: 250px;
+    padding: 5px;
+    margin: 5px 0;
+  }
   .forever-content {
     flex-direction: column;
     text-align: center;
-    gap: 15px;
-    padding: 18px 10px;
+    gap: 12px;
+    padding: 12px 8px;
   }
   .forever-brand {
     justify-content: center;
-  }
-  .forever-brand {
-    text-align: left;
+    text-align: center;
   }
   .countdown {
     width: 100%;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
   }
   .countdown div {
-    min-width: 55px;
+    min-width: 45px;
   }
   .countdown span {
-    font-size: 30px;
+    font-size: 20px;
   }
+}
+/* ==========================================================================
+   MEDIA QUERIES (MOBILE SMALL: max-width 480px / 400px)
+   ========================================================================== */
+@media (max-width: 500px) {
+  .class-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  #classGrid {
+    grid-template-columns: 1fr;
+    /* 1 columna limpia para móviles */
+  }
+  /* Ajuste de textos generales */
+  h1 {
+    font-size: 1.4rem !important;
+  }
+  h2 {
+    font-size: 1.2rem !important;
+  }
+  h3 {
+    font-size: 1.05rem !important;
+  }
+  p {
+    font-size: 0.85rem !important;
+  }
+  .boss-progress-rect-widget {
+    height: 160px;
+    width: 160px;
+  }
+}
+@media (max-width: 400px) {
+  .nuestro-goal video {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+  .nuestro-equipo-simple iframe {
+    width: 100%;
+    height: 220px;
+    padding: 5px;
+  }
+}
+/* ==========================================================================
+   ESTILOS GENERALES RESPONSIVOS (FUERA DE BREAKPOINTS)
+   ========================================================================== */
+.eventos-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  display: block;
+}
+
+.hero .hero-content p {
+  text-align: center;
+}
+
+.logo-no-broken {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+  flex-wrap: wrap;
+}
+
+footer .footer-logo {
+  flex: 1;
+}
+footer .footer-logo h3 {
+  text-align: center;
+  font-family: "Sedgwick Ave", cursive;
+  font-size: 1.1rem;
+}
+footer .footer-logo .footer-container .footer-sections .footer-column {
+  margin: 0 1em;
+}
+footer .footer-logo .footer-column a {
+  color: #F5F5F5;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: flex;
+}
+
+.galeria-guild {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 5px;
+  padding: 0;
+  margin: 5px;
+  grid-auto-rows: 1fr;
+}
+
+.nuestro-goal {
+  background-color: #222;
+  margin: auto;
+}
+
+.mobile-ad {
+  display: none;
+  width: 100%;
+  margin: 15px 0;
 }
 
 /*# sourceMappingURL=estilos.css.map */
