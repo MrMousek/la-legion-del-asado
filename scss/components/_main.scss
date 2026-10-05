@@ -1759,3 +1759,30 @@ SECCIÓN VOTACIÓN GUILD WOW FOREVER
 .poll-status {
     min-height: 24px;
 }
+
+#discord-card {
+    background: #2b2d31;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: inherit;
+}
+
+#discord-invite {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #5865F2;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#discord-invite:hover {
+    background-color: #4752C4;
+}
