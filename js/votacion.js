@@ -20,8 +20,8 @@ async function cargarResultadosGrafico() {
     if (!supabaseClient) return;
 
     try {
-        const { data: votos, error } = await supabaseClient
-            .from('votos')
+        const { data: votacion, error } = await supabaseClient
+            .from('votacion')
             .select('opcion');
 
         if (error) throw error;
@@ -34,7 +34,7 @@ async function cargarResultadosGrafico() {
             'Horda - PvE': 0
         };
 
-        votos.forEach(v => {
+        votacion.forEach(v => {
             if (conteo[v.opcion] !== undefined) {
                 conteo[v.opcion]++;
             }
@@ -114,14 +114,14 @@ async function votarGuild(opcion) {
     try {
         const userIP = await obtenerIP();
 
-        const { data: votosExistentes, error: checkError } = await supabaseClient
-            .from('votos')
+        const { data: votacionExistentes, error: checkError } = await supabaseClient
+            .from('votacion')
             .select('ip')
             .eq('ip', userIP);
 
         if (checkError) throw checkError;
 
-        if (votosExistentes && votosExistentes.length > 0) {
+        if (votacionExistentes && votacionExistentes.length > 0) {
             localStorage.setItem('llan_voted', 'true');
             statusEl.style.color = '#dc3545';
             statusEl.textContent = '❌ Ya se ha registrado un voto desde esta dirección IP.';
@@ -129,7 +129,7 @@ async function votarGuild(opcion) {
         }
 
         const { error: insertError } = await supabaseClient
-            .from('votos')
+            .from('votacion')
             .insert([{ ip: userIP, opcion: opcion }]);
 
         if (insertError) throw insertError;
