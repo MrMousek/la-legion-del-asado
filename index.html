@@ -99,61 +99,6 @@
                             ¿Ya tenés todo listo papá?
                         </div>
                     </section>
-
-                    <section class="guild-poll-section my-4">
-                        <div class="poll-card shadow-lg p-4 rounded-4 text-center">
-                            <h3 class="poll-title fw-bold text-warning mb-2">
-                                <i class="fas fa-vote-yea me-2"></i>¿Dónde va a jugar La Legión en Forever?
-                            </h3>
-                            <p class="poll-subtitle text-light-50 small mb-4">
-                                Votación única por conexión/IP. Elegí la combinación de Facción y Tipo de Reino que
-                                preferís.
-                            </p>
-
-                            <!-- Botones de Votación -->
-                            <div class="row g-3 justify-content-center mb-4">
-                                <div class="col-6 col-md-3">
-                                    <button class="poll-btn btn-alliance w-100" onclick="votarGuild('Alianza - PvP')">
-                                        <i class="fas fa-shield-alt d-block mb-1 fs-4"></i>
-                                        <strong>Alianza</strong>
-                                        <small class="d-block">PvP</small>
-                                    </button>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <button class="poll-btn btn-alliance w-100" onclick="votarGuild('Alianza - PvE')">
-                                        <i class="fas fa-shield-alt d-block mb-1 fs-4"></i>
-                                        <strong>Alianza</strong>
-                                        <small class="d-block">PvE</small>
-                                    </button>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <button class="poll-btn btn-horde w-100" onclick="votarGuild('Horda - PvP')">
-                                        <i class="fas fa-khanda d-block mb-1 fs-4"></i>
-                                        <strong>Horda</strong>
-                                        <small class="d-block">PvP</small>
-                                    </button>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <button class="poll-btn btn-horde w-100" onclick="votarGuild('Horda - PvE')">
-                                        <i class="fas fa-khanda d-block mb-1 fs-4"></i>
-                                        <strong>Horda</strong>
-                                        <small class="d-block">PvE</small>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div id="poll-status" class="poll-status mb-4 fw-bold small"></div>
-
-                            <!-- SECCIÓN DEL GRÁFICO EN TIEMPO REAL -->
-                            <div class="poll-chart-container mt-3">
-                                <h5 class="text-warning fw-bold mb-3"><i class="fas fa-chart-bar me-2"></i>Resultados
-                                    parciales</h5>
-                                <div class="chart-wrapper" style="position: relative; height: 260px; width: 100%;">
-                                    <canvas id="pollChart"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                     <!-- Seccion Memorial Assa -->
                     <section class="memorial-section">
                         <div class="memorial-card">
@@ -334,11 +279,8 @@
     <script src="./js/appNoticias.js"></script>
     <script src="./js/time.js"></script>
     <script src="./js/app.js"></script>
-    <!-- <script src="./js/alters.js"></script> -->
     <script src="./js/enano.js"></script>
     <script src="./js/contador.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./js/votacion.js"></script>
     <script type="module" src="./js/counter.js"></script>
 </body>
 
