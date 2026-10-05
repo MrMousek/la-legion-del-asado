@@ -1,6 +1,6 @@
 // Configuración de Supabase - Reemplaza con tus datos reales
 const SUPABASE_URL = 'https://rvdhhgkmdiorgdsihndl.supabase.co';
-const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
+const SUPABASE_ANON_KEY = 'sb_publishable_8fsBlfPp36ZfofJh8BH_iQ_2mC6alM3';
 
 const supabaseClient = window.supabase
     ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
