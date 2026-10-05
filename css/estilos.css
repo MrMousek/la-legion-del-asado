@@ -1722,8 +1722,15 @@ article a {
 }
 
 /* ==========================================
-   SECCIÓN VOTACIÓN GUILD WOW FOREVER
+SECCIÓN VOTACIÓN GUILD WOW FOREVER
    ========================================== */
+.poll-chart-container {
+  background: rgba(10, 10, 10, 0.6);
+  border-top: 1px solid rgba(255, 193, 7, 0.3);
+  padding-top: 15px;
+  border-radius: 8px;
+}
+
 .poll-card {
   background: rgba(20, 20, 20, 0.95);
   border: 1px solid #ffc107;
