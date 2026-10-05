@@ -1,9 +1,9 @@
-// Configuración de Supabase (Clave pública/publishable)
+// Configuración de Supabase (Clave secreta/secret)
 const SUPABASE_URL = 'https://rvdhhgkmdiorgdsihndl.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_8fsBlfPp36ZfofJh8BH_iQ_2mC6alM3';
+const SUPABASE_SECRET_KEY = 'SUPABASE_SECRET_KEY';
 
 const supabaseClient = window.supabase
-    ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+    ? window.supabase.createClient(SUPABASE_URL, SUPABASE_SECRET_KEY)
     : null;
 
 let pollChartInstance = null;
