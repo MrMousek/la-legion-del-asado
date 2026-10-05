@@ -1,6 +1,6 @@
 // Configuración de Supabase - Reemplaza con tus datos reales
 const SUPABASE_URL = 'https://rvdhhgkmdiorgdsihndl.supabase.co';
-const SUPABASE_ANON_KEY = 'SUPA_ANON_KEY';
+const SUPABASE_ANON_KEY = 'sb_secret_sE2C3fWCGyZ5oFn714dXog_ZoxWKhd2';
 
 const supabaseClient = window.supabase
     ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
