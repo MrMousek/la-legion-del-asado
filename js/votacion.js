@@ -1,5 +1,5 @@
 // Configuración de Supabase - Reemplaza con tus datos reales
-const SUPABASE_URL = 'https://rvdhhgkmdiorgdsihndl.supabase.co/rest/v1/';
+const SUPABASE_URL = 'https://rvdhhgkmdiorgdsihndl.supabase.co';
 const SUPABASE_ANON_KEY = 'SUPA_ANON_KEY';
 
 const supabaseClient = window.supabase
