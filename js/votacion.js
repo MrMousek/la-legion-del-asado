@@ -1,4 +1,4 @@
-// Configuración de Supabase - Reemplaza con tus datos reales
+// Configuración de Supabase (Clave pública/publishable)
 const SUPABASE_URL = 'https://rvdhhgkmdiorgdsihndl.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_8fsBlfPp36ZfofJh8BH_iQ_2mC6alM3';
 
