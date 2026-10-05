@@ -1,6 +1,6 @@
 // Configuración de Supabase - Reemplaza con tus datos reales
 const SUPABASE_URL = 'https://rvdhhgkmdiorgdsihndl.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_secret_sE2C3fWCGyZ5oFn714dXog_ZoxWKhd2';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ2ZGhoZ2ttZGlvcmdkc2lobmRsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTExNTM0OTAsImV4cCI6MjEwNjcyOTQ5MH0.0lIsSvha9-r-vfDQ0QvV5zyI_s4FQ6W1tbT0Jkrb9ec';
 
 const supabaseClient = window.supabase
     ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
