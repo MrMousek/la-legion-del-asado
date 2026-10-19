@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addon oficial - La Legión del Asado</title>
+    <meta name="description"
+        content="Descargá el addon oficial de La Legión del Asado para WoW Forever y Retail: parrilla de guild, ruleta del fernet, rankings, avisos de muertes, niveles y PvP." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../img/favicon.avif" type="image">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        /* Retoques solo para esta página */
+        .addon-page code { color: #FF6F00; background: #121212; padding: 2px 6px; border-radius: 4px; }
+        .addon-page .feature-card { background-color: #121212 !important; }
+        .addon-page .feature-icon { font-size: 2rem; color: #FF6F00; }
+        .addon-page .step-badge { background: #FF6F00; color: #1B1B1F; font-weight: 700; }
+        .addon-page .table { --bs-table-bg: #121212; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="navbar-brand" href="../index.html">
+            <img class="logo" src="../img/nuevoLLAN.avif" alt="La Legión del Asado - Logo">
+        </a>
+        <h1>Una comunidad Argentina de WoW
+            <img src="https://images.emojiterra.com/google/noto-emoji/unicode-17.0/color/svg/1f1e6-1f1f7.svg" alt="">
+        </h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienes-somos.html">Quiénes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./unete.html">Únete</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./addon.html">Addon</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="content-column addon-page">
+                <div class="container">
+
+                    <!-- TÍTULO + DESCARGA -->
+                    <section class="text-center py-4">
+                        <img src="../img/nuevoLLAN.avif" alt="Logo de La Legión del Asado" class="img-fluid mb-3"
+                            style="max-width: 170px; border-radius: 50%;">
+                        <h2 class="text-warning fw-bold">Addon oficial de La Legión del Asado</h2>
+                        <p class="text-light lead mt-2">
+                            Todo lo que hace especial a la guild, adentro del juego. Gratis, sin conexión a internet
+                            y con mística de barrio.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge text-bg-warning me-1">v0.7.2</span>
+                            <span class="badge text-bg-secondary me-1">WoW: Forever</span>
+                            <span class="badge text-bg-secondary">Retail</span>
+                        </div>
+                        <a href="../descargas/LaLegionDelAsado.zip" download
+                            class="btn btn-warning btn-lg fw-bold rounded-pill shadow-sm px-5">
+                            <i class="fas fa-download me-2"></i> Descargar addon (.zip)
+                        </a>
+                        <p class="small mt-3">¿Dudas o errores? Pasate por nuestro
+                            <a href="https://discord.gg/RsEyM5frhT" target="_blank" class="text-warning">Discord</a>.
+                        </p>
+                    </section>
+
+                    <!-- QUÉ TRAE -->
+                    <section class="py-4">
+                        <h2 class="text-warning fw-bold text-center mb-4">¿Qué trae?</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
+                                    <div class="feature-icon mb-2"><i class="fas fa-fire"></i></div>
+                                    <h3 class="fs-5 fw-bold">La Parrilla</h3>
+                                    <p class="small mb-0">Mensaje del día de la guild, links a la web y al Discord, y tu rango.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
+                                    <div class="feature-icon mb-2"><i class="fas fa-trophy"></i></div>
+                                    <h3 class="fs-5 fw-bold">Asador y Pollo del Mes</h3>
+                                    <p class="small mb-0">Puntos de reconocimiento que dan los oficiales, y el que más se murió. Se reinician cada mes.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
+                                    <div class="feature-icon mb-2"><i class="fas fa-dice"></i></div>
+                                    <h3 class="fs-5 fw-bold">Ruleta del Fernet</h3>
+                                    <p class="small mb-0">Sorteo animado que ve todo tu grupo. Sin discusiones: manda la ruleta.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
+                                    <div class="feature-icon mb-2"><i class="fas fa-chart-line"></i></div>
+                                    <h3 class="fs-5 fw-bold">La Carrera de Niveles</h3>
+                                    <p class="small mb-0">Quién va primero y aviso a toda la guild cuando alguien llega primero a un hito.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
+                                    <div class="feature-icon mb-2"><i class="fas fa-skull"></i></div>
+                                    <h3 class="fs-5 fw-bold">Avisos de muertes</h3>
+                                    <p class="small mb-0">Quién, en qué nivel, dónde y cuántas veces en el mes. En pantalla, en el chat y en un historial de la guild.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
+                                    <div class="feature-icon mb-2"><i class="fas fa-crosshairs"></i></div>
+                                    <h3 class="fs-5 fw-bold">PvP</h3>
+                                    <p class="small mb-0">El Carnicero del Mes, primera sangre e hitos de bajas. Sirve para cualquier facción.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
+                                    <div class="feature-icon mb-2"><i class="fas fa-volume-high"></i></div>
+                                    <h3 class="fs-5 fw-bold">Locutor del Barrio</h3>
+                                    <p class="small mb-0">Sonidos para muertes, wipes, bosses y loot épico. Podés poner los tuyos.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
+                                    <div class="feature-icon mb-2"><i class="fas fa-dragon"></i></div>
+                                    <h3 class="fs-5 fw-bold">Dragón en el retrato</h3>
+                                    <p class="small mb-0">Dorado o plateado, para que se note que el addon está andando.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-center small mt-3">Todos los avisos se pueden apagar desde la pestaña Opciones.</p>
+                    </section>
+
+                    <!-- INSTALACIÓN -->
+                    <section class="py-4">
+                        <h2 class="text-warning fw-bold text-center mb-4">Instalación en 5 pasos</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9">
+                                <div class="card community-card text-light border-secondary rounded-4 p-3">
+                                    <div class="card-body">
+                                        <ol class="list-unstyled mb-0">
+                                            <li class="d-flex mb-3">
+                                                <span class="badge step-badge rounded-pill me-3 align-self-start">1</span>
+                                                <span>Descargá el ZIP de arriba y <strong>descomprimilo</strong>.</span>
+                                            </li>
+                                            <li class="d-flex mb-3">
+                                                <span class="badge step-badge rounded-pill me-3 align-self-start">2</span>
+                                                <span>Copiá la carpeta <code>LaLegionDelAsado</code> dentro de la carpeta de addons de tu juego (tabla de abajo).</span>
+                                            </li>
+                                            <li class="d-flex mb-3">
+                                                <span class="badge step-badge rounded-pill me-3 align-self-start">3</span>
+                                                <span>Verificá que quede <code>AddOns\LaLegionDelAsado\LaLegionDelAsado.toc</code>, <strong>sin carpetas dobles</strong>.</span>
+                                            </li>
+                                            <li class="d-flex mb-3">
+                                                <span class="badge step-badge rounded-pill me-3 align-self-start">4</span>
+                                                <span><strong>Cerrá el juego por completo</strong> y abrilo de nuevo (con <code>/reload</code> no alcanza).</span>
+                                            </li>
+                                            <li class="d-flex">
+                                                <span class="badge step-badge rounded-pill me-3 align-self-start">5</span>
+                                                <span>Dentro del juego escribí <code>/asado</code> o hacé click en el botón del minimapa. ¡Listo!</span>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div class="table-responsive mt-4">
+                                    <table class="table table-dark table-striped align-middle mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Cliente</th>
+                                                <th>Carpeta de addons</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Retail</td>
+                                                <td><code>World of Warcraft\_retail_\Interface\AddOns\</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td>WoW: Forever (beta)</td>
+                                                <td><code>World of Warcraft\_classic_beta_\Interface\AddOns\</code></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="small mt-2">Al lanzamiento de Forever la carpeta puede cambiar. Si no la encontrás, en Battle.net:
+                                    Opciones → Mostrar en el explorador.</p>
+                                <p class="small"><strong>Para actualizar:</strong> reemplazá la carpeta por la nueva. Tus datos y opciones se conservan.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- COMANDOS -->
+                    <section class="py-4">
+                        <h2 class="text-warning fw-bold text-center mb-4">Comandos útiles</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9">
+                                <div class="table-responsive">
+                                    <table class="table table-dark table-striped align-middle mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Comando</th>
+                                                <th>Qué hace</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td><code>/asado</code></td><td>Abre la Parrilla</td></tr>
+                                            <tr><td><code>/asado ranking</code> · <code>niveles</code> · <code>pvp</code> · <code>ruleta</code></td><td>Abre cada pestaña</td></tr>
+                                            <tr><td><code>/asado dragon oro</code> · <code>plata</code> · <code>off</code></td><td>Cambia el dragón del retrato</td></tr>
+                                            <tr><td><code>/asado sonido muerte</code> · <code>todos</code></td><td>Prueba un sonido, o todos en orden</td></tr>
+                                            <tr><td><code>/asado sync</code></td><td>Le pide a la guild los datos que te falten</td></tr>
+                                            <tr><td><code>/asado diag</code></td><td>Chequeo técnico (útil para reportar errores)</td></tr>
+                                            <tr><td><code>/asado puntos &lt;nombre&gt; &lt;n&gt; [motivo]</code></td><td>Solo oficiales: da puntos</td></tr>
+                                            <tr><td><code>/asado lista [puntos] [motivo]</code></td><td>Solo oficiales: pase de lista a los de la guild en el grupo</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- PREGUNTAS FRECUENTES -->
+                    <section class="py-4">
+                        <h2 class="text-warning fw-bold text-center mb-4">Preguntas frecuentes</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9">
+                                <div class="accordion" id="faqAddon" data-bs-theme="dark">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq1">
+                                                No me aparece en la lista de addons
+                                            </button>
+                                        </h3>
+                                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAddon">
+                                            <div class="accordion-body">
+                                                Revisá que la ruta sea <code>_retail_</code> o <code>_classic_beta_</code>, que no haya una
+                                                carpeta doble y que hayas reiniciado el juego. Si aparece en gris, tildá
+                                                "Cargar addons desactualizados".
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                No veo el logo o veo un cuadrado
+                                            </button>
+                                        </h3>
+                                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAddon">
+                                            <div class="accordion-body">
+                                                Reiniciá el juego por completo: las imágenes nuevas no se cargan con <code>/reload</code>.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq3">
+                                                ¿Qué datos comparte el addon?
+                                            </button>
+                                        </h3>
+                                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAddon">
+                                            <div class="accordion-body">
+                                                El addon <strong>no se conecta a internet</strong>. Entre los miembros de la guild que lo tengan
+                                                instalado se comparte, por el canal interno del juego: nivel, muertes (con la zona), bajas PvP y
+                                                puntos. Nada más.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq4">
+                                                ¿Por qué no dice quién me mató?
+                                            </button>
+                                        </h3>
+                                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAddon">
+                                            <div class="accordion-body">
+                                                En estos clientes el registro de combate está cerrado para los addons, así que no hay forma de saberlo.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq5">
+                                                Me tira un error
+                                            </button>
+                                        </h3>
+                                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAddon">
+                                            <div class="accordion-body">
+                                                Activá los errores con <code>/console scriptErrors 1</code>, repetí lo que hacías y pasanos el
+                                                mensaje por el Discord. Si tenés BugSack, mejor.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq6">
+                                                Lo instalé desde CurseForge y no suenan los sonidos de la guild
+                                            </button>
+                                        </h3>
+                                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAddon">
+                                            <div class="accordion-body">
+                                                La versión de CurseForge usa sonidos del juego. Para tener los de la guild bajá el
+                                                <a href="../descargas/LaLegionDelAsado-Sonidos.zip" class="text-warning" download>pack de sonidos</a>
+                                                y descomprimilo dentro de la carpeta <code>AddOns</code> (se funde con la del addon).
+                                                Después reiniciá el juego y probalos con <code>/asado sonido todos</code>.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- DISCORD -->
+                    <section class="py-4 text-center">
+                        <h2 class="text-warning fw-bold">¿Querés ayudar o contarnos algo?</h2>
+                        <p class="text-light lead">Reportá errores, proponé ideas o mostrá tu dragón en el Discord de la guild.</p>
+                        <a href="https://discord.gg/RsEyM5frhT" target="_blank"
+                            class="btn btn-discord btn-lg fw-bold rounded-pill shadow-sm">
+                            <i class="fab fa-discord me-2"></i> Ir al Discord
+                        </a>
+                    </section>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../img/nuevoLLAN.avif" alt="Logo de LA Legión del Asado">
+            </div>
+            <div class="footer-sections">
+                <div class="footer-column">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./addon.html">Addon de la guild</a></li>
+                        <li><a href="./terminos-condiciones.html">Términos y Condiciones</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./politica-privacidad.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Quiénes Somos</h4>
+                    <ul>
+                        <li><a href="./quienes-somos.html">Nuestra historia</a></li>
+                        <li><a href="./unete.html">Únete</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 La Legión del Asado. World of Warcraft y sus imágenes son propiedad de Blizzard
+                Entertainment. Este sitio no está afiliado ni respaldado por Blizzard. Sitio web creado por Mouse. Todos
+                los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
