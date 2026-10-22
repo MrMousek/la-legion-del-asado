@@ -1,5 +1,55 @@
 [
     {
+        "id": "noticia8",
+        "titulo": "¡Nuestro addon ya está disponible en CurseForge!",
+        "fecha": "2026-10-20T14:25:00",
+        "texto": "¡El addon de La Legión del Asado fue aprobado en CurseForge! Conocé sus funciones y cómo descargarlo.",
+        "imagen": "../img/cursexasado.avif",
+        "categoria": "noticia",
+        "contenido": [
+            {
+                "tipo": "parrafo",
+                "texto": "¡Tenemos una linda noticia para compartir! Nuestro addon <b>La Legión del Asado</b> fue aprobado y publicado en <b>CurseForge</b>."
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Lo que empezó como una idea para sumar humor argentino a nuestras aventuras en Azeroth ahora está disponible para que más jugadores puedan disfrutarlo."
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "¿Qué trae el addon?"
+            },
+            {
+                "tipo": "lista",
+                "items": [
+                    "La Parrilla: información de la hermandad y accesos a nuestra comunidad.",
+                    "Ruleta del Fernet: sorteos meme para el grupo.",
+                    "Asador y Pollo del Mes: rankings y reconocimientos.",
+                    "Avisos de muertes, niveles y PvP.",
+                    "Locutor del Barrio: sonidos para distintos momentos del juego.",
+                    "Dragón en el retrato: un detalle visual para tu personaje."
+                ]
+            },
+            {
+                "tipo": "subtitulo",
+                "texto": "¡Ya estamos en CurseForge!"
+            },
+            {
+                "tipo": "parrafo",
+                "texto": "Podés conocer todas las funciones y consultar cómo instalarlo desde nuestra página del addon."
+            },
+            {
+                "tipo": "link",
+                "texto": "Ver nuestro addon y cómo instalarlo",
+                "url": "https://www.curseforge.com/wow/addons/la-legion-del-asado-guild-addon/preview"
+            },
+            {
+                "tipo": "blockquote",
+                "texto": "Gracias a todos los que acompañan este proyecto. ¡Nos vemos en Azeroth, culiaos!"
+            }
+        ]
+    },
+    {
     "id": "noticia7",
     "titulo": "¡Completamos la Gloria del Asaltante de Ny'alotha!",
     "fecha": "2026-10-03T13:00:00",
@@ -301,5 +351,5 @@
                 "url": "https://discord.gg/jhcePpuMt5"
             }
         ]
-    } 
+    }
 ]
