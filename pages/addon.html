@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Addon oficial - La Legión del Asado</title>
     <meta name="description"
-        content="Descargá el addon oficial de La Legión del Asado, ya en CurseForge para Retail (y pronto en WoW Forever): parrilla de guild, ruleta del fernet, rankings, avisos de muertes, niveles y PvP." />
+        content="Descargá el addon oficial de La Legión del Asado, hecho para WoW Forever y ya en CurseForge para Retail: compañeros cerca en el mapa, Himno Nacional, parrilla de guild, ruleta del fernet, rankings, avisos de muertes, niveles y PvP." />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- FontAwesome para íconos -->
@@ -64,17 +64,18 @@
 
                     <!-- TÍTULO + DESCARGA -->
                     <section class="text-center py-4">
+                        <div style="height:6px;border-radius:3px;background:linear-gradient(to bottom,#74ACDF 0 33.3%,#FFFFFF 33.3% 66.6%,#74ACDF 66.6% 100%);width:120px;margin:0 auto 1.25rem;" aria-hidden="true"></div>
                         <img src="../img/nuevoLLAN.avif" alt="Logo de La Legión del Asado" class="img-fluid mb-3"
                             style="max-width: 170px; border-radius: 50%;">
                         <h2 class="text-warning fw-bold">Addon oficial de La Legión del Asado</h2>
                         <p class="text-light lead mt-2">
-                            Todo lo que hace especial a la guild, adentro del juego. Gratis, sin conexión a internet
+                            Todo lo que hace especial a la guild, adentro de WoW Forever. Gratis, sin conexión a internet
                             y con mística de barrio.
                         </p>
                         <div class="mb-3">
-                            <span class="badge text-bg-warning me-1">v0.7.2</span>
-                            <span class="badge text-bg-success me-1">Retail · Disponible en CurseForge</span>
-                            <span class="badge text-bg-secondary">WoW: Forever · Próximamente</span>
+                            <span class="badge text-bg-warning me-1">v0.9 beta</span>
+                            <span class="badge me-1" style="background:#74ACDF;color:#1B1B1F;">WoW: Forever 1.60.1 · Pensado para este cliente</span>
+                            <span class="badge text-bg-success">Retail · Disponible en CurseForge</span>
                         </div>
                         <div class="d-flex flex-wrap gap-2 justify-content-center">
                             <a href="https://www.curseforge.com/wow/addons/la-legion-del-asado" target="_blank" rel="noopener"
@@ -86,7 +87,7 @@
                                 Descarga directa (.zip)
                             </a>
                         </div>
-                        <p class="small mt-3 mb-0">Con la app de CurseForge se actualiza solo. WoW: Forever lo sumamos cuando salga (4 de noviembre).</p>
+                        <p class="small mt-3 mb-0">Con la app de CurseForge se actualiza solo. En CurseForge hoy está para Retail; la versión para Forever la sumamos apenas termine de probarse.</p>
                         <p class="small mt-3">¿Dudas o errores? Pasate por nuestro
                             <a href="https://discord.gg/RsEyM5frhT" target="_blank" class="text-warning">Discord</a>.
                         </p>
@@ -152,6 +153,20 @@
                                     <p class="small mb-0">Dorado o plateado, para que se note que el addon está andando.</p>
                                 </div>
                             </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
+                                    <div class="feature-icon mb-2"><i class="fas fa-location-dot"></i></div>
+                                    <h3 class="fs-5 fw-bold">Compañeros cerca</h3>
+                                    <p class="small mb-0">Opcional: los que quieran aparecen en el mapa del mundo y en un indicador chiquito junto al minimapa. Vos decidís si compartir.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
+                                    <div class="feature-icon mb-2"><i class="fas fa-music"></i></div>
+                                    <h3 class="fs-5 fw-bold">Himno Nacional</h3>
+                                    <p class="small mb-0">El GM o un oficial lo pone y suena para toda la guild. ¡De pie, Legión!</p>
+                                </div>
+                            </div>
                         </div>
                         <p class="text-center small mt-3">Todos los avisos se pueden apagar desde la pestaña Opciones.</p>
                     </section>
@@ -211,7 +226,7 @@
                                                 <td><code>World of Warcraft\_retail_\Interface\AddOns\</code></td>
                                             </tr>
                                             <tr>
-                                                <td>WoW: Forever (próximamente)</td>
+                                                <td>WoW: Forever (1.60.1)</td>
                                                 <td><code>World of Warcraft\_classic_beta_\Interface\AddOns\</code></td>
                                             </tr>
                                         </tbody>
@@ -241,6 +256,10 @@
                                             <tr><td><code>/asado</code></td><td>Abre la Parrilla</td></tr>
                                             <tr><td><code>/asado ranking</code> · <code>niveles</code> · <code>pvp</code> · <code>ruleta</code></td><td>Abre cada pestaña</td></tr>
                                             <tr><td><code>/asado dragon oro</code> · <code>plata</code> · <code>off</code></td><td>Cambia el dragón del retrato</td></tr>
+                                            <tr><td><code>/asado ubicacion on</code> · <code>off</code></td><td>Compartir (o dejar de compartir) tu ubicación con la guild</td></tr>
+                                            <tr><td><code>/asado cerca reset</code></td><td>Devuelve el indicador de proximidad a su lugar (se mueve con Shift + arrastrar)</td></tr>
+                                            <tr><td><code>/asado himno</code></td><td>Solo GM y oficiales: pone el Himno Nacional para toda la guild</td></tr>
+                                            <tr><td><code>/asado himno stop</code></td><td>Corta el himno (solo para vos)</td></tr>
                                             <tr><td><code>/asado sonido muerte</code> · <code>todos</code></td><td>Prueba un sonido, o todos en orden</td></tr>
                                             <tr><td><code>/asado sync</code></td><td>Le pide a la guild los datos que te falten</td></tr>
                                             <tr><td><code>/asado diag</code></td><td>Chequeo técnico (útil para reportar errores)</td></tr>
@@ -298,7 +317,7 @@
                                             <div class="accordion-body">
                                                 El addon <strong>no se conecta a internet</strong>. Entre los miembros de la guild que lo tengan
                                                 instalado se comparte, por el canal interno del juego: nivel, muertes (con la zona), bajas PvP y
-                                                puntos. Nada más.
+                                                puntos. Tu ubicación <strong>solo</strong> si vos la activás. Nada más.
                                             </div>
                                         </div>
                                     </div>
@@ -332,14 +351,45 @@
                                     <div class="accordion-item">
                                         <h3 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq8">
+                                                ¿Ven dónde estoy todo el tiempo?
+                                            </button>
+                                        </h3>
+                                        <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAddon">
+                                            <div class="accordion-body">
+                                                No. Tu ubicación viene <strong>apagada</strong>. Si la activás, solo la ven los de tu guild que
+                                                tengan el addon, no se guarda en ningún lado, no se envía dentro de instancias y desaparece
+                                                a los pocos segundos de que dejes de compartir. Se apaga con <code>/asado ubicacion off</code>.
+                                                Ver a los demás en el mapa no requiere compartir la tuya.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq9">
+                                                ¿Quién puede poner el himno?
+                                            </button>
+                                        </h3>
+                                        <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAddon">
+                                            <div class="accordion-body">
+                                                Solo el GM y los oficiales, con <code>/asado himno</code>. Suena para todos los que tengan el addon,
+                                                pero cada uno puede apagarlo en Opciones o cortarlo con <code>/asado himno stop</code>. No suena
+                                                en medio de una pelea de jefe y tiene un enfriamiento de 5 minutos.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#faq7">
                                                 ¿Funciona en WoW: Forever?
                                             </button>
                                         </h3>
                                         <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAddon">
                                             <div class="accordion-body">
-                                                Lo estamos preparando para el lanzamiento (4 de noviembre). Cuando esté confirmado y probado,
-                                                lo publicamos en CurseForge y avisamos por el Discord.
+                                                Es el foco del addon: está hecho para WoW: Forever (1.60.1). Lo estamos probando en el cliente y, apenas
+                                                esté confirmado, lo publicamos en CurseForge para Forever y avisamos por el Discord.
                                             </div>
                                         </div>
                                     </div>
