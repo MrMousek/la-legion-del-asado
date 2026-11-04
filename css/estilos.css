@@ -2159,3 +2159,24 @@ footer .footer-logo .footer-column a {
 }
 
 /*# sourceMappingURL=estilos.css.map */
+
+
+/* WoW Forever: cierre del contador y celebración liviana */
+.forever-countdown { position: relative; isolation: isolate; overflow: hidden; }
+.forever-countdown .forever-content, .forever-countdown .forever-bottom { position: relative; z-index: 2; }
+.forever-launched .countdown { display: flex; width: 100%; justify-content: center; align-items: center; }
+.forever-launched .countdown .forever-launch-message { display: flex; flex-direction: column; align-items: center; gap: .65rem; width: 100%; padding: 1.3rem .75rem; text-align: center; animation: forever-reveal .8s ease both; }
+.forever-launch-kicker { color: #74acdf; font: 700 .85rem 'Montserrat',sans-serif; letter-spacing: .2em; }
+.forever-launched .countdown .forever-launch-message strong { display: block; font: 800 clamp(1.35rem, 4vw, 2.7rem)/1.15 'Montserrat',sans-serif; color: #fff; text-shadow: 0 2px 15px #000, 0 0 24px #ff6f0060; }
+.forever-launch-subtitle { font-size: clamp(.95rem, 2vw, 1.25rem); color: #ffd5a7; }
+.forever-launch-faction { font-size: clamp(.75rem, 1.7vw, 1rem); color: #f4f4f4; }
+.forever-party-layer { position: absolute; inset: 0; z-index: 3; overflow: hidden; pointer-events: none; }
+.forever-party-item { position: absolute; top: var(--top); left: -4rem; font-size: clamp(1.4rem, 3.5vw, 2.4rem); animation: forever-fly var(--duration) linear var(--delay) both; filter: drop-shadow(0 3px 4px #0009); }
+.forever-party-item.reverse { left: auto; right: -4rem; animation-name: forever-fly-reverse; }
+.forever-confetti { position: absolute; top: -12px; left: var(--left); width: 7px; height: 13px; background: #74acdf; animation: forever-fall var(--duration) ease-in var(--delay) both; }
+.forever-confetti:nth-of-type(3n) { background: #fff; }
+@keyframes forever-fly { from { transform: translateX(0) rotate(-18deg); opacity: 0; } 10%,85% {opacity:1} to { transform: translateX(calc(100vw + 8rem)) rotate(22deg); opacity:0; } }
+@keyframes forever-fly-reverse { from { transform: translateX(0) rotate(18deg); opacity:0 } 10%,85% {opacity:1} to { transform: translateX(calc(-100vw - 8rem)) rotate(-22deg); opacity:0 } }
+@keyframes forever-fall { from {transform:translateY(-10px) rotate(0);opacity:1} to {transform:translateY(550px) rotate(500deg);opacity:0} }
+@keyframes forever-reveal { from {transform:translateY(10px);opacity:0} to {transform:translateY(0);opacity:1} }
+@media (prefers-reduced-motion: reduce) { .forever-launch-message { animation:none !important; } .forever-party-layer {display:none} }
