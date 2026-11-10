@@ -2,11 +2,17 @@
 const HASHTAG = "#wowxasado";
 const GAME_NAME = "World of Warcraft";
 
-// Cantidad de páginas de transmisiones que revisamos.
-// Cada página contiene hasta 100 directos.
-const MAX_PAGES = 5;
+// Cantidad de páginas públicas a revisar.
+// Cada página contiene hasta 100 transmisiones.
+const MAX_PAGES = 10;
 
-const CACHE_SECONDS = 180;
+// Canales conocidos de La Legión del Asado.
+// Siempre se consultan, aunque tengan pocos espectadores.
+const GUILD_STREAMERS = [
+    "mouse_hc"
+];
+
+const CACHE_SECONDS = 60;
 
 exports.handler = async function () {
     const {
@@ -14,14 +20,16 @@ exports.handler = async function () {
         TWITCH_CLIENT_SECRET
     } = process.env;
 
-    const jsonResponse = (statusCode, data) => ({
-        statusCode,
-        headers: {
-            "Content-Type": "application/json; charset=utf-8",
-            "Cache-Control": `public, max-age=${CACHE_SECONDS}`
-        },
-        body: JSON.stringify(data)
-    });
+    function jsonResponse(statusCode, data) {
+        return {
+            statusCode,
+            headers: {
+                "Content-Type": "application/json; charset=utf-8",
+                "Cache-Control": `public, max-age=${CACHE_SECONDS}`
+            },
+            body: JSON.stringify(data)
+        };
+    }
 
     if (!TWITCH_CLIENT_ID || !TWITCH_CLIENT_SECRET) {
         return jsonResponse(500, {
@@ -30,7 +38,10 @@ exports.handler = async function () {
     }
 
     try {
-        // 1. Obtener token OAuth
+        // =========================================
+        // 1. AUTENTICACIÓN CON TWITCH
+        // =========================================
+
         const tokenParams = new URLSearchParams({
             client_id: TWITCH_CLIENT_ID,
             client_secret: TWITCH_CLIENT_SECRET,
@@ -51,18 +62,23 @@ exports.handler = async function () {
 
         if (!tokenRes.ok) {
             throw new Error(
-                `Error de autenticación Twitch: ${tokenRes.status}`
+                `Error de autenticación: ${tokenRes.status}`
             );
         }
 
         const tokenData = await tokenRes.json();
+
+        if (!tokenData.access_token) {
+            throw new Error(
+                "Twitch no devolvió un access_token."
+            );
+        }
 
         const headers = {
             "Client-ID": TWITCH_CLIENT_ID,
             "Authorization": `Bearer ${tokenData.access_token}`
         };
 
-        // Función auxiliar para consultar Twitch
         async function twitchGet(endpoint) {
             const response = await fetch(
                 `https://api.twitch.tv/helix/${endpoint}`,
@@ -70,6 +86,14 @@ exports.handler = async function () {
             );
 
             if (!response.ok) {
+                const details = await response.text();
+
+                console.error(
+                    "Error Twitch API:",
+                    response.status,
+                    details
+                );
+
                 throw new Error(
                     `Error Twitch API: ${response.status}`
                 );
@@ -78,7 +102,10 @@ exports.handler = async function () {
             return response.json();
         }
 
-        // 2. Buscar la categoría World of Warcraft
+        // =========================================
+        // 2. BUSCAR CATEGORÍA WORLD OF WARCRAFT
+        // =========================================
+
         const gamesData = await twitchGet(
             `games?name=${encodeURIComponent(GAME_NAME)}`
         );
@@ -94,10 +121,14 @@ exports.handler = async function () {
             );
         }
 
-        // 3. Recorrer las transmisiones de WoW
+        // =========================================
+        // 3. DESCUBRIMIENTO PÚBLICO POR HASHTAG
+        // =========================================
+
+        const matches = new Map();
+
         let cursor = null;
         let scanned = 0;
-        const matches = [];
 
         for (let page = 0; page < MAX_PAGES; page++) {
             const params = new URLSearchParams({
@@ -118,16 +149,12 @@ exports.handler = async function () {
 
             scanned += streams.length;
 
-            // 4. Filtrar por hashtag
             for (const stream of streams) {
-                const title = stream.title || "";
+                const title = (stream.title || "")
+                    .toLowerCase();
 
-                if (
-                    title.toLowerCase().includes(
-                        HASHTAG.toLowerCase()
-                    )
-                ) {
-                    matches.push(stream);
+                if (title.includes(HASHTAG.toLowerCase())) {
+                    matches.set(stream.user_id, stream);
                 }
             }
 
@@ -138,11 +165,71 @@ exports.handler = async function () {
             }
         }
 
-        // 5. Obtener avatares de los canales encontrados
+        console.log(
+            `Descubrimiento público: ${scanned} streams revisados.`
+        );
+
+        // =========================================
+        // 4. CONSULTAR CANALES DE LA GUILD
+        // =========================================
+
+        // Esto permite detectar canales pequeños,
+        // aunque no aparezcan en las primeras páginas.
+
+        if (GUILD_STREAMERS.length > 0) {
+            for (
+                let i = 0;
+                i < GUILD_STREAMERS.length;
+                i += 100
+            ) {
+                const batch = GUILD_STREAMERS.slice(
+                    i,
+                    i + 100
+                );
+
+                const params = new URLSearchParams({
+                    first: "100"
+                });
+
+                batch.forEach(login => {
+                    params.append("user_login", login);
+                });
+
+                const guildData = await twitchGet(
+                    `streams?${params.toString()}`
+                );
+
+                for (const stream of guildData.data || []) {
+                    const title = (stream.title || "")
+                        .toLowerCase();
+
+                    const hasHashtag = title.includes(
+                        HASHTAG.toLowerCase()
+                    );
+
+                    const isWoW = stream.game_id === game.id;
+
+                    if (hasHashtag && isWoW) {
+                        matches.set(stream.user_id, stream);
+                    }
+                }
+            }
+        }
+
+        // =========================================
+        // 5. OBTENER AVATARES DE LOS STREAMERS
+        // =========================================
+
+        const foundStreams = [...matches.values()];
+
         const users = new Map();
 
-        for (let i = 0; i < matches.length; i += 100) {
-            const batch = matches.slice(i, i + 100);
+        for (
+            let i = 0;
+            i < foundStreams.length;
+            i += 100
+        ) {
+            const batch = foundStreams.slice(i, i + 100);
 
             const params = new URLSearchParams();
 
@@ -159,9 +246,18 @@ exports.handler = async function () {
             }
         }
 
-        // 6. Preparar los resultados
-        const result = matches.map(stream => {
+        // =========================================
+        // 6. PREPARAR RESULTADOS PARA EL FRONTEND
+        // =========================================
+
+        const result = foundStreams.map(stream => {
             const user = users.get(stream.user_id);
+
+            const thumbnail = (
+                stream.thumbnail_url || ""
+            )
+                .replace("{width}", "640")
+                .replace("{height}", "360");
 
             return {
                 id: stream.user_id,
@@ -169,13 +265,12 @@ exports.handler = async function () {
                 display_name: stream.user_name,
                 profile_image_url:
                     user?.profile_image_url || "",
+                description: user?.description || "",
                 is_live: true,
                 title: stream.title,
                 game_name: stream.game_name,
                 viewer_count: stream.viewer_count,
-                thumbnail_url: stream.thumbnail_url
-                    .replace("{width}", "640")
-                    .replace("{height}", "360"),
+                thumbnail_url: thumbnail,
                 started_at: stream.started_at,
                 url: `https://www.twitch.tv/${
                     encodeURIComponent(stream.user_login)
@@ -188,10 +283,17 @@ exports.handler = async function () {
             (a, b) => b.viewer_count - a.viewer_count
         );
 
+        console.log(
+            `#wowxasado: ${result.length} streamers encontrados.`
+        );
+
         return jsonResponse(200, result);
 
     } catch (err) {
-        console.error("Error en getStreamers:", err);
+        console.error(
+            "Error en getStreamers:",
+            err
+        );
 
         return jsonResponse(500, {
             error: "No se pudieron obtener los streamers."
