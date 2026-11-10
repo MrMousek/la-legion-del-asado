@@ -1802,6 +1802,133 @@ SECCIÓN VOTACIÓN GUILD WOW FOREVER
   background-color: #4752C4;
 }
 
+/* LA LEGIÓN DEL ASADO - STREAMERS */
+.streamer-card {
+  background: #171b22;
+  border: 1px solid #303640;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.streamer-card:hover {
+  border-color: #c9a46b;
+  transform: translateY(-3px);
+}
+
+.streamer-preview {
+  position: relative;
+  aspect-ratio: 16/9;
+  background: #101319;
+  overflow: hidden;
+}
+
+.streamer-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.streamer-live-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #b93434;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 9px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+
+.streamer-viewers {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 12px;
+  padding: 5px 9px;
+  border-radius: 5px;
+}
+
+.streamer-info {
+  padding: 18px;
+}
+
+.streamer-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.streamer-user .avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.streamer-user h5 {
+  color: #f0f0f0;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.streamer-title {
+  color: #d5d5d5;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+
+.streamer-game {
+  color: #c9a46b;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.streamer-info .btn {
+  display: inline-block;
+  background: #c9a46b;
+  color: #141414;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 15px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.streamer-info .btn:hover {
+  background: #e0bd84;
+  color: #141414;
+}
+
+.streamers-empty {
+  padding: 40px 20px;
+  color: #aeb5bf;
+}
+
+.streamers-empty h4 {
+  color: #f0f0f0;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 767px) {
+  .streamer-info {
+    padding: 15px;
+  }
+  .streamer-user h5 {
+    font-size: 16px;
+  }
+}
 footer {
   background-color: #111111;
   padding: 1%;
@@ -2159,24 +2286,3 @@ footer .footer-logo .footer-column a {
 }
 
 /*# sourceMappingURL=estilos.css.map */
-
-
-/* WoW Forever: cierre del contador y celebración liviana */
-.forever-countdown { position: relative; isolation: isolate; overflow: hidden; }
-.forever-countdown .forever-content, .forever-countdown .forever-bottom { position: relative; z-index: 2; }
-.forever-launched .countdown { display: flex; width: 100%; justify-content: center; align-items: center; }
-.forever-launched .countdown .forever-launch-message { display: flex; flex-direction: column; align-items: center; gap: .65rem; width: 100%; padding: 1.3rem .75rem; text-align: center; animation: forever-reveal .8s ease both; }
-.forever-launch-kicker { color: #74acdf; font: 700 .85rem 'Montserrat',sans-serif; letter-spacing: .2em; }
-.forever-launched .countdown .forever-launch-message strong { display: block; font: 800 clamp(1.35rem, 4vw, 2.7rem)/1.15 'Montserrat',sans-serif; color: #fff; text-shadow: 0 2px 15px #000, 0 0 24px #ff6f0060; }
-.forever-launch-subtitle { font-size: clamp(.95rem, 2vw, 1.25rem); color: #ffd5a7; }
-.forever-launch-faction { font-size: clamp(.75rem, 1.7vw, 1rem); color: #f4f4f4; }
-.forever-party-layer { position: absolute; inset: 0; z-index: 3; overflow: hidden; pointer-events: none; }
-.forever-party-item { position: absolute; top: var(--top); left: -4rem; font-size: clamp(1.4rem, 3.5vw, 2.4rem); animation: forever-fly var(--duration) linear var(--delay) both; filter: drop-shadow(0 3px 4px #0009); }
-.forever-party-item.reverse { left: auto; right: -4rem; animation-name: forever-fly-reverse; }
-.forever-confetti { position: absolute; top: -12px; left: var(--left); width: 7px; height: 13px; background: #74acdf; animation: forever-fall var(--duration) ease-in var(--delay) both; }
-.forever-confetti:nth-of-type(3n) { background: #fff; }
-@keyframes forever-fly { from { transform: translateX(0) rotate(-18deg); opacity: 0; } 10%,85% {opacity:1} to { transform: translateX(calc(100vw + 8rem)) rotate(22deg); opacity:0; } }
-@keyframes forever-fly-reverse { from { transform: translateX(0) rotate(18deg); opacity:0 } 10%,85% {opacity:1} to { transform: translateX(calc(-100vw - 8rem)) rotate(-22deg); opacity:0 } }
-@keyframes forever-fall { from {transform:translateY(-10px) rotate(0);opacity:1} to {transform:translateY(550px) rotate(500deg);opacity:0} }
-@keyframes forever-reveal { from {transform:translateY(10px);opacity:0} to {transform:translateY(0);opacity:1} }
-@media (prefers-reduced-motion: reduce) { .forever-launch-message { animation:none !important; } .forever-party-layer {display:none} }
