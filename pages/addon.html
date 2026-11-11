@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Addon oficial - La Legión del Asado</title>
     <meta name="description"
-        content="Descargá el addon oficial de La Legión del Asado, hecho para WoW Forever y ya en CurseForge para Retail: compañeros cerca en el mapa, Himno Nacional, parrilla de guild, ruleta del fernet, rankings, avisos de muertes, niveles y PvP." />
+        content="Descargá el addon oficial de La Legión del Asado, hecho para WoW Forever y ya en CurseForge para Retail: compañeros cerca en el mapa, Himno Nacional, parrilla de guild, ruleta del fernet, rankings, avisos de muertes, niveles, PvP y pedidos de ayuda en mundo abierto." />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- FontAwesome para íconos -->
@@ -73,7 +73,7 @@
                             y con mística de barrio.
                         </p>
                         <div class="mb-3">
-                            <span class="badge text-bg-warning me-1">v0.9 beta</span>
+                            <span class="badge text-bg-warning me-1">v0.9.5</span>
                             <span class="badge me-1" style="background:#74ACDF;color:#1B1B1F;">WoW: Forever 1.60.1 · Pensado para este cliente</span>
                             <span class="badge text-bg-success">Retail · Disponible en CurseForge</span>
                         </div>
@@ -136,7 +136,14 @@
                                 <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
                                     <div class="feature-icon mb-2"><i class="fas fa-crosshairs"></i></div>
                                     <h3 class="fs-5 fw-bold">PvP</h3>
-                                    <p class="small mb-0">El Carnicero del Mes, primera sangre e hitos de bajas. Sirve para cualquier facción.</p>
+                                    <p class="small mb-0">El Carnicero del Mes, primera sangre, hitos de bajas y alertas para pedir refuerzos. Sirve para cualquier facción.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card feature-card h-100 text-light border-secondary rounded-4 p-3 text-center">
+                                    <div class="feature-icon mb-2"><i class="fas fa-shield-halved"></i></div>
+                                    <h3 class="fs-5 fw-bold">Pedí ayuda</h3>
+                                    <p class="small mb-0">¿Te están gankeando? Pedí refuerzos con <code>/asado sos</code>, organizá una reunión PvP y marcá las alertas en el mapa. Con avisos y sonidos configurables.</p>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3">
@@ -260,7 +267,10 @@
                                             <tr><td><code>/asado cerca reset</code></td><td>Devuelve el indicador de proximidad a su lugar (se mueve con Shift + arrastrar)</td></tr>
                                             <tr><td><code>/asado himno</code></td><td>Solo GM y oficiales: pone el Himno Nacional para toda la guild (además suena solo a las 00:00)</td></tr>
                                             <tr><td><code>/asado himno hora</code></td><td>Muestra la hora argentina y cuánto falta para el himno de las 00:00</td></tr>
-                                            <tr><td><code>/asado quien</code></td><td>Abre la lista de quién tiene el addon y con qué versión</td></tr>
+                                                                                         <tr><td><code>/asado sos [mensaje]</code></td><td>Pide ayuda a la guild: alarma y marca roja en el mapa durante 3 minutos</td></tr>
+                                             <tr><td><code>/asado reunion [mensaje]</code></td><td>Convoca una reunión PvP con marca dorada durante 10 minutos</td></tr>
+                                             <tr><td><code>/asado ir</code></td><td>Marca en tu mapa la ubicación de la última alerta</td></tr>
+<tr><td><code>/asado quien</code></td><td>Abre la lista de quién tiene el addon y con qué versión</td></tr>
                                             <tr><td><code>/asado himno stop</code></td><td>Corta el himno (solo para vos)</td></tr>
                                             <tr><td><code>/asado sonido muerte</code> · <code>todos</code></td><td>Prueba un sonido, o todos en orden</td></tr>
                                             <tr><td><code>/asado sync</code></td><td>Le pide a la guild los datos que te falten</td></tr>
@@ -319,7 +329,7 @@
                                             <div class="accordion-body">
                                                 El addon <strong>no se conecta a internet</strong>. Entre los miembros de la guild que lo tengan
                                                 instalado se comparte, por el canal interno del juego: nivel, muertes (con la zona), bajas PvP y
-                                                puntos. Tu ubicación <strong>solo</strong> si vos la activás. Nada más.
+                                                puntos. Tu ubicación se comparte según tu configuración y, al pedir ayuda o convocar una reunión PvP, se envía la ubicación puntual de esa alerta.
                                             </div>
                                         </div>
                                     </div>
@@ -359,7 +369,7 @@
                                         </h3>
                                         <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAddon">
                                             <div class="accordion-body">
-                                                No. Tu ubicación viene <strong>apagada</strong>. Si la activás, solo la ven los de tu guild que
+                                                No. En instalaciones nuevas, compartir ubicación viene <strong>activado</strong>; si ya la tenías apagada, se respeta esa preferencia. Si la activás, solo la ven los de tu guild que
                                                 tengan el addon, no se guarda en ningún lado, no se envía dentro de instancias y desaparece
                                                 a los pocos segundos de que dejes de compartir. Se apaga con <code>/asado ubicacion off</code>.
                                                 Ver a los demás en el mapa no requiere compartir la tuya.
@@ -392,6 +402,20 @@
                                             <div class="accordion-body">
                                                 Es el foco del addon: está hecho para WoW: Forever (1.60.1). Lo estamos probando en el cliente y, apenas
                                                 esté confirmado, lo publicamos en CurseForge para Forever y avisamos por el Discord.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqAyuda" aria-expanded="false" aria-controls="faqAyuda">¿Cómo pido ayuda o convoco a la guild para PvP?</button>
+                                        </h3>
+                                        <div id="faqAyuda" class="accordion-collapse collapse" data-bs-parent="#faqAddon">
+                                            <div class="accordion-body">
+                                                Usá <code>/asado sos [mensaje]</code> si te están atacando: la guild recibe una alarma con tu zona y distancia, y una marca roja durante 3 minutos.
+                                                Para organizar un encuentro en mundo abierto, usá <code>/asado reunion [mensaje]</code>: aparece una marca dorada durante 10 minutos.
+                                                Con <code>/asado ir</code> marcás la última alerta en tu mapa. También hay botones en la pestaña PvP.
+                                                Hay un tiempo de espera entre avisos para evitar spam; las alertas y su sonido se pueden desactivar.
+                                                La ubicación de la alerta solo se envía cuando pedís ayuda o convocás una reunión.
                                             </div>
                                         </div>
                                     </div>
