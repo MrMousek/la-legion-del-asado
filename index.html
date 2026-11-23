@@ -329,8 +329,42 @@
                 los derechos reservados.</p>
         </div>
     </footer>
+<!-- POPOUT CAFECITO ENANO -->
+<div class="modal fade" id="cafecitoDwarfModal" tabindex="-1" aria-labelledby="cafecitoDwarfLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-light border border-warning rounded-4 shadow-lg" style="background-color: #16181d;">
+            <div class="modal-header border-0 pb-0">
+                <span class="badge text-bg-warning fw-bold">Taberna de La Legión del Asado</span>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body text-center px-4 pt-2 pb-4">
+                <!-- Reemplazá la ruta con tu imagen del enano en ./img/ -->
+                <img src="./img/enano_cafecito.png" alt="Enano de WoW invitando un cafecito" 
+                     class="img-fluid mb-3" style="max-height: 170px; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.6));">
+                
+                <h3 class="text-warning fw-bold fs-4 mb-2" id="cafecitoDwarfLabel">
+                    ¡Eh, wowero! ¡Aguanta un toque!
+                </h3>
+                
+                <p class="text-light-50 mb-4" style="font-size: 0.95rem; line-height: 1.5;">
+                    Mantener prendido esta banda, la web y los proyectos de <strong>La Legión del Asado</strong> lleva laburo y oro de verdad. Si querés darle una mano a <strong>Mouse</strong> para bancar los gastos de la hermandad, te invitamos a compartir un cafecito con nosotros. <strong>¡Cada granito suma!</strong>
+                </p>
 
+                <div class="d-grid gap-2">
+                    <a href="https://cafecito.app/lalegiondelasado" target="_blank" rel="noopener noreferrer" 
+                       class="btn btn-warning btn-lg fw-bold rounded-pill shadow-sm">
+                        <i class="fas fa-mug-hot me-2"></i> Invitar un Cafecito
+                    </a>
+                    <button type="button" class="btn btn-link text-secondary text-decoration-none btn-sm" data-bs-dismiss="modal">
+                        Quizás más tarde, sigo de paso
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Scripts -->
+        <script src="./js/popout.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
