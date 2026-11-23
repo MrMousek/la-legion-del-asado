@@ -14,7 +14,7 @@ function celebrateForever() {
             <span class="forever-launch-kicker">LA ESPERA TERMINÓ</span>
             <strong>¡FOREVER YA ESTÁ DISPONIBLE!</strong>
             <span class="forever-launch-subtitle">¡Azeroth nos espera loco!</span>
-            <span class="forever-launch-faction">🛡️ Alianza · ⚔️ PvP · 🇦🇷 La Legión del Asado</span>
+            <span class="forever-launch-faction">Estamos jugando en Alianza servidor PvP</span>
         </div>`;
     const bottom = countdownSection.querySelector(".forever-bottom");
     if (bottom) bottom.textContent = "¡Activate ese ferne' y entrá a jugar!";
