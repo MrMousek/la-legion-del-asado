@@ -1,1 +1,788 @@
-{"addonVersion":"0.11.1","archivo":[],"generated":1795842604,"generatedBy":"Mouse","guild":"La Legi\u00f3n del Asado","month":"2026-11","primeros":[{"class":"PALADIN","level":10,"name":"Kelvan","ts":1792629408},{"class":"SHAMAN","level":20,"name":"Lapa","ts":1794011974},{"class":"PALADIN","level":30,"name":"Kelvan","ts":1794279935},{"class":"SHAMAN","level":40,"name":"Lapa","ts":1794783787},{"class":"SHAMAN","level":50,"name":"Lapa","ts":1795098342},{"class":"SHAMAN","level":55,"name":"Cogollo","ts":1795622775}],"rankings":{"asador":[{"class":"PALADIN","name":"Kelvan","points":200},{"class":"ROGUE","name":"Facu","points":110},{"class":"","name":"Elto","points":60},{"class":"PALADIN","name":"Pefeeto","points":50},{"class":"DRUID","name":"Soyun","points":50},{"class":"HUNTER","name":"Toby","points":25},{"class":"HUNTER","name":"Geralt","points":21},{"class":"DRUID","name":"Galardriel","points":11},{"class":"DRUID","name":"Chucho","points":10},{"class":"WARRIOR","name":"Inrarmir","points":10},{"class":"HUNTER","name":"Jos","points":10},{"class":"WARRIOR","name":"Mouse","points":10},{"class":"WARRIOR","name":"Gaha","points":6},{"class":"SHAMAN","name":"Viejo","points":5},{"class":"DRUID","name":"Sospollo","points":3},{"class":"PALADIN","name":"Alucard","points":1},{"class":"PALADIN","name":"El","points":1},{"class":"PRIEST","name":"Hotpants","points":1},{"class":"WARRIOR","name":"Hrafna","points":1},{"class":"PALADIN","name":"Rar","points":1}],"carnicero":[{"class":"PALADIN","kills":575,"name":"Kelvan"},{"class":"ROGUE","kills":567,"name":"Azul"},{"class":"DRUID","kills":491,"name":"Kyori"},{"class":"DRUID","kills":307,"name":"Lizi"},{"class":"SHAMAN","kills":203,"name":"Lapa"},{"class":"PRIEST","kills":190,"name":"Kusanaca"},{"class":"DRUID","kills":170,"name":"Chucho"},{"class":"WARRIOR","kills":158,"name":"Inrarmir"},{"class":"WARRIOR","kills":157,"name":"Mouse"},{"class":"PALADIN","kills":155,"name":"Sir"},{"class":"PALADIN","kills":116,"name":"Evur"},{"class":"WARRIOR","kills":116,"name":"Tipo"},{"class":"HUNTER","kills":113,"name":"Sin"},{"class":"SHAMAN","kills":105,"name":"Tynchito"},{"class":"DRUID","kills":104,"name":"Galardriel"},{"class":"PRIEST","kills":102,"name":"Gordo"},{"class":"WARRIOR","kills":100,"name":"Hrafna"},{"class":"ROGUE","kills":98,"name":"Shimone"},{"class":"WARLOCK","kills":97,"name":"Arcyonarth"},{"class":"","kills":97,"name":"Oliber"}],"logros":[{"class":"HUNTER","count":11,"month":21,"name":"Geralt","points":21},{"class":"WARRIOR","count":5,"month":10,"name":"Inrarmir","points":10},{"class":"WARRIOR","count":5,"month":6,"name":"Gaha","points":6},{"class":"DRUID","count":3,"month":3,"name":"Sospollo","points":3},{"class":"SHAMAN","count":1,"month":5,"name":"Viejo","points":5},{"class":"PALADIN","count":1,"month":1,"name":"Alucard","points":1},{"class":"DRUID","count":1,"month":1,"name":"Galardriel","points":1},{"class":"PRIEST","count":1,"month":1,"name":"Hotpants","points":1},{"class":"WARRIOR","count":1,"month":1,"name":"Hrafna","points":1},{"class":"PALADIN","count":1,"month":1,"name":"Rar","points":1}],"niveles":[{"class":"ROGUE","level":60,"name":"Ditto"},{"class":"SHAMAN","level":58,"name":"Cogollo"},{"class":"SHAMAN","level":56,"name":"Lapa"},{"class":"PALADIN","level":53,"name":"El"},{"class":"WARRIOR","level":53,"name":"Obywan"},{"class":"PALADIN","level":51,"name":"Kelvan"},{"class":"WARRIOR","level":49,"name":"Gaha"},{"class":"PRIEST","level":49,"name":"Esel"},{"class":"PRIEST","level":49,"name":"Macri"},{"class":"WARLOCK","level":48,"name":"Nasferath"},{"class":"SHAMAN","level":48,"name":"Bob"},{"class":"PALADIN","level":48,"name":"Sir"},{"class":"PALADIN","level":48,"name":"Loco"},{"class":"DRUID","level":47,"name":"Lizi"},{"class":"HUNTER","level":47,"name":"Jos"},{"class":"ROGUE","level":47,"name":"Facu"},{"class":"PRIEST","level":47,"name":"Fek"},{"class":"DRUID","level":45,"name":"Galardriel"},{"class":"MAGE","level":45,"name":"Ram"},{"class":"PALADIN","level":45,"name":"Rar"}],"pollo":[{"class":"WARLOCK","deaths":187,"name":"Ladry"},{"class":"PRIEST","deaths":176,"name":"Gordo"},{"class":"HUNTER","deaths":176,"name":"Hungry"},{"class":"WARRIOR","deaths":171,"name":"Inrarmir"},{"class":"DRUID","deaths":162,"name":"Kyori"},{"class":"DRUID","deaths":155,"name":"Lizi"},{"class":"ROGUE","deaths":134,"name":"Facu"},{"class":"HUNTER","deaths":130,"name":"Morthe"},{"class":"ROGUE","deaths":130,"name":"Shimone"},{"class":"ROGUE","deaths":126,"name":"La"},{"class":"MAGE","deaths":126,"name":"Luckerr"},{"class":"PALADIN","deaths":125,"name":"El"},{"class":"WARLOCK","deaths":115,"name":"Che"},{"class":"ROGUE","deaths":110,"name":"Azul"},{"class":"SHAMAN","deaths":106,"name":"Javierr"},{"class":"MAGE","deaths":106,"name":"Mateo"},{"class":"WARLOCK","deaths":103,"name":"Arcyonarth"},{"class":"SHAMAN","deaths":98,"name":"Lapa"},{"class":"","deaths":94,"name":"Elto"},{"class":"WARRIOR","deaths":92,"name":"Hrafna"}],"rangos":[{"class":"PALADIN","name":"Kelvan","points":200,"rank":"Asador"},{"class":"ROGUE","name":"Facu","points":110,"rank":"Parrillero"},{"class":"","name":"Elto","points":60,"rank":"Parrillero"},{"class":"PALADIN","name":"Pefeeto","points":50,"rank":"Carbonero"},{"class":"DRUID","name":"Soyun","points":50,"rank":"Carbonero"},{"class":"HUNTER","name":"Toby","points":25,"rank":"Carbonero"},{"class":"HUNTER","name":"Geralt","points":21,"rank":"Carbonero"},{"class":"DRUID","name":"Galardriel","points":11,"rank":"Pinche"},{"class":"DRUID","name":"Chucho","points":10,"rank":"Pinche"},{"class":"WARRIOR","name":"Inrarmir","points":10,"rank":"Pinche"},{"class":"HUNTER","name":"Jos","points":10,"rank":"Pinche"},{"class":"WARRIOR","name":"Mouse","points":10,"rank":"Pinche"},{"class":"WARRIOR","name":"Gaha","points":6,"rank":"Pinche"},{"class":"SHAMAN","name":"Viejo","points":5,"rank":"Pinche"},{"class":"DRUID","name":"Sospollo","points":3,"rank":"Pinche"},{"class":"PALADIN","name":"Alucard","points":1,"rank":"Pinche"},{"class":"PALADIN","name":"El","points":1,"rank":"Pinche"},{"class":"PRIEST","name":"Hotpants","points":1,"rank":"Pinche"},{"class":"WARRIOR","name":"Hrafna","points":1,"rank":"Pinche"},{"class":"PALADIN","name":"Rar","points":1,"rank":"Pinche"}]},"schema":1,"ultimasMuertes":[{"class":"WARRIOR","level":40,"name":"Bartholomew","pvp":false,"sub":"Claro Soleado","ts":1795842513,"zone":"Claros del R\u00edo"},{"class":"WARRIOR","level":37,"name":"Hrafna","pvp":false,"sub":"Costasur","ts":1795841540,"zone":"Laderas de Trabalomas"},{"class":"WARRIOR","level":39,"name":"Inrarmir","pvp":false,"sub":"","ts":1795841205,"zone":"Claros del R\u00edo"},{"class":"WARRIOR","level":39,"name":"Inrarmir","pvp":false,"sub":"Playa Viento Este","ts":1795841080,"zone":"Claros del R\u00edo"},{"class":"WARRIOR","level":39,"name":"Inrarmir","pvp":false,"sub":"Playa Viento Este","ts":1795840979,"zone":"Claros del R\u00edo"},{"class":"SHAMAN","level":48,"name":"Bob","pvp":false,"sub":"Cavernas de Brazanegra","ts":1795840776,"zone":"Cavernas de Brazanegra"},{"class":"ROGUE","level":47,"name":"Facu","pvp":false,"sub":"Barranco Lethlor","ts":1795840692,"zone":"Tierras Inh\u00f3spitas"},{"class":"HUNTER","level":32,"name":"Geralt","pvp":false,"sub":"Cavernas de Brazanegra","ts":1795840646,"zone":"Cavernas de Brazanegra"},{"class":"WARRIOR","level":39,"name":"Inrarmir","pvp":false,"sub":"Playa Viento Este","ts":1795840347,"zone":"Claros del R\u00edo"},{"class":"HUNTER","level":32,"name":"Geralt","pvp":false,"sub":"","ts":1795840203,"zone":"Vallefresno"},{"class":"WARRIOR","level":37,"name":"Hrafna","pvp":false,"sub":"Castillo de Stromgarde","ts":1795840097,"zone":"Tierras Altas de Arathi"},{"class":"HUNTER","level":47,"name":"Jos","pvp":false,"sub":"","ts":1795840088,"zone":"Claros de Tirisfal"},{"class":"HUNTER","level":32,"name":"Geralt","pvp":false,"sub":"","ts":1795839853,"zone":"Vallefresno"},{"class":"WARRIOR","level":40,"name":"Bartholomew","pvp":false,"sub":"Lodo Traicionero","ts":1795839713,"zone":"Pantano de las Penas"},{"class":"WARRIOR","level":37,"name":"Hrafna","pvp":false,"sub":"Castillo de Stromgarde","ts":1795839509,"zone":"Tierras Altas de Arathi"}]}
+{
+  "schema": 1,
+  "sample": false,
+  "guild": "La Legión del Asado",
+  "generated": 1795870765,
+  "generatedBy": "Señor Carbón",
+  "month": "2026-11",
+  "rankings": {
+    "asador": [
+      {
+        "class": "PALADIN",
+        "name": "Kelvan",
+        "points": 200
+      },
+      {
+        "class": "ROGUE",
+        "name": "Facu",
+        "points": 110
+      },
+      {
+        "class": "",
+        "name": "Elto",
+        "points": 60
+      },
+      {
+        "class": "PALADIN",
+        "name": "Pefeeto",
+        "points": 50
+      },
+      {
+        "class": "DRUID",
+        "name": "Soyun",
+        "points": 50
+      },
+      {
+        "class": "HUNTER",
+        "name": "Toby",
+        "points": 25
+      },
+      {
+        "class": "HUNTER",
+        "name": "Geralt",
+        "points": 21
+      },
+      {
+        "class": "DRUID",
+        "name": "Galardriel",
+        "points": 11
+      },
+      {
+        "class": "DRUID",
+        "name": "Chucho",
+        "points": 10
+      },
+      {
+        "class": "WARRIOR",
+        "name": "Inrarmir",
+        "points": 10
+      },
+      {
+        "class": "HUNTER",
+        "name": "Jos",
+        "points": 10
+      },
+      {
+        "class": "WARRIOR",
+        "name": "Mouse",
+        "points": 10
+      },
+      {
+        "class": "WARRIOR",
+        "name": "Gaha",
+        "points": 6
+      },
+      {
+        "class": "SHAMAN",
+        "name": "Viejo",
+        "points": 5
+      },
+      {
+        "class": "DRUID",
+        "name": "Sospollo",
+        "points": 3
+      },
+      {
+        "class": "PALADIN",
+        "name": "Alucard",
+        "points": 1
+      },
+      {
+        "class": "PALADIN",
+        "name": "El",
+        "points": 1
+      },
+      {
+        "class": "PRIEST",
+        "name": "Hotpants",
+        "points": 1
+      },
+      {
+        "class": "WARRIOR",
+        "name": "Hrafna",
+        "points": 1
+      },
+      {
+        "class": "PALADIN",
+        "name": "Rar",
+        "points": 1
+      }
+    ],
+    "rangos": [
+      {
+        "class": "PALADIN",
+        "name": "Kelvan",
+        "points": 200,
+        "rank": "Asador"
+      },
+      {
+        "class": "ROGUE",
+        "name": "Facu",
+        "points": 110,
+        "rank": "Parrillero"
+      },
+      {
+        "class": "",
+        "name": "Elto",
+        "points": 60,
+        "rank": "Parrillero"
+      },
+      {
+        "class": "PALADIN",
+        "name": "Pefeeto",
+        "points": 50,
+        "rank": "Carbonero"
+      },
+      {
+        "class": "DRUID",
+        "name": "Soyun",
+        "points": 50,
+        "rank": "Carbonero"
+      },
+      {
+        "class": "HUNTER",
+        "name": "Toby",
+        "points": 25,
+        "rank": "Carbonero"
+      },
+      {
+        "class": "HUNTER",
+        "name": "Geralt",
+        "points": 21,
+        "rank": "Carbonero"
+      },
+      {
+        "class": "DRUID",
+        "name": "Galardriel",
+        "points": 11,
+        "rank": "Pinche"
+      },
+      {
+        "class": "DRUID",
+        "name": "Chucho",
+        "points": 10,
+        "rank": "Pinche"
+      },
+      {
+        "class": "WARRIOR",
+        "name": "Inrarmir",
+        "points": 10,
+        "rank": "Pinche"
+      },
+      {
+        "class": "HUNTER",
+        "name": "Jos",
+        "points": 10,
+        "rank": "Pinche"
+      },
+      {
+        "class": "WARRIOR",
+        "name": "Mouse",
+        "points": 10,
+        "rank": "Pinche"
+      },
+      {
+        "class": "WARRIOR",
+        "name": "Gaha",
+        "points": 6,
+        "rank": "Pinche"
+      },
+      {
+        "class": "SHAMAN",
+        "name": "Viejo",
+        "points": 5,
+        "rank": "Pinche"
+      },
+      {
+        "class": "DRUID",
+        "name": "Sospollo",
+        "points": 3,
+        "rank": "Pinche"
+      },
+      {
+        "class": "PALADIN",
+        "name": "Alucard",
+        "points": 1,
+        "rank": "Pinche"
+      },
+      {
+        "class": "PALADIN",
+        "name": "El",
+        "points": 1,
+        "rank": "Pinche"
+      },
+      {
+        "class": "PRIEST",
+        "name": "Hotpants",
+        "points": 1,
+        "rank": "Pinche"
+      },
+      {
+        "class": "WARRIOR",
+        "name": "Hrafna",
+        "points": 1,
+        "rank": "Pinche"
+      },
+      {
+        "class": "PALADIN",
+        "name": "Rar",
+        "points": 1,
+        "rank": "Pinche"
+      }
+    ],
+    "pollo": [
+      {
+        "class": "WARLOCK",
+        "deaths": 187,
+        "name": "Ladry"
+      },
+      {
+        "class": "PRIEST",
+        "deaths": 176,
+        "name": "Gordo"
+      },
+      {
+        "class": "HUNTER",
+        "deaths": 176,
+        "name": "Hungry"
+      },
+      {
+        "class": "WARRIOR",
+        "deaths": 171,
+        "name": "Inrarmir"
+      },
+      {
+        "class": "DRUID",
+        "deaths": 162,
+        "name": "Kyori"
+      },
+      {
+        "class": "DRUID",
+        "deaths": 155,
+        "name": "Lizi"
+      },
+      {
+        "class": "ROGUE",
+        "deaths": 134,
+        "name": "Facu"
+      },
+      {
+        "class": "HUNTER",
+        "deaths": 130,
+        "name": "Morthe"
+      },
+      {
+        "class": "ROGUE",
+        "deaths": 130,
+        "name": "Shimone"
+      },
+      {
+        "class": "ROGUE",
+        "deaths": 126,
+        "name": "La"
+      },
+      {
+        "class": "MAGE",
+        "deaths": 126,
+        "name": "Luckerr"
+      },
+      {
+        "class": "PALADIN",
+        "deaths": 125,
+        "name": "El"
+      },
+      {
+        "class": "WARLOCK",
+        "deaths": 115,
+        "name": "Che"
+      },
+      {
+        "class": "ROGUE",
+        "deaths": 110,
+        "name": "Azul"
+      },
+      {
+        "class": "SHAMAN",
+        "deaths": 106,
+        "name": "Javierr"
+      },
+      {
+        "class": "MAGE",
+        "deaths": 106,
+        "name": "Mateo"
+      },
+      {
+        "class": "WARLOCK",
+        "deaths": 103,
+        "name": "Arcyonarth"
+      },
+      {
+        "class": "SHAMAN",
+        "deaths": 98,
+        "name": "Lapa"
+      },
+      {
+        "class": "",
+        "deaths": 94,
+        "name": "Elto"
+      },
+      {
+        "class": "WARRIOR",
+        "deaths": 92,
+        "name": "Hrafna"
+      }
+    ],
+    "carnicero": [
+      {
+        "class": "PALADIN",
+        "kills": 575,
+        "name": "Kelvan"
+      },
+      {
+        "class": "ROGUE",
+        "kills": 567,
+        "name": "Azul"
+      },
+      {
+        "class": "DRUID",
+        "kills": 491,
+        "name": "Kyori"
+      },
+      {
+        "class": "DRUID",
+        "kills": 307,
+        "name": "Lizi"
+      },
+      {
+        "class": "SHAMAN",
+        "kills": 203,
+        "name": "Lapa"
+      },
+      {
+        "class": "PRIEST",
+        "kills": 190,
+        "name": "Kusanaca"
+      },
+      {
+        "class": "DRUID",
+        "kills": 170,
+        "name": "Chucho"
+      },
+      {
+        "class": "WARRIOR",
+        "kills": 158,
+        "name": "Inrarmir"
+      },
+      {
+        "class": "WARRIOR",
+        "kills": 157,
+        "name": "Mouse"
+      },
+      {
+        "class": "PALADIN",
+        "kills": 155,
+        "name": "Sir"
+      },
+      {
+        "class": "PALADIN",
+        "kills": 116,
+        "name": "Evur"
+      },
+      {
+        "class": "WARRIOR",
+        "kills": 116,
+        "name": "Tipo"
+      },
+      {
+        "class": "HUNTER",
+        "kills": 113,
+        "name": "Sin"
+      },
+      {
+        "class": "SHAMAN",
+        "kills": 105,
+        "name": "Tynchito"
+      },
+      {
+        "class": "DRUID",
+        "kills": 104,
+        "name": "Galardriel"
+      },
+      {
+        "class": "PRIEST",
+        "kills": 102,
+        "name": "Gordo"
+      },
+      {
+        "class": "WARRIOR",
+        "kills": 100,
+        "name": "Hrafna"
+      },
+      {
+        "class": "ROGUE",
+        "kills": 98,
+        "name": "Shimone"
+      },
+      {
+        "class": "WARLOCK",
+        "kills": 97,
+        "name": "Arcyonarth"
+      },
+      {
+        "class": "",
+        "kills": 97,
+        "name": "Oliber"
+      }
+    ],
+    "niveles": [
+      {
+        "class": "ROGUE",
+        "level": 60,
+        "name": "Ditto"
+      },
+      {
+        "class": "SHAMAN",
+        "level": 58,
+        "name": "Cogollo"
+      },
+      {
+        "class": "SHAMAN",
+        "level": 56,
+        "name": "Lapa"
+      },
+      {
+        "class": "PALADIN",
+        "level": 53,
+        "name": "El"
+      },
+      {
+        "class": "WARRIOR",
+        "level": 53,
+        "name": "Obywan"
+      },
+      {
+        "class": "PALADIN",
+        "level": 51,
+        "name": "Kelvan"
+      },
+      {
+        "class": "WARRIOR",
+        "level": 49,
+        "name": "Gaha"
+      },
+      {
+        "class": "PRIEST",
+        "level": 49,
+        "name": "Esel"
+      },
+      {
+        "class": "PRIEST",
+        "level": 49,
+        "name": "Macri"
+      },
+      {
+        "class": "WARLOCK",
+        "level": 48,
+        "name": "Nasferath"
+      },
+      {
+        "class": "SHAMAN",
+        "level": 48,
+        "name": "Bob"
+      },
+      {
+        "class": "PALADIN",
+        "level": 48,
+        "name": "Sir"
+      },
+      {
+        "class": "PALADIN",
+        "level": 48,
+        "name": "Loco"
+      },
+      {
+        "class": "DRUID",
+        "level": 47,
+        "name": "Lizi"
+      },
+      {
+        "class": "HUNTER",
+        "level": 47,
+        "name": "Jos"
+      },
+      {
+        "class": "ROGUE",
+        "level": 47,
+        "name": "Facu"
+      },
+      {
+        "class": "PRIEST",
+        "level": 47,
+        "name": "Fek"
+      },
+      {
+        "class": "DRUID",
+        "level": 45,
+        "name": "Galardriel"
+      },
+      {
+        "class": "MAGE",
+        "level": 45,
+        "name": "Ram"
+      },
+      {
+        "class": "PALADIN",
+        "level": 45,
+        "name": "Rar"
+      }
+    ],
+    "logros": [
+      {
+        "class": "HUNTER",
+        "count": 11,
+        "month": 21,
+        "name": "Geralt",
+        "points": 21
+      },
+      {
+        "class": "WARRIOR",
+        "count": 5,
+        "month": 10,
+        "name": "Inrarmir",
+        "points": 10
+      },
+      {
+        "class": "WARRIOR",
+        "count": 5,
+        "month": 6,
+        "name": "Gaha",
+        "points": 6
+      },
+      {
+        "class": "DRUID",
+        "count": 3,
+        "month": 3,
+        "name": "Sospollo",
+        "points": 3
+      },
+      {
+        "class": "SHAMAN",
+        "count": 1,
+        "month": 5,
+        "name": "Viejo",
+        "points": 5
+      },
+      {
+        "class": "PALADIN",
+        "count": 1,
+        "month": 1,
+        "name": "Alucard",
+        "points": 1
+      },
+      {
+        "class": "DRUID",
+        "count": 1,
+        "month": 1,
+        "name": "Galardriel",
+        "points": 1
+      },
+      {
+        "class": "PRIEST",
+        "count": 1,
+        "month": 1,
+        "name": "Hotpants",
+        "points": 1
+      },
+      {
+        "class": "WARRIOR",
+        "count": 1,
+        "month": 1,
+        "name": "Hrafna",
+        "points": 1
+      },
+      {
+        "class": "PALADIN",
+        "count": 1,
+        "month": 1,
+        "name": "Rar",
+        "points": 1
+      }
+    ]
+  },
+  "primeros": [
+    {
+      "class": "PALADIN",
+      "level": 10,
+      "name": "Kelvan",
+      "ts": 1792629408
+    },
+    {
+      "class": "SHAMAN",
+      "level": 20,
+      "name": "Lapa",
+      "ts": 1794011974
+    },
+    {
+      "class": "PALADIN",
+      "level": 30,
+      "name": "Kelvan",
+      "ts": 1794279935
+    },
+    {
+      "class": "SHAMAN",
+      "level": 40,
+      "name": "Lapa",
+      "ts": 1794783787
+    },
+    {
+      "class": "SHAMAN",
+      "level": 50,
+      "name": "Lapa",
+      "ts": 1795098342
+    },
+    {
+      "class": "SHAMAN",
+      "level": 55,
+      "name": "Cogollo",
+      "ts": 1795622775
+    }
+  ],
+  "ultimasMuertes": [
+    {
+      "class": "WARRIOR",
+      "level": 40,
+      "name": "Bartholomew",
+      "pvp": false,
+      "sub": "Claro Soleado",
+      "ts": 1795842513,
+      "zone": "Claros del Río"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 37,
+      "name": "Hrafna",
+      "pvp": false,
+      "sub": "Costasur",
+      "ts": 1795841540,
+      "zone": "Laderas de Trabalomas"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 39,
+      "name": "Inrarmir",
+      "pvp": false,
+      "sub": "",
+      "ts": 1795841205,
+      "zone": "Claros del Río"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 39,
+      "name": "Inrarmir",
+      "pvp": false,
+      "sub": "Playa Viento Este",
+      "ts": 1795841080,
+      "zone": "Claros del Río"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 39,
+      "name": "Inrarmir",
+      "pvp": false,
+      "sub": "Playa Viento Este",
+      "ts": 1795840979,
+      "zone": "Claros del Río"
+    },
+    {
+      "class": "SHAMAN",
+      "level": 48,
+      "name": "Bob",
+      "pvp": false,
+      "sub": "Cavernas de Brazanegra",
+      "ts": 1795840776,
+      "zone": "Cavernas de Brazanegra"
+    },
+    {
+      "class": "ROGUE",
+      "level": 47,
+      "name": "Facu",
+      "pvp": false,
+      "sub": "Barranco Lethlor",
+      "ts": 1795840692,
+      "zone": "Tierras Inhóspitas"
+    },
+    {
+      "class": "HUNTER",
+      "level": 32,
+      "name": "Geralt",
+      "pvp": false,
+      "sub": "Cavernas de Brazanegra",
+      "ts": 1795840646,
+      "zone": "Cavernas de Brazanegra"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 39,
+      "name": "Inrarmir",
+      "pvp": false,
+      "sub": "Playa Viento Este",
+      "ts": 1795840347,
+      "zone": "Claros del Río"
+    },
+    {
+      "class": "HUNTER",
+      "level": 32,
+      "name": "Geralt",
+      "pvp": false,
+      "sub": "",
+      "ts": 1795840203,
+      "zone": "Vallefresno"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 37,
+      "name": "Hrafna",
+      "pvp": false,
+      "sub": "Castillo de Stromgarde",
+      "ts": 1795840097,
+      "zone": "Tierras Altas de Arathi"
+    },
+    {
+      "class": "HUNTER",
+      "level": 47,
+      "name": "Jos",
+      "pvp": false,
+      "sub": "",
+      "ts": 1795840088,
+      "zone": "Claros de Tirisfal"
+    },
+    {
+      "class": "HUNTER",
+      "level": 32,
+      "name": "Geralt",
+      "pvp": false,
+      "sub": "",
+      "ts": 1795839853,
+      "zone": "Vallefresno"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 40,
+      "name": "Bartholomew",
+      "pvp": false,
+      "sub": "Lodo Traicionero",
+      "ts": 1795839713,
+      "zone": "Pantano de las Penas"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 37,
+      "name": "Hrafna",
+      "pvp": false,
+      "sub": "Castillo de Stromgarde",
+      "ts": 1795839509,
+      "zone": "Tierras Altas de Arathi"
+    }
+  ],
+  "archivo": []
+}
