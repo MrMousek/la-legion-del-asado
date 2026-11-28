@@ -2,7 +2,7 @@
   "schema": 1,
   "sample": false,
   "guild": "La Legión del Asado",
-  "generated": 1795870765,
+  "generated": 1795871135,
   "generatedBy": "Señor Carbón",
   "month": "2026-11",
   "rankings": {
@@ -15,7 +15,7 @@
       {
         "class": "ROGUE",
         "name": "Facu",
-        "points": 110
+        "points": 115
       },
       {
         "class": "",
@@ -43,19 +43,24 @@
         "points": 21
       },
       {
-        "class": "DRUID",
-        "name": "Galardriel",
-        "points": 11
+        "class": "WARRIOR",
+        "name": "Inrarmir",
+        "points": 15
+      },
+      {
+        "class": "PRIEST",
+        "name": "Sor",
+        "points": 14
       },
       {
         "class": "DRUID",
         "name": "Chucho",
-        "points": 10
+        "points": 11
       },
       {
-        "class": "WARRIOR",
-        "name": "Inrarmir",
-        "points": 10
+        "class": "DRUID",
+        "name": "Galardriel",
+        "points": 11
       },
       {
         "class": "HUNTER",
@@ -88,7 +93,7 @@
         "points": 1
       },
       {
-        "class": "PALADIN",
+        "class": "ROGUE",
         "name": "El",
         "points": 1
       },
@@ -100,11 +105,6 @@
       {
         "class": "WARRIOR",
         "name": "Hrafna",
-        "points": 1
-      },
-      {
-        "class": "PALADIN",
-        "name": "Rar",
         "points": 1
       }
     ],
@@ -118,7 +118,7 @@
       {
         "class": "ROGUE",
         "name": "Facu",
-        "points": 110,
+        "points": 115,
         "rank": "Parrillero"
       },
       {
@@ -152,21 +152,27 @@
         "rank": "Carbonero"
       },
       {
-        "class": "DRUID",
-        "name": "Galardriel",
-        "points": 11,
+        "class": "WARRIOR",
+        "name": "Inrarmir",
+        "points": 15,
+        "rank": "Pinche"
+      },
+      {
+        "class": "PRIEST",
+        "name": "Sor",
+        "points": 14,
         "rank": "Pinche"
       },
       {
         "class": "DRUID",
         "name": "Chucho",
-        "points": 10,
+        "points": 11,
         "rank": "Pinche"
       },
       {
-        "class": "WARRIOR",
-        "name": "Inrarmir",
-        "points": 10,
+        "class": "DRUID",
+        "name": "Galardriel",
+        "points": 11,
         "rank": "Pinche"
       },
       {
@@ -206,7 +212,7 @@
         "rank": "Pinche"
       },
       {
-        "class": "PALADIN",
+        "class": "ROGUE",
         "name": "El",
         "points": 1,
         "rank": "Pinche"
@@ -220,12 +226,6 @@
       {
         "class": "WARRIOR",
         "name": "Hrafna",
-        "points": 1,
-        "rank": "Pinche"
-      },
-      {
-        "class": "PALADIN",
-        "name": "Rar",
         "points": 1,
         "rank": "Pinche"
       }
@@ -279,17 +279,17 @@
       {
         "class": "ROGUE",
         "deaths": 126,
+        "name": "El"
+      },
+      {
+        "class": "ROGUE",
+        "deaths": 126,
         "name": "La"
       },
       {
         "class": "MAGE",
         "deaths": 126,
         "name": "Luckerr"
-      },
-      {
-        "class": "PALADIN",
-        "deaths": 125,
-        "name": "El"
       },
       {
         "class": "WARLOCK",
@@ -322,14 +322,14 @@
         "name": "Lapa"
       },
       {
+        "class": "WARRIOR",
+        "deaths": 95,
+        "name": "Hrafna"
+      },
+      {
         "class": "",
         "deaths": 94,
         "name": "Elto"
-      },
-      {
-        "class": "WARRIOR",
-        "deaths": 92,
-        "name": "Hrafna"
       }
     ],
     "carnicero": [
@@ -415,7 +415,7 @@
       },
       {
         "class": "WARRIOR",
-        "kills": 100,
+        "kills": 101,
         "name": "Hrafna"
       },
       {
@@ -442,18 +442,13 @@
       },
       {
         "class": "SHAMAN",
-        "level": 58,
+        "level": 59,
         "name": "Cogollo"
       },
       {
         "class": "SHAMAN",
         "level": 56,
         "name": "Lapa"
-      },
-      {
-        "class": "PALADIN",
-        "level": 53,
-        "name": "El"
       },
       {
         "class": "WARRIOR",
@@ -464,6 +459,11 @@
         "class": "PALADIN",
         "level": 51,
         "name": "Kelvan"
+      },
+      {
+        "class": "ROGUE",
+        "level": 50,
+        "name": "El"
       },
       {
         "class": "WARRIOR",
@@ -545,11 +545,18 @@
         "points": 21
       },
       {
+        "class": "PRIEST",
+        "count": 8,
+        "month": 14,
+        "name": "Sor",
+        "points": 14
+      },
+      {
         "class": "WARRIOR",
-        "count": 5,
-        "month": 10,
+        "count": 6,
+        "month": 15,
         "name": "Inrarmir",
-        "points": 10
+        "points": 15
       },
       {
         "class": "WARRIOR",
@@ -566,6 +573,13 @@
         "points": 3
       },
       {
+        "class": "ROGUE",
+        "count": 1,
+        "month": 5,
+        "name": "Facu",
+        "points": 5
+      },
+      {
         "class": "SHAMAN",
         "count": 1,
         "month": 5,
@@ -577,6 +591,13 @@
         "count": 1,
         "month": 1,
         "name": "Alucard",
+        "points": 1
+      },
+      {
+        "class": "DRUID",
+        "count": 1,
+        "month": 1,
+        "name": "Chucho",
         "points": 1
       },
       {
@@ -598,6 +619,20 @@
         "count": 1,
         "month": 1,
         "name": "Hrafna",
+        "points": 1
+      },
+      {
+        "class": "PRIEST",
+        "count": 1,
+        "month": 1,
+        "name": "Light",
+        "points": 1
+      },
+      {
+        "class": "WARLOCK",
+        "count": 1,
+        "month": 1,
+        "name": "Mate",
         "points": 1
       },
       {
@@ -649,67 +684,94 @@
   ],
   "ultimasMuertes": [
     {
+      "class": "PRIEST",
+      "level": 26,
+      "name": "Sor",
+      "pvp": false,
+      "sub": "Torre de Althalaxx",
+      "ts": 1795870496,
+      "zone": "Costa Oscura"
+    },
+    {
+      "class": "PRIEST",
+      "level": 41,
+      "name": "Light",
+      "pvp": false,
+      "sub": "Boulder'gor",
+      "ts": 1795864733,
+      "zone": "Arathi Highlands"
+    },
+    {
+      "class": "PALADIN",
+      "level": 33,
+      "name": "Alucard",
+      "pvp": false,
+      "sub": "",
+      "ts": 1795864683,
+      "zone": "Vega de Tuercespina"
+    },
+    {
+      "class": "PALADIN",
+      "level": 33,
+      "name": "Alucard",
+      "pvp": false,
+      "sub": "",
+      "ts": 1795864130,
+      "zone": "Vega de Tuercespina"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 37,
+      "name": "Hrafna",
+      "pvp": false,
+      "sub": "Horado Rajacieno",
+      "ts": 1795845525,
+      "zone": "Los Baldíos"
+    },
+    {
+      "class": "ROGUE",
+      "level": 40,
+      "name": "El",
+      "pvp": false,
+      "sub": "Playa Tenebruma",
+      "ts": 1795845009,
+      "zone": "Marjal Revolcafango"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 40,
+      "name": "Bartholomew",
+      "pvp": false,
+      "sub": "Granja de Elbrim",
+      "ts": 1795844807,
+      "zone": "Claros del Río"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 37,
+      "name": "Hrafna",
+      "pvp": false,
+      "sub": "Baldíos del Sur",
+      "ts": 1795844266,
+      "zone": "Los Baldíos"
+    },
+    {
+      "class": "WARRIOR",
+      "level": 37,
+      "name": "Hrafna",
+      "pvp": false,
+      "sub": "Camino del Oro Sur",
+      "ts": 1795844067,
+      "zone": "Los Baldíos"
+    },
+    {
       "class": "WARRIOR",
       "level": 40,
       "name": "Bartholomew",
       "pvp": false,
       "sub": "Claro Soleado",
-      "ts": 1795842513,
+      "ts": 1795843903,
       "zone": "Claros del Río"
-    },
-    {
-      "class": "WARRIOR",
-      "level": 37,
-      "name": "Hrafna",
-      "pvp": false,
-      "sub": "Costasur",
-      "ts": 1795841540,
-      "zone": "Laderas de Trabalomas"
-    },
-    {
-      "class": "WARRIOR",
-      "level": 39,
-      "name": "Inrarmir",
-      "pvp": false,
-      "sub": "",
-      "ts": 1795841205,
-      "zone": "Claros del Río"
-    },
-    {
-      "class": "WARRIOR",
-      "level": 39,
-      "name": "Inrarmir",
-      "pvp": false,
-      "sub": "Playa Viento Este",
-      "ts": 1795841080,
-      "zone": "Claros del Río"
-    },
-    {
-      "class": "WARRIOR",
-      "level": 39,
-      "name": "Inrarmir",
-      "pvp": false,
-      "sub": "Playa Viento Este",
-      "ts": 1795840979,
-      "zone": "Claros del Río"
-    },
-    {
-      "class": "SHAMAN",
-      "level": 48,
-      "name": "Bob",
-      "pvp": false,
-      "sub": "Cavernas de Brazanegra",
-      "ts": 1795840776,
-      "zone": "Cavernas de Brazanegra"
-    },
-    {
-      "class": "ROGUE",
-      "level": 47,
-      "name": "Facu",
-      "pvp": false,
-      "sub": "Barranco Lethlor",
-      "ts": 1795840692,
-      "zone": "Tierras Inhóspitas"
     },
     {
       "class": "HUNTER",
@@ -717,71 +779,44 @@
       "name": "Geralt",
       "pvp": false,
       "sub": "Cavernas de Brazanegra",
-      "ts": 1795840646,
+      "ts": 1795843691,
       "zone": "Cavernas de Brazanegra"
     },
     {
-      "class": "WARRIOR",
-      "level": 39,
-      "name": "Inrarmir",
+      "class": "DRUID",
+      "level": 22,
+      "name": "Sospollo",
       "pvp": false,
-      "sub": "Playa Viento Este",
-      "ts": 1795840347,
+      "sub": "Cavernas de Brazanegra",
+      "ts": 1795843677,
+      "zone": "Cavernas de Brazanegra"
+    },
+    {
+      "class": "HUNTER",
+      "level": 39,
+      "name": "Mistercap",
+      "pvp": false,
+      "sub": "Aserradero de Turner",
+      "ts": 1795843006,
       "zone": "Claros del Río"
     },
     {
-      "class": "HUNTER",
-      "level": 32,
-      "name": "Geralt",
+      "class": "DRUID",
+      "level": 22,
+      "name": "Sospollo",
       "pvp": false,
-      "sub": "",
-      "ts": 1795840203,
-      "zone": "Vallefresno"
+      "sub": "Cavernas de Brazanegra",
+      "ts": 1795842702,
+      "zone": "Cavernas de Brazanegra"
     },
     {
-      "class": "WARRIOR",
-      "level": 37,
-      "name": "Hrafna",
-      "pvp": false,
-      "sub": "Castillo de Stromgarde",
-      "ts": 1795840097,
-      "zone": "Tierras Altas de Arathi"
-    },
-    {
-      "class": "HUNTER",
-      "level": 47,
-      "name": "Jos",
-      "pvp": false,
-      "sub": "",
-      "ts": 1795840088,
-      "zone": "Claros de Tirisfal"
-    },
-    {
-      "class": "HUNTER",
-      "level": 32,
-      "name": "Geralt",
-      "pvp": false,
-      "sub": "",
-      "ts": 1795839853,
-      "zone": "Vallefresno"
-    },
-    {
-      "class": "WARRIOR",
+      "class": "PRIEST",
       "level": 40,
-      "name": "Bartholomew",
+      "name": "Light",
       "pvp": false,
-      "sub": "Lodo Traicionero",
-      "ts": 1795839713,
-      "zone": "Pantano de las Penas"
-    },
-    {
-      "class": "WARRIOR",
-      "level": 37,
-      "name": "Hrafna",
-      "pvp": false,
-      "sub": "Castillo de Stromgarde",
-      "ts": 1795839509,
-      "zone": "Tierras Altas de Arathi"
+      "sub": "Quel'Danil Lodge",
+      "ts": 1795842660,
+      "zone": "The Hinterlands"
     }
   ],
   "archivo": []
