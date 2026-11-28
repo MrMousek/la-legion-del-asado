@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rankings - La Legión del Asado</title>
+    <meta name="description" content="Los rankings de La Legión del Asado: Asador del Mes, Pollo del Mes, Carnicero del Mes, niveles, logros y el historial de cada mes." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../img/favicon.avif" type="image">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        /* Retoques solo para esta página */
+        .addon-page code { color: #FF6F00; background: #121212; padding: 2px 6px; border-radius: 4px; }
+        .addon-page .feature-card { background-color: #121212 !important; }
+        .addon-page .feature-icon { font-size: 2rem; color: #FF6F00; }
+        .addon-page .step-badge { background: #FF6F00; color: #1B1B1F; font-weight: 700; }
+        .addon-page .table { --bs-table-bg: #121212; }
+        .addon-page .nav-pills .nav-link { color: #ddd; }
+        .addon-page .nav-pills .nav-link.active { background: #FF6F00; color: #1B1B1F; font-weight: 700; }
+        .addon-page .rank-1 td { font-weight: 700; }
+        .addon-page .muted { color: #8a8a8a; }
+        .addon-page .update-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 111, 0, 0.12);
+            border: 1px solid rgba(255, 111, 0, 0.35);
+            color: #f1f1f1;
+            border-radius: 999px;
+            padding: 6px 14px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="navbar-brand" href="../index.html">
+            <img class="logo" src="../img/nuevoLLAN.avif" alt="La Legión del Asado - Logo">
+        </a>
+        <h1>Una comunidad Argentina de WoW
+            <img src="https://images.emojiterra.com/google/noto-emoji/unicode-17.0/color/svg/1f1e6-1f1f7.svg" alt="">
+        </h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienes-somos.html">Quiénes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./unete.html">Únete</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./addon.html">Addon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./rankings.html">Rankings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+        <div class="main-content-wrapper">
+            <main class="content-column addon-page">
+                <div class="container">
+
+                    <section class="text-center py-4">
+                        <h2 class="text-warning fw-bold">Rankings de La Legión del Asado</h2>
+                        <p class="text-light lead mt-2">Lo que pasa adentro del juego, para que lo vea cualquiera. Se actualiza todos los días.</p>
+                        <div class="mt-3">
+                            <span class="update-pill" id="meta">
+                                <i class="fa-regular fa-clock text-warning" aria-hidden="true"></i>
+                                <span id="meta-text">Cargando los rankings...</span>
+                            </span>
+                        </div>
+                        <div id="sample-banner" class="alert alert-warning mt-3 d-none" role="alert">
+                            Estos son <strong>datos de ejemplo</strong>. Se reemplazan cuando se sube el primer archivo real.
+                        </div>
+                    </section>
+
+                    <ul class="nav nav-pills justify-content-center flex-wrap gap-1 mb-4" id="rank-tabs" role="tablist"></ul>
+                    <div class="tab-content" id="rank-content"></div>
+
+                    <p class="text-center small mt-4">
+                        ¿Querés aparecer? Bajá el <a href="./addon.html" class="text-warning">addon de la Legión</a> y sumate a la guild:
+                        <a href="https://discord.gg/RsEyM5frhT" target="_blank" rel="noopener" class="text-warning">Discord</a>.
+                    </p>
+                </div>
+            </main>
+
+            <script>
+                (function () {
+                    "use strict";
+                    var CLASS_COLORS = {
+                        WARRIOR: "#C79C6E", PALADIN: "#F58CBA", HUNTER: "#ABD473", ROGUE: "#FFF569", PRIEST: "#FFFFFF",
+                        DEATHKNIGHT: "#C41F3B", SHAMAN: "#0070DE", MAGE: "#69CCF0", WARLOCK: "#9482C9", MONK: "#00FF96",
+                        DRUID: "#FF7D0A", DEMONHUNTER: "#A330C9", EVOKER: "#33937F"
+                    };
+                    var MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+                    function monthLabel(mk) {
+                        var m = /^(\d{4})-(\d{2})$/.exec(mk || "");
+                        return m ? (MESES[parseInt(m[2], 10) - 1] || m[2]) + " " + m[1] : (mk || "");
+                    }
+                    function fmtDate(ts) {
+                        if (!ts) return "sin fecha";
+                        var ms = ts > 1e12 ? ts : ts * 1000;
+                        return new Date(ms).toLocaleString("es-AR", {
+                            day: "2-digit",
+                            month: "2-digit",
+                            year: "numeric",
+                            hour: "2-digit",
+                            minute: "2-digit"
+                        });
+                    }
+
+                    function cell(tr, c) {
+                        var td = document.createElement("td");
+                        if (c && typeof c === "object") {
+                            var span = document.createElement("span");
+                            span.textContent = c.text == null ? "" : String(c.text);
+                            if (c.color) span.style.color = c.color;
+                            if (c.cls) span.className = c.cls;
+                            td.appendChild(span);
+                        } else {
+                            td.textContent = c == null ? "" : String(c);
+                        }
+                        tr.appendChild(td);
+                    }
+                    function name(p) { return { text: p.name, color: CLASS_COLORS[p.class] || "" }; }
+
+                    function table(headers, rows, emptyText) {
+                        if (!rows.length) {
+                            var p = document.createElement("p");
+                            p.className = "muted text-center py-4";
+                            p.textContent = emptyText || "Todavía no hay datos.";
+                            return p;
+                        }
+                        var wrap = document.createElement("div");
+                        wrap.className = "table-responsive";
+                        var t = document.createElement("table");
+                        t.className = "table table-dark table-striped align-middle mb-0";
+                        var thead = document.createElement("thead"), hr = document.createElement("tr");
+                        headers.forEach(function (h) { var th = document.createElement("th"); th.textContent = h; hr.appendChild(th); });
+                        thead.appendChild(hr); t.appendChild(thead);
+                        var tb = document.createElement("tbody");
+                        rows.forEach(function (r, i) {
+                            var tr = document.createElement("tr");
+                            if (i === 0) tr.className = "rank-1";
+                            r.forEach(function (c) { cell(tr, c); });
+                            tb.appendChild(tr);
+                        });
+                        t.appendChild(tb); wrap.appendChild(t);
+                        return wrap;
+                    }
+
+                    function winner(list, field, unit) {
+                        var e = list && list[0];
+                        return e ? e.name + " (" + (e[field] || 0) + (unit ? " " + unit : "") + ")" : "-";
+                    }
+
+                    var SECTIONS = [
+                        { id: "asador", title: "Asador del Mes", build: function (d) {
+                            return table(["#", "Jugador", "Puntos"], d.rankings.asador.map(function (p, i) { return [i + 1, name(p), p.points]; }),
+                                "Todavía nadie sumó puntos este mes.");
+                        } },
+                        { id: "pollo", title: "Pollo del Mes", build: function (d) {
+                            return table(["#", "Jugador", "Muertes"], d.rankings.pollo.map(function (p, i) { return [i + 1, name(p), p.deaths]; }),
+                                "Todos vivitos y coleando.");
+                        } },
+                        { id: "carnicero", title: "Carnicero del Mes", build: function (d) {
+                            return table(["#", "Jugador", "Bajas"], d.rankings.carnicero.map(function (p, i) { return [i + 1, name(p), p.kills]; }),
+                                "Sin bajas PvP este mes.");
+                        } },
+                        { id: "niveles", title: "Niveles", build: function (d) {
+                            return table(["#", "Jugador", "Nivel"], d.rankings.niveles.map(function (p, i) { return [i + 1, name(p), p.level]; }));
+                        } },
+                        { id: "logros", title: "Logros", build: function (d) {
+                            return table(["#", "Jugador", "Logros", "Puntos", "Este mes"],
+                                d.rankings.logros.map(function (p, i) { return [i + 1, name(p), p.count, p.points, p.month]; }),
+                                "Todavía nadie desbloqueó logros.");
+                        } },
+                        { id: "rangos", title: "Rangos", build: function (d) {
+                            return table(["#", "Jugador", "Rango", "Puntos"],
+                                d.rankings.rangos.map(function (p, i) { return [i + 1, name(p), p.rank, p.points]; }));
+                        } },
+                        { id: "primeros", title: "Los Primeros", build: function (d) {
+                            return table(["Nivel", "Primero en llegar", "Cuándo"],
+                                (d.primeros || []).map(function (p) { return [p.level, name(p), fmtDate(p.ts)]; }),
+                                "Todavía nadie llegó a un nivel importante.");
+                        } },
+                        { id: "muertes", title: "Últimas muertes", build: function (d) {
+                            return table(["Jugador", "Nivel", "Dónde", "Cuándo"],
+                                (d.ultimasMuertes || []).map(function (p) {
+                                    var where = [p.sub, p.zone].filter(Boolean).join(", ") + (p.pvp ? " (PvP)" : "");
+                                    return [name(p), p.level || "", where, fmtDate(p.ts)];
+                                }), "Nadie se murió todavía. Raro.");
+                        } },
+                        { id: "historial", title: "Historial", build: function (d) {
+                            return table(["Mes", "Asador del Mes", "Pollo del Mes", "Carnicero del Mes", "Logros"],
+                                (d.archivo || []).map(function (a) {
+                                    return [monthLabel(a.month), winner(a.asador, "points", "pts"), winner(a.pollo, "deaths", "muertes"),
+                                            winner(a.carnicero, "kills", "bajas"), winner(a.logros, "points", "pts")];
+                                }), "Todavía no hay meses archivados. El primero se guarda cuando termine este mes.");
+                        } }
+                    ];
+
+                    function render(d) {
+                        var tabs = document.getElementById("rank-tabs"), content = document.getElementById("rank-content");
+                        tabs.textContent = ""; content.textContent = "";
+                        SECTIONS.forEach(function (s, i) {
+                            var li = document.createElement("li"); li.className = "nav-item"; li.setAttribute("role", "presentation");
+                            var b = document.createElement("button");
+                            b.className = "nav-link" + (i === 0 ? " active" : ""); b.type = "button";
+                            b.setAttribute("data-bs-toggle", "pill"); b.setAttribute("data-bs-target", "#pane-" + s.id);
+                            b.textContent = s.title; li.appendChild(b); tabs.appendChild(li);
+
+                            var pane = document.createElement("div");
+                            pane.className = "tab-pane fade" + (i === 0 ? " show active" : ""); pane.id = "pane-" + s.id;
+                            var card = document.createElement("div");
+                            card.className = "card community-card text-light border-secondary rounded-4 p-3";
+                            var h = document.createElement("h3"); h.className = "fs-4 text-warning fw-bold mb-3";
+                            h.textContent = s.title + (/^(asador|pollo|carnicero)$/.test(s.id) ? " - " + monthLabel(d.month) : "");
+                            card.appendChild(h); card.appendChild(s.build(d)); pane.appendChild(card); content.appendChild(pane);
+                        });
+                        var updatedLabel = "Última actualización: " + fmtDate(d.generated);
+                        if (d.generatedBy) updatedLabel += " por " + d.generatedBy;
+                        if (d.month) updatedLabel += " · Mes: " + monthLabel(d.month);
+                        document.getElementById("meta-text").textContent = updatedLabel;
+                        if (d.sample) document.getElementById("sample-banner").classList.remove("d-none");
+                    }
+
+                    fetch("../data/rankings.json", { cache: "no-store" })
+                        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+                        .then(function (d) {
+                            d.rankings = d.rankings || {};
+                            ["asador", "pollo", "carnicero", "niveles", "logros", "rangos"].forEach(function (k) { d.rankings[k] = d.rankings[k] || []; });
+                            render(d);
+                        })
+                        .catch(function () {
+                            document.getElementById("meta-text").textContent = "Todavía no hay rankings publicados. Volvé pronto.";
+                        });
+                })();
+            </script>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../img/nuevoLLAN.avif" alt="Logo de LA Legión del Asado">
+            </div>
+            <div class="footer-sections">
+                <div class="footer-column">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./addon.html">Addon de la guild</a></li>
+                        <li><a href="./terminos-condiciones.html">Términos y Condiciones</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./politica-privacidad.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Quiénes Somos</h4>
+                    <ul>
+                        <li><a href="./quienes-somos.html">Nuestra historia</a></li>
+                        <li><a href="./unete.html">Únete</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 La Legión del Asado. World of Warcraft y sus imágenes son propiedad de Blizzard
+                Entertainment. Este sitio no está afiliado ni respaldado por Blizzard. Sitio web creado por Mouse. Todos
+                los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
